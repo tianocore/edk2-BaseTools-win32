@@ -1,5 +1,5 @@
 @REM
-@REM Copyright (c) 2008, Intel Corporation. All rights reserved.<BR>
+@REM Copyright (c) 2008 - 2014, Intel Corporation. All rights reserved.<BR>
 @REM This program and the accompanying materials
 @REM are licensed and made available under the terms and conditions of the BSD License
 @REM which accompanies this distribution.  The full text of the license may be found at
@@ -16,6 +16,7 @@
 @if /I "%1"=="/h" goto Usage
 @if /I "%1"=="/help" goto Usage
 @if /I "%1"=="/?" goto Usage
+@if /I "%1"=="--version" goto Version
 
 set IMPORT_TOOL=%~dp0Trim.exe
 if NOT exist %IMPORT_TOOL% (
@@ -37,9 +38,17 @@ for /r %%i in (%FILE_LIST%) do (
 )
 goto End
 
+:Version
+  echo %0 Version 1.0
+  echo.
+goto End
+
+  
 :Usage
   echo.
-  echo  Usage: "%0 [-h | -help | --help | /h | /help | /?] [files]"
+  echo  ImportTool - Copyright (c) 2008 - 2014, Intel Corporation. All rights reserved.
+  echo.
+  echo  Usage: "%0 [-h | -help | --help | /h | /help | /? | --version] [files]"
   echo.
   echo         files          File list or file pattern with wildcard, like "*.c *.h",
   echo                        seperated by space. If not specified, defaul to *.c.
