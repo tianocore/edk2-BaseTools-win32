@@ -9,7 +9,7 @@ https://svn.code.sf.net/p/edk2/code/trunk/edk2
 
 This directory contains the Win32 binaries.
 
-Build Date: Mon, 28 Jul 2014 11:20:12 Pacific Daylight Time
+Build Date: Thu, 31 Jul 2014 03:01:38 Pacific Daylight Time
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -49,34 +49,34 @@ Build Date: Mon, 28 Jul 2014 11:20:12 Pacific Daylight Time
   build.exe Version 0.51 Build 15703
 
 ##################### Anti-Virus Scan #####################
-Anti-Virus Software not found.
-  7/28/2014 11:20:13AM Engine version = 5400.1158
-  7/28/2014 11:20:13AM AntiVirus DAT version = 7512.0
-  7/28/2014 11:20:13AM Number of detection signatures in EXTRA.DAT = 1
-  7/28/2014 11:20:13AM Names of detection signatures in EXTRA.DAT = Trojan-FakeUpdater (ED)
-  7/28/2014 11:20:13AM Scan Started On-Demand Scan
-  7/28/2014 11:20:16AM Scan Summary
-  7/28/2014 11:20:16AM Processes scanned : 0
-  7/28/2014 11:20:16AM Processes detected : 0
-  7/28/2014 11:20:16AM Processes cleaned : 0
-  7/28/2014 11:20:16AM Boot sectors scanned : 2
-  7/28/2014 11:20:16AM Boot sectors detected: 0
-  7/28/2014 11:20:16AM Boot sectors cleaned : 0
-  7/28/2014 11:20:16AM Files scanned : 66
-  7/28/2014 11:20:16AM Files with detections: 0
-  7/28/2014 11:20:16AM File detections : 0
-  7/28/2014 11:20:16AM Files cleaned : 0
-  7/28/2014 11:20:16AM Files deleted : 0
-  7/28/2014 11:20:16AM Files not scanned : 0
-  7/28/2014 11:20:16AM Scan Summary (Registry Scanning)
-  7/28/2014 11:20:16AM Keys scanned : 0
-  7/28/2014 11:20:16AM Keys detected : 0
-  7/28/2014 11:20:16AM Keys cleaned : 0
-  7/28/2014 11:20:16AM Keys deleted : 0
-  7/28/2014 11:20:16AM Scan Summary (Cookie Scanning)
-  7/28/2014 11:20:16AM Cookies scanned : 0
-  7/28/2014 11:20:16AM Cookies detected : 0
-  7/28/2014 11:20:16AM Cookies cleaned : 0
-  7/28/2014 11:20:16AM Cookies deleted : 0
-  7/28/2014 11:20:16AM Run time : 0:00:04
-  7/28/2014 11:20:16AM Scan Complete On-Demand Scan
+McAfee VirusScan Enterprise Version 8.8.0.975
+  7/31/2014 3:01:39AM Engine version = 5400.1158
+  7/31/2014 3:01:39AM AntiVirus DAT version = 7515.0
+  7/31/2014 3:01:39AM Number of detection signatures in EXTRA.DAT = 1
+  7/31/2014 3:01:39AM Names of detection signatures in EXTRA.DAT = Trojan-FakeUpdater (ED)
+  7/31/2014 3:01:39AM Scan Started On-Demand Scan
+  7/31/2014 3:01:42AM Scan Summary
+  7/31/2014 3:01:42AM Processes scanned : 0
+  7/31/2014 3:01:42AM Processes detected : 0
+  7/31/2014 3:01:42AM Processes cleaned : 0
+  7/31/2014 3:01:42AM Boot sectors scanned : 2
+  7/31/2014 3:01:42AM Boot sectors detected: 0
+  7/31/2014 3:01:42AM Boot sectors cleaned : 0
+  7/31/2014 3:01:42AM Files scanned : 66
+  7/31/2014 3:01:42AM Files with detections: 0
+  7/31/2014 3:01:42AM File detections : 0
+  7/31/2014 3:01:42AM Files cleaned : 0
+  7/31/2014 3:01:42AM Files deleted : 0
+  7/31/2014 3:01:42AM Files not scanned : 0
+  7/31/2014 3:01:42AM Scan Summary (Registry Scanning)
+  7/31/2014 3:01:42AM Keys scanned : 0
+  7/31/2014 3:01:42AM Keys detected : 0
+  7/31/2014 3:01:42AM Keys cleaned : 0
+  7/31/2014 3:01:42AM Keys deleted : 0
+  7/31/2014 3:01:42AM Scan Summary (Cookie Scanning)
+  7/31/2014 3:01:42AM Cookies scanned : 0
+  7/31/2014 3:01:42AM Cookies detected : 0
+  7/31/2014 3:01:42AM Cookies cleaned : 0
+  7/31/2014 3:01:42AM Cookies deleted : 0
+  7/31/2014 3:01:42AM Run time : 0:00:04
+  7/31/2014 3:01:42AM Scan Complete On-Demand Scan
