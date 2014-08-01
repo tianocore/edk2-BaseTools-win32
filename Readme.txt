@@ -9,7 +9,7 @@ https://svn.code.sf.net/p/edk2/code/trunk/edk2
 
 This directory contains the Win32 binaries.
 
-Build Date: Thu, 31 Jul 2014 15:48:25 Pacific Daylight Time
+Build Date: Fri, 01 Aug 2014 03:01:38 Pacific Daylight Time
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -44,39 +44,39 @@ Build Date: Thu, 31 Jul 2014 15:48:25 Pacific Daylight Time
   TianoCompress Version 0.1 Build 15723
   Trim.exe Version 0.10 Build 15723
   Intel(r) UEFI Packaging Tool (Intel(r) UEFIPT) - Revision 1.0 Build 15723
-  ERROR : This tool is missing --version option: VfrCompile.exe
+  VfrCompile version  2.00 (UEFI 2.4) Build 15734
   VolInfo Tiano Firmware Volume FFS image info.  Version 0.82 Build 15723, Jul 31 2014
   build.exe Version 0.51 Build 15723
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.975
-  7/31/2014 3:48:26PM Engine version = 5400.1158
-  7/31/2014 3:48:26PM AntiVirus DAT version = 7515.0
-  7/31/2014 3:48:26PM Number of detection signatures in EXTRA.DAT = 1
-  7/31/2014 3:48:26PM Names of detection signatures in EXTRA.DAT = Trojan-FakeUpdater (ED)
-  7/31/2014 3:48:26PM Scan Started On-Demand Scan
-  7/31/2014 3:48:29PM Scan Summary
-  7/31/2014 3:48:29PM Processes scanned : 0
-  7/31/2014 3:48:29PM Processes detected : 0
-  7/31/2014 3:48:29PM Processes cleaned : 0
-  7/31/2014 3:48:29PM Boot sectors scanned : 2
-  7/31/2014 3:48:29PM Boot sectors detected: 0
-  7/31/2014 3:48:29PM Boot sectors cleaned : 0
-  7/31/2014 3:48:29PM Files scanned : 64
-  7/31/2014 3:48:29PM Files with detections: 0
-  7/31/2014 3:48:29PM File detections : 0
-  7/31/2014 3:48:29PM Files cleaned : 0
-  7/31/2014 3:48:29PM Files deleted : 0
-  7/31/2014 3:48:29PM Files not scanned : 0
-  7/31/2014 3:48:29PM Scan Summary (Registry Scanning)
-  7/31/2014 3:48:29PM Keys scanned : 0
-  7/31/2014 3:48:29PM Keys detected : 0
-  7/31/2014 3:48:29PM Keys cleaned : 0
-  7/31/2014 3:48:29PM Keys deleted : 0
-  7/31/2014 3:48:29PM Scan Summary (Cookie Scanning)
-  7/31/2014 3:48:29PM Cookies scanned : 0
-  7/31/2014 3:48:29PM Cookies detected : 0
-  7/31/2014 3:48:29PM Cookies cleaned : 0
-  7/31/2014 3:48:29PM Cookies deleted : 0
-  7/31/2014 3:48:29PM Run time : 0:00:03
-  7/31/2014 3:48:29PM Scan Complete On-Demand Scan
+  8/1/2014 3:01:39AM Engine version = 5400.1158
+  8/1/2014 3:01:39AM AntiVirus DAT version = 7516.0
+  8/1/2014 3:01:39AM Number of detection signatures in EXTRA.DAT = 1
+  8/1/2014 3:01:39AM Names of detection signatures in EXTRA.DAT = Trojan-FakeUpdater (ED)
+  8/1/2014 3:01:39AM Scan Started On-Demand Scan
+  8/1/2014 3:01:42AM Scan Summary
+  8/1/2014 3:01:42AM Processes scanned : 0
+  8/1/2014 3:01:42AM Processes detected : 0
+  8/1/2014 3:01:42AM Processes cleaned : 0
+  8/1/2014 3:01:42AM Boot sectors scanned : 2
+  8/1/2014 3:01:42AM Boot sectors detected: 0
+  8/1/2014 3:01:42AM Boot sectors cleaned : 0
+  8/1/2014 3:01:42AM Files scanned : 66
+  8/1/2014 3:01:42AM Files with detections: 0
+  8/1/2014 3:01:42AM File detections : 0
+  8/1/2014 3:01:42AM Files cleaned : 0
+  8/1/2014 3:01:42AM Files deleted : 0
+  8/1/2014 3:01:42AM Files not scanned : 0
+  8/1/2014 3:01:42AM Scan Summary (Registry Scanning)
+  8/1/2014 3:01:42AM Keys scanned : 0
+  8/1/2014 3:01:42AM Keys detected : 0
+  8/1/2014 3:01:42AM Keys cleaned : 0
+  8/1/2014 3:01:42AM Keys deleted : 0
+  8/1/2014 3:01:42AM Scan Summary (Cookie Scanning)
+  8/1/2014 3:01:42AM Cookies scanned : 0
+  8/1/2014 3:01:42AM Cookies detected : 0
+  8/1/2014 3:01:42AM Cookies cleaned : 0
+  8/1/2014 3:01:42AM Cookies deleted : 0
+  8/1/2014 3:01:42AM Run time : 0:00:04
+  8/1/2014 3:01:42AM Scan Complete On-Demand Scan
