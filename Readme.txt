@@ -9,7 +9,7 @@ https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for thi
 
 This directory contains the Win32 binaries.
 
-Build Date:       Fri, 29 Aug 2014 03:02:24 Pacific Daylight Time
+Build Date:       Fri, 29 Aug 2014 09:07:02 Pacific Daylight Time
 Last Changed Rev: 15971
 
 ############### Build System Information ###############
@@ -40,46 +40,46 @@ Last Changed Rev: 15971
   LzmaCompress Version 0.2 Build 15977
   LzmaF86Compress Version 0.2 Build 15977
   PatchPcdValue.exe Version 0.10 Build 15977
-  Rsa2048Sha256GenerateKeys Version 0.9 Build 15811
-  Rsa2048Sha256Sign Version 0.9 Build 15811
+  Rsa2048Sha256GenerateKeys Version 0.9 Build 15977
+  Rsa2048Sha256Sign Version 0.9 Build 15977
   Split Version 0.1 Build 15977
   TargetTool.exe Version 0.01 Build 15977
   TianoCompress Version 0.1 Build 15977
   Trim.exe Version 0.10 Build 15977
-  Intel(r) UEFI Packaging Tool (Intel(r) UEFIPT) - Revision 1.0 Build 15899
+  Intel(r) UEFI Packaging Tool (Intel(r) UEFIPT) - Revision 1.0 Build 15977
   VfrCompile version  2.00 (UEFI 2.4) Build 15977
   VolInfo Version 0.83 Build 15977, Aug 29 2014
   build.exe Version 0.51 Build 15977
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.975
-  8/29/2014 3:02:25AM Engine version = 5400.1158
-  8/29/2014 3:02:25AM AntiVirus DAT version = 7544.0
-  8/29/2014 3:02:25AM Number of detection signatures in EXTRA.DAT = None
-  8/29/2014 3:02:25AM Names of detection signatures in EXTRA.DAT = None
-  8/29/2014 3:02:25AM Scan Started On-Demand Scan
-  8/29/2014 3:02:33AM Scan Summary
-  8/29/2014 3:02:33AM Processes scanned : 0
-  8/29/2014 3:02:33AM Processes detected : 0
-  8/29/2014 3:02:33AM Processes cleaned : 0
-  8/29/2014 3:02:33AM Boot sectors scanned : 2
-  8/29/2014 3:02:33AM Boot sectors detected: 0
-  8/29/2014 3:02:33AM Boot sectors cleaned : 0
-  8/29/2014 3:02:33AM Files scanned : 69
-  8/29/2014 3:02:33AM Files with detections: 0
-  8/29/2014 3:02:33AM File detections : 0
-  8/29/2014 3:02:33AM Files cleaned : 0
-  8/29/2014 3:02:33AM Files deleted : 0
-  8/29/2014 3:02:33AM Files not scanned : 0
-  8/29/2014 3:02:33AM Scan Summary (Registry Scanning)
-  8/29/2014 3:02:33AM Keys scanned : 0
-  8/29/2014 3:02:33AM Keys detected : 0
-  8/29/2014 3:02:33AM Keys cleaned : 0
-  8/29/2014 3:02:33AM Keys deleted : 0
-  8/29/2014 3:02:33AM Scan Summary (Cookie Scanning)
-  8/29/2014 3:02:33AM Cookies scanned : 0
-  8/29/2014 3:02:33AM Cookies detected : 0
-  8/29/2014 3:02:33AM Cookies cleaned : 0
-  8/29/2014 3:02:33AM Cookies deleted : 0
-  8/29/2014 3:02:33AM Run time : 0:00:08
-  8/29/2014 3:02:33AM Scan Complete On-Demand Scan
+  8/29/2014 9:07:02AM Engine version = 5400.1158
+  8/29/2014 9:07:02AM AntiVirus DAT version = 7523.0
+  8/29/2014 9:07:02AM Number of detection signatures in EXTRA.DAT = None
+  8/29/2014 9:07:02AM Names of detection signatures in EXTRA.DAT = None
+  8/29/2014 9:07:02AM Scan Started On-Demand Scan
+  8/29/2014 9:07:10AM Scan Summary
+  8/29/2014 9:07:10AM Processes scanned : 0
+  8/29/2014 9:07:10AM Processes detected : 0
+  8/29/2014 9:07:10AM Processes cleaned : 0
+  8/29/2014 9:07:10AM Boot sectors scanned : 2
+  8/29/2014 9:07:10AM Boot sectors detected: 0
+  8/29/2014 9:07:10AM Boot sectors cleaned : 0
+  8/29/2014 9:07:10AM Files scanned : 67
+  8/29/2014 9:07:10AM Files with detections: 0
+  8/29/2014 9:07:10AM File detections : 0
+  8/29/2014 9:07:10AM Files cleaned : 0
+  8/29/2014 9:07:10AM Files deleted : 0
+  8/29/2014 9:07:10AM Files not scanned : 0
+  8/29/2014 9:07:10AM Scan Summary (Registry Scanning)
+  8/29/2014 9:07:10AM Keys scanned : 0
+  8/29/2014 9:07:10AM Keys detected : 0
+  8/29/2014 9:07:10AM Keys cleaned : 0
+  8/29/2014 9:07:10AM Keys deleted : 0
+  8/29/2014 9:07:10AM Scan Summary (Cookie Scanning)
+  8/29/2014 9:07:10AM Cookies scanned : 0
+  8/29/2014 9:07:10AM Cookies detected : 0
+  8/29/2014 9:07:10AM Cookies cleaned : 0
+  8/29/2014 9:07:10AM Cookies deleted : 0
+  8/29/2014 9:07:10AM Run time : 0:00:08
+  8/29/2014 9:07:10AM Scan Complete On-Demand Scan
