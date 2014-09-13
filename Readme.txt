@@ -5,12 +5,12 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 16068
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 16103
 
 This directory contains the Win32 binaries.
 
-Build Date:       Tue, 09 Sep 2014 08:24:51 Pacific Daylight Time
-Last Changed Rev: 16063
+Build Date:       Sat, 13 Sep 2014 03:01:34 Pacific Daylight Time
+Last Changed Rev: 16103
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -21,8 +21,6 @@ Last Changed Rev: 16063
   antlr3        = 3.0.1
 
 ##################### Tool Versions #####################
-
-** ALL TOOLS WERE REBUILT **
   Intel(r) Binary Product Data Generation Tool (Intel(r) BPDG) - Version 0.1 Build 16068
   BootSectImage Version 0.1 Build 16068
   EfiLdrImage Version 0.1 Build 16068
@@ -30,7 +28,7 @@ Last Changed Rev: 16063
   GenBootSector Version 0.2 Build 16068
   GenCrc32 Version 0.2 Build 16068
   GenDepex.exe Version 0.04 Build 16068
-  GenFds.exe 1.0 Build 16068
+ *GenFds.exe 1.0 Build 16103
   GenFfs Version 0.1 Build 16068
   GenFv Version 0.1 Build 16068
   GenFw Version 0.2 Build 16068
@@ -53,70 +51,74 @@ Last Changed Rev: 16063
   VolInfo Version 0.83 Build 16068, Sep  9 2014
   build.exe Version 0.51 Build 16068
 
+* This tool was updated
+
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.975
-  9/9/2014 8:24:53AM Engine version = 5400.1158
-  9/9/2014 8:24:53AM AntiVirus DAT version = 7555.0
-  9/9/2014 8:24:53AM Number of detection signatures in EXTRA.DAT = None
-  9/9/2014 8:24:53AM Names of detection signatures in EXTRA.DAT = None
-  9/9/2014 8:24:53AM Scan Started On-Demand Scan
-  9/9/2014 8:25:01AM Scan Summary
-  9/9/2014 8:25:01AM Processes scanned : 0
-  9/9/2014 8:25:01AM Processes detected : 0
-  9/9/2014 8:25:01AM Processes cleaned : 0
-  9/9/2014 8:25:01AM Boot sectors scanned : 2
-  9/9/2014 8:25:01AM Boot sectors detected: 0
-  9/9/2014 8:25:01AM Boot sectors cleaned : 0
-  9/9/2014 8:25:01AM Files scanned : 67
-  9/9/2014 8:25:01AM Files with detections: 0
-  9/9/2014 8:25:01AM File detections : 0
-  9/9/2014 8:25:01AM Files cleaned : 0
-  9/9/2014 8:25:01AM Files deleted : 0
-  9/9/2014 8:25:01AM Files not scanned : 0
-  9/9/2014 8:25:01AM Scan Summary (Registry Scanning)
-  9/9/2014 8:25:01AM Keys scanned : 0
-  9/9/2014 8:25:01AM Keys detected : 0
-  9/9/2014 8:25:01AM Keys cleaned : 0
-  9/9/2014 8:25:01AM Keys deleted : 0
-  9/9/2014 8:25:01AM Scan Summary (Cookie Scanning)
-  9/9/2014 8:25:01AM Cookies scanned : 0
-  9/9/2014 8:25:01AM Cookies detected : 0
-  9/9/2014 8:25:01AM Cookies cleaned : 0
-  9/9/2014 8:25:01AM Cookies deleted : 0
-  9/9/2014 8:25:01AM Run time : 0:00:09
-  9/9/2014 8:25:01AM Scan Complete On-Demand Scan
+  9/13/2014 3:01:35AM Engine version = 5400.1158
+  9/13/2014 3:01:35AM AntiVirus DAT version = 7559.0
+  9/13/2014 3:01:35AM Number of detection signatures in EXTRA.DAT = None
+  9/13/2014 3:01:35AM Names of detection signatures in EXTRA.DAT = None
+  9/13/2014 3:01:35AM Scan Started On-Demand Scan
+  9/13/2014 3:01:42AM Scan Summary
+  9/13/2014 3:01:42AM Processes scanned : 0
+  9/13/2014 3:01:42AM Processes detected : 0
+  9/13/2014 3:01:42AM Processes cleaned : 0
+  9/13/2014 3:01:42AM Boot sectors scanned : 2
+  9/13/2014 3:01:42AM Boot sectors detected: 0
+  9/13/2014 3:01:42AM Boot sectors cleaned : 0
+  9/13/2014 3:01:42AM Files scanned : 69
+  9/13/2014 3:01:42AM Files with detections: 0
+  9/13/2014 3:01:42AM File detections : 0
+  9/13/2014 3:01:42AM Files cleaned : 0
+  9/13/2014 3:01:42AM Files deleted : 0
+  9/13/2014 3:01:42AM Files not scanned : 0
+  9/13/2014 3:01:42AM Scan Summary (Registry Scanning)
+  9/13/2014 3:01:42AM Keys scanned : 0
+  9/13/2014 3:01:42AM Keys detected : 0
+  9/13/2014 3:01:42AM Keys cleaned : 0
+  9/13/2014 3:01:42AM Keys deleted : 0
+  9/13/2014 3:01:42AM Scan Summary (Cookie Scanning)
+  9/13/2014 3:01:42AM Cookies scanned : 0
+  9/13/2014 3:01:42AM Cookies detected : 0
+  9/13/2014 3:01:42AM Cookies cleaned : 0
+  9/13/2014 3:01:42AM Cookies deleted : 0
+  9/13/2014 3:01:42AM Run time : 0:00:08
+  9/13/2014 3:01:42AM Scan Complete On-Demand Scan
 
 ############### SVN Log Since Last Build ################
-svn log -r 16055:HEAD Source
-------------------------------------------------------------------------  r16057 | hchen30 | 2014-09-04 01:32:44 -0700 (Thu, 04 Sep 2014) | 7 lines
-  BaseTools/AutoGen: Remove redundant copy action for binary module
-  Remove redundant copy action for binary module to copy binary files to output directory only when the binary module is a library
+svn log -r 16068:HEAD Source
+------------------------------------------------------------------------  r16094 | yingke | 2014-09-10 23:44:17 -0700 (Wed, 10 Sep 2014) | 9 lines
+  Add support for ${s_*} and ${d_*} macros for in FDF file for the INF files, and for each statement in the build rules.
+  The following keywords are supported:
+  "src", "s_path", "s_dir", "s_name", "s_base", "s_ext", "dst", "d_path", "d_name", "d_base", "d_ext"
   Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Hess Chen <hesheng.chen@intel.com>
-  Reviewed-by: Yingke Liu <yingke.d.liu@Intel.com>
+  Signed-off-by: Abner Chang <abner.chang@hp.com>
+  Reviewed-by: Yingke Liu <yingke.d.liu@intel.com>
+  Reviewed-by: Larry Hauch <larry.hauch@intel.com>
 
-------------------------------------------------------------------------  r16063 | lhauch | 2014-09-05 07:15:40 -0700 (Fri, 05 Sep 2014) | 27 lines
-  This file allows a developer to add a new tool in either the C or Python trees, add the executable (and any supporting files, such as the TestSigningPrivateKey.pem file) to this file and the build server will automatically make sure that the new files are added to the BaseTools\Bin\Win32 directory. The Win32 directory is located in https://svn.code.sf.net/p/edk2-toolbinaries/code/trunk/Win32 repository.
-  Developer - Tool add process:
-  1)	Developer adds code for the new tool.
-  2)	Developer updates the Makefile in the C or Python directory
-  a)	The entry must make sure that the executable is generated in the BaseTools\Bin\Win32 directory and any supporting files are copied to the same directory as part of the build step.
-  3)	Developer adds the <Toolname>.exe under the [Bin.Win32] section in the BinaryFiles.txt file.
-  4)	Developer adds other files required to be present in the [ExtraFiles.Win32] section in the BinaryFiles.txt file.
-  Build Server:
-  1)	Build all binaries by calling nmake on the Source\C\Makefile and Source\Python\Makefile
-  2)	After building the binaries, the build server verify that the files listed in BaseTools\Source\BinFiles.txt are also in the edk2-toolbinaries project,
-  a.	If a file is not under source control, then the build server will add file as long as it is present.
-  File format:
-  [SectionName.TargetDir]
-  File1
-  File2
-  …
-  Where:
-  SectionName is one of Bin, ExtraFiles or CxFreeze
-  TargeDir is the name of the subdirectory in the BaseTools\Bin directory tree.
+------------------------------------------------------------------------  r16099 | yingke | 2014-09-11 23:57:22 -0700 (Thu, 11 Sep 2014) | 12 lines
+  BaseTools: Fix the regression issue after enbaling s_* an d_* macros in FDF.
+  Add the missing 'MacroDict' field in FfsInfStatement.
+  The issue is that BaseTools/Source/Python/GenFds/FfsInfStatement.py", line 448, in __ExtendMacro__
+  String = GenFdsGlobalVariable.MacroExtend(String, self.MacroDict)
+  AttributeError: OptRomInfStatement instance has no attribute 'MacroDict'
+  Contributed-under: TianoCore Contribution Agreement 1.0
+  Signed-off-by: Yingke Liu <yingke.d.liu@intel.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+
+------------------------------------------------------------------------  r16101 | bobfeng | 2014-09-12 01:46:30 -0700 (Fri, 12 Sep 2014) | 5 lines
+  This patch is going to fix the issue of the mis-match between the index of Platform DynamicPcd list and Dynamic Pcd generated token number.
+  Contributed-under: TianoCore Contribution Agreement 1.0
+  Signed-off-by: Feng, Bob C <bob.c.feng@intel.com>
+  Reviewed-by: Yingke Liu <yingke.d.liu@intel.com>
+
+------------------------------------------------------------------------  r16103 | lhauch | 2014-09-12 15:59:04 -0700 (Fri, 12 Sep 2014) | 9 lines
+  The current Makefile only checks the primary python file, such as build.py and does not check other files in tool’s directory tree.
+  This modification adds all of the other files within the tool’s directory tree that would be a cause to rebuild the tool.
+  The format in the Makefile for listing these other files was selected to allow the nightly build script to detect changes in the additional files.
   Contributed-under: TianoCore Contribution Agreement 1.0
   Signed-off-by: lhauch <larry.hauch@intel.com>
+  Reviewed-by: Gao, Liming <liming.gao@intel.com>
 
 ------------------------------------------------------------------------
-Forcing build to fix roll-back for using antlr 3.0.1 required for the EXECUTION_ORDER report generation, also picking up change to UPT which was not rebuilt due to an issue with the Makefile that only checked UPT.py
