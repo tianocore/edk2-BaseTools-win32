@@ -5,12 +5,12 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 16149
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 16154
 
 This directory contains the Win32 binaries.
 
-Build Date:       Fri, 19 Sep 2014 03:01:36 Pacific Daylight Time
-Last Changed Rev: 16149
+Build Date:       Mon, 22 Sep 2014 03:01:33 Pacific Daylight Time
+Last Changed Rev: 16154
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -46,7 +46,7 @@ Last Changed Rev: 16149
   TargetTool.exe Version 0.01 Build 16114
   TianoCompress Version 0.1 Build 16068
   Trim.exe Version 0.10 Build 16114
- *Intel(r) UEFI Packaging Tool (Intel(r) UEFIPT) - Revision 1.0 Build 16149
+ *Intel(r) UEFI Packaging Tool (Intel(r) UEFIPT) - Revision 1.0 Build 16154
   VfrCompile version  2.00 (UEFI 2.4) Build 16068
   VolInfo Version 0.83 Build 16068, Sep  9 2014
   build.exe Version 0.60 Build 16114
@@ -55,55 +55,59 @@ Last Changed Rev: 16149
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.975
-  9/19/2014 3:01:37AM Engine version = 5400.1158
-  9/19/2014 3:01:37AM AntiVirus DAT version = 7565.0
-  9/19/2014 3:01:37AM Number of detection signatures in EXTRA.DAT = None
-  9/19/2014 3:01:37AM Names of detection signatures in EXTRA.DAT = None
-  9/19/2014 3:01:37AM Scan Started On-Demand Scan
-  9/19/2014 3:01:44AM Scan Summary
-  9/19/2014 3:01:44AM Processes scanned : 0
-  9/19/2014 3:01:44AM Processes detected : 0
-  9/19/2014 3:01:44AM Processes cleaned : 0
-  9/19/2014 3:01:44AM Boot sectors scanned : 2
-  9/19/2014 3:01:44AM Boot sectors detected: 0
-  9/19/2014 3:01:44AM Boot sectors cleaned : 0
-  9/19/2014 3:01:44AM Files scanned : 69
-  9/19/2014 3:01:44AM Files with detections: 0
-  9/19/2014 3:01:44AM File detections : 0
-  9/19/2014 3:01:44AM Files cleaned : 0
-  9/19/2014 3:01:44AM Files deleted : 0
-  9/19/2014 3:01:44AM Files not scanned : 0
-  9/19/2014 3:01:44AM Scan Summary (Registry Scanning)
-  9/19/2014 3:01:44AM Keys scanned : 0
-  9/19/2014 3:01:44AM Keys detected : 0
-  9/19/2014 3:01:44AM Keys cleaned : 0
-  9/19/2014 3:01:44AM Keys deleted : 0
-  9/19/2014 3:01:44AM Scan Summary (Cookie Scanning)
-  9/19/2014 3:01:44AM Cookies scanned : 0
-  9/19/2014 3:01:44AM Cookies detected : 0
-  9/19/2014 3:01:44AM Cookies cleaned : 0
-  9/19/2014 3:01:44AM Cookies deleted : 0
-  9/19/2014 3:01:44AM Run time : 0:00:07
-  9/19/2014 3:01:44AM Scan Complete On-Demand Scan
+  9/22/2014 3:01:34AM Engine version = 5400.1158
+  9/22/2014 3:01:34AM AntiVirus DAT version = 7568.0
+  9/22/2014 3:01:34AM Number of detection signatures in EXTRA.DAT = None
+  9/22/2014 3:01:34AM Names of detection signatures in EXTRA.DAT = None
+  9/22/2014 3:01:34AM Scan Started On-Demand Scan
+  9/22/2014 3:01:42AM Scan Summary
+  9/22/2014 3:01:42AM Processes scanned : 0
+  9/22/2014 3:01:42AM Processes detected : 0
+  9/22/2014 3:01:42AM Processes cleaned : 0
+  9/22/2014 3:01:42AM Boot sectors scanned : 2
+  9/22/2014 3:01:42AM Boot sectors detected: 0
+  9/22/2014 3:01:42AM Boot sectors cleaned : 0
+  9/22/2014 3:01:42AM Files scanned : 69
+  9/22/2014 3:01:42AM Files with detections: 0
+  9/22/2014 3:01:42AM File detections : 0
+  9/22/2014 3:01:42AM Files cleaned : 0
+  9/22/2014 3:01:42AM Files deleted : 0
+  9/22/2014 3:01:42AM Files not scanned : 0
+  9/22/2014 3:01:42AM Scan Summary (Registry Scanning)
+  9/22/2014 3:01:42AM Keys scanned : 0
+  9/22/2014 3:01:42AM Keys detected : 0
+  9/22/2014 3:01:42AM Keys cleaned : 0
+  9/22/2014 3:01:42AM Keys deleted : 0
+  9/22/2014 3:01:42AM Scan Summary (Cookie Scanning)
+  9/22/2014 3:01:42AM Cookies scanned : 0
+  9/22/2014 3:01:42AM Cookies detected : 0
+  9/22/2014 3:01:42AM Cookies cleaned : 0
+  9/22/2014 3:01:42AM Cookies deleted : 0
+  9/22/2014 3:01:42AM Run time : 0:00:08
+  9/22/2014 3:01:42AM Scan Complete On-Demand Scan
 
 ############### SVN Log Since Last Build ################
-svn log -r 16114:HEAD Source
-------------------------------------------------------------------------  r16114 | lgao4 | 2014-09-16 02:03:00 -0700 (Tue, 16 Sep 2014) | 5 lines
-  Update Build Tool version from 0.51 to 0.60
-  Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Gao, Liming <liming.gao@intel.com>
-
-------------------------------------------------------------------------  r16124 | lgao4 | 2014-09-17 01:47:01 -0700 (Wed, 17 Sep 2014) | 5 lines
-  BaseTools: Update the BaseTools/Source/Python/Makefile to check for dependent files
-  Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Gao, Liming <liming.gao@intel.com>
-  Reviewed-by: Hauch, Larry <larry.hauch@intel.com>
-
+svn log -r 16149:HEAD Source
 ------------------------------------------------------------------------  r16149 | hchen30 | 2014-09-18 19:04:08 -0700 (Thu, 18 Sep 2014) | 9 lines
   BaseTools/Upt: Fix several bugs
   1. Fix a bug of packaging a full path file in zip at Linux.
   2. Fix a format error of generating Hob/Event/BootMode information.
   3. Fix a bug of generating additional “GUID” subtype for “UNDEFINED” guid.
+  Contributed-under: TianoCore Contribution Agreement 1.0
+  Signed-off-by: Hess Chen <hesheng.chen@intel.com>
+  Reviewed-by: Yingke Liu <yingke.d.liu@Intel.com>
+
+------------------------------------------------------------------------  r16153 | hchen30 | 2014-09-22 00:06:12 -0700 (Mon, 22 Sep 2014) | 8 lines
+  BaseTools/Upt: Fix several bugs
+  1. Fix a bug of generating additional EOL in file header.
+  2. Fix a bug of format error for Defines section.
+  Contributed-under: TianoCore Contribution Agreement 1.0
+  Signed-off-by: Hess Chen <hesheng.chen@intel.com>
+  Reviewed-by: Yingke Liu <yingke.d.liu@Intel.com>
+
+------------------------------------------------------------------------  r16154 | hchen30 | 2014-09-22 00:37:28 -0700 (Mon, 22 Sep 2014) | 7 lines
+  BaseTools/ECC: Ignore duplicate check for 'NULL' library
+  Update a checkpoint to ignore duplicate check for 'NULL' library
   Contributed-under: TianoCore Contribution Agreement 1.0
   Signed-off-by: Hess Chen <hesheng.chen@intel.com>
   Reviewed-by: Yingke Liu <yingke.d.liu@Intel.com>
