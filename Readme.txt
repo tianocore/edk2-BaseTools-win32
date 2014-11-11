@@ -5,12 +5,12 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 16304
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 16330
 
 This directory contains the Win32 binaries.
 
-Build Date:       Thu, 06 Nov 2014 03:06:35 Pacific Standard Time
-Last Changed Rev: 16302
+Build Date:       Tue, 11 Nov 2014 03:07:08 Pacific Standard Time
+Last Changed Rev: 16330
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -21,77 +21,72 @@ Last Changed Rev: 16302
   antlr3        = 3.0.1
 
 ##################### Tool Versions #####################
-  Intel(r) Binary Product Data Generation Tool (Intel(r) BPDG) - Version 0.1 Build 16164
+ *Intel(r) Binary Product Data Generation Tool (Intel(r) BPDG) - Version 0.1 Build 16330
   BootSectImage Version 0.1 Build 16164
   EfiLdrImage Version 0.1 Build 16164
   EfiRom Version 0.1 Build 16164
   GenBootSector Version 0.2 Build 16164
   GenCrc32 Version 0.2 Build 16164
-  GenDepex.exe Version 0.04 Build 16164
-  GenFds.exe 1.0 Build 16164
+ *GenDepex.exe Version 0.04 Build 16330
+ *GenFds.exe 1.0 Build 16330
   GenFfs Version 0.1 Build 16164
   GenFv Version 0.1 Build 16164
- *GenFw Version 0.2 Build 16304
+  GenFw Version 0.2 Build 16304
   GenPage Version 0.2 Build 16164
-  GenPatchPcdTable.exe Version 0.10 Build 16164
+ *GenPatchPcdTable.exe Version 0.10 Build 16330
   GenSec Version 0.1 Build 16164
   GenVtf Version 0.1 Build 16164
   ImportTool.bat Version 1.0
   LzmaCompress Version 0.2 Build 16164
   LzmaF86Compress Version 0.2 Build 16164
-  PatchPcdValue.exe Version 0.10 Build 16164
+ *PatchPcdValue.exe Version 0.10 Build 16330
   Rsa2048Sha256GenerateKeys Version 0.9 Build 16164
   Rsa2048Sha256Sign Version 0.9 Build 16164
   Split Version 0.1 Build 16164
-  TargetTool.exe Version 0.01 Build 16164
+ *TargetTool.exe Version 0.01 Build 16330
   TianoCompress Version 0.1 Build 16164
-  Trim.exe Version 0.10 Build 16164
+ *Trim.exe Version 0.10 Build 16330
   Intel(r) UEFI Packaging Tool (Intel(r) UEFIPT) - Revision 1.0 Build 16229
   VfrCompile version  2.00 (UEFI 2.4) Build 16164
   VolInfo Version 0.83 Build 16164, Sep 24 2014
-  build.exe Version 0.60 Build 16164
+ *build.exe Version 0.60 Build 16330
 
 * This tool was updated
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1247
-  11/6/2014 3:06:37AM Engine version = 5600.1067
-  11/6/2014 3:06:37AM AntiVirus DAT version = 7613.0
-  11/6/2014 3:06:37AM Number of detection signatures in EXTRA.DAT = None
-  11/6/2014 3:06:37AM Names of detection signatures in EXTRA.DAT = None
-  11/6/2014 3:06:37AM Scan Started On-Demand Scan
-  11/6/2014 3:06:55AM Scan Summary
-  11/6/2014 3:06:55AM Processes scanned : 0
-  11/6/2014 3:06:55AM Processes detected : 0
-  11/6/2014 3:06:55AM Processes cleaned : 0
-  11/6/2014 3:06:55AM Boot sectors scanned : 2
-  11/6/2014 3:06:55AM Boot sectors detected: 0
-  11/6/2014 3:06:55AM Boot sectors cleaned : 0
-  11/6/2014 3:06:55AM Files scanned : 48
-  11/6/2014 3:06:55AM Files with detections: 0
-  11/6/2014 3:06:55AM File detections : 0
-  11/6/2014 3:06:55AM Files cleaned : 0
-  11/6/2014 3:06:55AM Files deleted : 0
-  11/6/2014 3:06:55AM Files not scanned : 0
-  11/6/2014 3:06:55AM Scan Summary (Registry Scanning)
-  11/6/2014 3:06:55AM Keys scanned : 0
-  11/6/2014 3:06:55AM Keys detected : 0
-  11/6/2014 3:06:55AM Keys cleaned : 0
-  11/6/2014 3:06:55AM Keys deleted : 0
-  11/6/2014 3:06:55AM Run time : 0:00:18
-  11/6/2014 3:06:55AM Scan Complete On-Demand Scan
+  11/11/2014 3:07:09AM Engine version = 5600.1067
+  11/11/2014 3:07:09AM AntiVirus DAT version = 7618.0
+  11/11/2014 3:07:09AM Number of detection signatures in EXTRA.DAT = None
+  11/11/2014 3:07:09AM Names of detection signatures in EXTRA.DAT = None
+  11/11/2014 3:07:09AM Scan Started On-Demand Scan
+  11/11/2014 3:10:00AM Scan Summary
+  11/11/2014 3:10:00AM Processes scanned : 0
+  11/11/2014 3:10:00AM Processes detected : 0
+  11/11/2014 3:10:00AM Processes cleaned : 0
+  11/11/2014 3:10:00AM Boot sectors scanned : 2
+  11/11/2014 3:10:00AM Boot sectors detected: 0
+  11/11/2014 3:10:00AM Boot sectors cleaned : 0
+  11/11/2014 3:10:00AM Files scanned : 53
+  11/11/2014 3:10:00AM Files with detections: 0
+  11/11/2014 3:10:00AM File detections : 0
+  11/11/2014 3:10:00AM Files cleaned : 0
+  11/11/2014 3:10:00AM Files deleted : 0
+  11/11/2014 3:10:00AM Files not scanned : 0
+  11/11/2014 3:10:00AM Scan Summary (Registry Scanning)
+  11/11/2014 3:10:00AM Keys scanned : 0
+  11/11/2014 3:10:00AM Keys detected : 0
+  11/11/2014 3:10:00AM Keys cleaned : 0
+  11/11/2014 3:10:00AM Keys deleted : 0
+  11/11/2014 3:10:00AM Run time : 0:02:51
+  11/11/2014 3:10:00AM Scan Complete On-Demand Scan
 
 ############### SVN Log Since Last Build ################
-svn log -r 16229:HEAD Source
-------------------------------------------------------------------------  r16302 | oliviermartin | 2014-11-05 10:56:17 -0800 (Wed, 05 Nov 2014) | 13 lines
-  BaseTools/GenFw: Fixed R_AARCH64_CALL26/R_AARCH64_JUMP26 when referring to start of a section
-  When R_AARCH64_CALL26/R_AARCH64_JUMP26 relocations referred to static
-  functions, they sometime refer to the start of the '.text' section + addend.
-  It means the addend is different of '0'.
-  The non-patched code (before applying the relocation) already contains
-  the correct offset.
+svn log -r 16304:HEAD Source
+------------------------------------------------------------------------  r16330 | yingke | 2014-11-10 23:33:50 -0800 (Mon, 10 Nov 2014) | 5 lines
+  BaseTool: Support EDKII style GUID definition for VFR function.
   Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Olivier Martin <olivier.martin@arm.com>
-  Reviewed-by: Yingke Liu <yingke.d.liu@intel.com>
+  Signed-off-by: Yingke Liu <yingke.d.liu@intel.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
 
 ------------------------------------------------------------------------
