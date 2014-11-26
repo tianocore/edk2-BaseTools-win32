@@ -5,11 +5,11 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 16444
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 16449
 
 This directory contains the Win32 binaries.
 
-Build Date:       Tue, 25 Nov 2014 03:07:20 Pacific Standard Time
+Build Date:       Wed, 26 Nov 2014 03:07:22 Pacific Standard Time
 Last Changed Rev: 16426
 
 ############### Build System Information ###############
@@ -53,61 +53,30 @@ Last Changed Rev: 16426
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1247
-  11/25/2014 3:07:22AM Engine version = 5600.1067
-  11/25/2014 3:07:22AM AntiVirus DAT version = 7631.0
-  11/25/2014 3:07:22AM Number of detection signatures in EXTRA.DAT = None
-  11/25/2014 3:07:22AM Names of detection signatures in EXTRA.DAT = None
-  11/25/2014 3:07:22AM Scan Started On-Demand Scan
-  11/25/2014 3:07:34AM Scan Summary
-  11/25/2014 3:07:34AM Processes scanned : 0
-  11/25/2014 3:07:34AM Processes detected : 0
-  11/25/2014 3:07:34AM Processes cleaned : 0
-  11/25/2014 3:07:34AM Boot sectors scanned : 2
-  11/25/2014 3:07:34AM Boot sectors detected: 0
-  11/25/2014 3:07:34AM Boot sectors cleaned : 0
-  11/25/2014 3:07:34AM Files scanned : 47
-  11/25/2014 3:07:34AM Files with detections: 0
-  11/25/2014 3:07:34AM File detections : 0
-  11/25/2014 3:07:34AM Files cleaned : 0
-  11/25/2014 3:07:34AM Files deleted : 0
-  11/25/2014 3:07:34AM Files not scanned : 0
-  11/25/2014 3:07:34AM Scan Summary (Registry Scanning)
-  11/25/2014 3:07:34AM Keys scanned : 0
-  11/25/2014 3:07:34AM Keys detected : 0
-  11/25/2014 3:07:34AM Keys cleaned : 0
-  11/25/2014 3:07:34AM Keys deleted : 0
-  11/25/2014 3:07:34AM Run time : 0:00:12
-  11/25/2014 3:07:34AM Scan Complete On-Demand Scan
+  11/26/2014 3:07:23AM Engine version = 5600.1067
+  11/26/2014 3:07:23AM AntiVirus DAT version = 7632.0
+  11/26/2014 3:07:23AM Number of detection signatures in EXTRA.DAT = None
+  11/26/2014 3:07:23AM Names of detection signatures in EXTRA.DAT = None
+  11/26/2014 3:07:23AM Scan Started On-Demand Scan
+  11/26/2014 3:07:40AM Scan Summary
+  11/26/2014 3:07:40AM Processes scanned : 0
+  11/26/2014 3:07:40AM Processes detected : 0
+  11/26/2014 3:07:40AM Processes cleaned : 0
+  11/26/2014 3:07:40AM Boot sectors scanned : 2
+  11/26/2014 3:07:40AM Boot sectors detected: 0
+  11/26/2014 3:07:40AM Boot sectors cleaned : 0
+  11/26/2014 3:07:40AM Files scanned : 47
+  11/26/2014 3:07:40AM Files with detections: 0
+  11/26/2014 3:07:40AM File detections : 0
+  11/26/2014 3:07:40AM Files cleaned : 0
+  11/26/2014 3:07:40AM Files deleted : 0
+  11/26/2014 3:07:40AM Files not scanned : 0
+  11/26/2014 3:07:40AM Scan Summary (Registry Scanning)
+  11/26/2014 3:07:40AM Keys scanned : 0
+  11/26/2014 3:07:40AM Keys detected : 0
+  11/26/2014 3:07:40AM Keys cleaned : 0
+  11/26/2014 3:07:40AM Keys deleted : 0
+  11/26/2014 3:07:40AM Run time : 0:00:17
+  11/26/2014 3:07:40AM Scan Complete On-Demand Scan
 
-############### SVN Log Since Last Build ################
-svn log -r 16400:HEAD Source
-------------------------------------------------------------------------  r16400 | lgao4 | 2014-11-17 18:38:20 -0800 (Mon, 17 Nov 2014) | 25 lines
-  BaseTools: Modify gcc 4.8 and 4.9 tool chain definition to support building from Windows.
-  Here is a new patch that adds Windows support for both gcc 4.8.x and gcc 4.9.x.
-  This time testing is more thorough: boot testing using Duet for all 4 combinations of
-  IA32/X64 and gcc 4.8.2 and gcc 4.9.1 passes. A Windows hosted gcc 4.8.2 has been added here:
-  http://sourceforge.net/projects/edk2developertoolsforwindows/
-  The environment variable settings for Windows look like:
-  set UEFI_BUILD_TOOLS=%cd%\tools
-  set NASM_PREFIX=%UEFI_BUILD_TOOLS%\nasm211\
-  set GCC48_BIN=%UEFI_BUILD_TOOLS%\gcc482-x86\bin\
-  set GCC48_DLL=%UEFI_BUILD_TOOLS%\gcc482-x86\dll\;%GCC48_BIN%
-  set GCC48_ARM_PREFIX=%UEFI_BUILD_TOOLS%\gcc482-arm\bin\
-  set GCC48_AARCH64_PREFIX=%UEFI_BUILD_TOOLS%\gcc482-aarch64\bin\
-  set GCC49_BIN=%UEFI_BUILD_TOOLS%\gcc491-x86\bin\
-  set GCC49_DLL=%UEFI_BUILD_TOOLS%\gcc491-x86\dll\;%GCC49_BIN%
-  set GCC49_ARM_PREFIX=%UEFI_BUILD_TOOLS%\gcc491-arm\bin\
-  set GCC49_AARCH64_PREFIX=%UEFI_BUILD_TOOLS%\gcc491-aarch64\bin\
-  No change is needed for building from Linux.
-  Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Scott Duplichan <scott@notabs.org>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
-
-------------------------------------------------------------------------  r16426 | hchen30 | 2014-11-24 20:58:17 -0800 (Mon, 24 Nov 2014) | 8 lines
-  BaseTools/UPT: Fix an issue of storing wrong PCD into XML file.
-  Fix an issue of storing wrong PCD into XML file to only store PcdEx for AsBuilt sections
-  Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Hess Chen <hesheng.chen@intel.com>
-  Reviewed-by: Yingke Liu <yingke.d.liu@Intel.com>
-
-------------------------------------------------------------------------
+############ No SVN Changes Since Last Build ############
