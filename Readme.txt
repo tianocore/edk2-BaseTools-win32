@@ -5,12 +5,12 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 16555
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 16562
 
 This directory contains the Win32 binaries.
 
-Build Date:       Tue, 23 Dec 2014 03:08:41 Pacific Standard Time
-Last Changed Rev: 16550
+Build Date:       Tue, 30 Dec 2014 03:09:11 Pacific Standard Time
+Last Changed Rev: 16561
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -47,61 +47,45 @@ Last Changed Rev: 16550
   TianoCompress Version 0.1 Build 16164
   Trim.exe Version 0.10 Build 16487
   Intel(r) UEFI Packaging Tool (Intel(r) UEFIPT) - Revision 1.0 Build 16455
- *VfrCompile version  2.00 (UEFI 2.4) Build 16555
+ *VfrCompile version  2.00 (UEFI 2.4) Build 16562
   VolInfo Version 0.83 Build 16164, Sep 24 2014
- *build.exe Version 0.60 Build 16555
+  build.exe Version 0.60 Build 16555
 
 * This tool was updated
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1247
-  12/23/2014 3:08:43AM Engine version = 5600.1067
-  12/23/2014 3:08:43AM AntiVirus DAT version = 7659.0
-  12/23/2014 3:08:43AM Number of detection signatures in EXTRA.DAT = None
-  12/23/2014 3:08:43AM Names of detection signatures in EXTRA.DAT = None
-  12/23/2014 3:08:43AM Scan Started On-Demand Scan
-  12/23/2014 3:08:55AM Scan Summary
-  12/23/2014 3:08:55AM Processes scanned : 0
-  12/23/2014 3:08:55AM Processes detected : 0
-  12/23/2014 3:08:55AM Processes cleaned : 0
-  12/23/2014 3:08:55AM Boot sectors scanned : 2
-  12/23/2014 3:08:55AM Boot sectors detected: 0
-  12/23/2014 3:08:55AM Boot sectors cleaned : 0
-  12/23/2014 3:08:55AM Files scanned : 54
-  12/23/2014 3:08:55AM Files with detections: 0
-  12/23/2014 3:08:55AM File detections : 0
-  12/23/2014 3:08:55AM Files cleaned : 0
-  12/23/2014 3:08:55AM Files deleted : 0
-  12/23/2014 3:08:55AM Files not scanned : 0
-  12/23/2014 3:08:55AM Scan Summary (Registry Scanning)
-  12/23/2014 3:08:55AM Keys scanned : 0
-  12/23/2014 3:08:55AM Keys detected : 0
-  12/23/2014 3:08:55AM Keys cleaned : 0
-  12/23/2014 3:08:55AM Keys deleted : 0
-  12/23/2014 3:08:55AM Run time : 0:00:12
-  12/23/2014 3:08:55AM Scan Complete On-Demand Scan
+  12/30/2014 3:09:14AM Engine version = 5600.1067
+  12/30/2014 3:09:14AM AntiVirus DAT version = 7666.0
+  12/30/2014 3:09:14AM Number of detection signatures in EXTRA.DAT = None
+  12/30/2014 3:09:14AM Names of detection signatures in EXTRA.DAT = None
+  12/30/2014 3:09:14AM Scan Started On-Demand Scan
+  12/30/2014 3:09:26AM Scan Summary
+  12/30/2014 3:09:26AM Processes scanned : 0
+  12/30/2014 3:09:26AM Processes detected : 0
+  12/30/2014 3:09:26AM Processes cleaned : 0
+  12/30/2014 3:09:26AM Boot sectors scanned : 2
+  12/30/2014 3:09:26AM Boot sectors detected: 0
+  12/30/2014 3:09:26AM Boot sectors cleaned : 0
+  12/30/2014 3:09:26AM Files scanned : 48
+  12/30/2014 3:09:26AM Files with detections: 0
+  12/30/2014 3:09:26AM File detections : 0
+  12/30/2014 3:09:26AM Files cleaned : 0
+  12/30/2014 3:09:26AM Files deleted : 0
+  12/30/2014 3:09:26AM Files not scanned : 0
+  12/30/2014 3:09:26AM Scan Summary (Registry Scanning)
+  12/30/2014 3:09:26AM Keys scanned : 0
+  12/30/2014 3:09:26AM Keys detected : 0
+  12/30/2014 3:09:26AM Keys cleaned : 0
+  12/30/2014 3:09:26AM Keys deleted : 0
+  12/30/2014 3:09:26AM Run time : 0:00:12
+  12/30/2014 3:09:26AM Scan Complete On-Demand Scan
 
 ############### SVN Log Since Last Build ################
-svn log -r 16487:HEAD Source
-------------------------------------------------------------------------  r16487 | hchen30 | 2014-12-08 22:41:58 -0800 (Mon, 08 Dec 2014) | 10 lines
-  BaseTools/ECC: Fix some issues of ECC tool
-  Add support for the usage which is defined in the above line for a Protocol/Ppi/Guid
-  Add support for “!ERROR”
-  Ignore issue of parsing a macro
+svn log -r 16555:HEAD Source
+------------------------------------------------------------------------  r16561 | ydong10 | 2014-12-29 19:03:37 -0800 (Mon, 29 Dec 2014) | 4 lines
+  Rollback change 16544.
   Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Hess Chen <hesheng.chen@intel.com>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
-
-------------------------------------------------------------------------  r16544 | ydong10 | 2014-12-21 18:21:53 -0800 (Sun, 21 Dec 2014) | 6 lines
-  Fixed VfrCompile crash on efivarstore statement.
-  Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Aaron Pop <aaronp@ami.com>
-  Reviewed-by: Eric Dong <eric.dong@intel.com>
-
-------------------------------------------------------------------------  r16550 | yingke | 2014-12-22 21:48:31 -0800 (Mon, 22 Dec 2014) | 5 lines
-  Fix ‘build run’ doesn’t work for NT32 X64 build.
-  Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Cinnamon Shia <cinnamon.shia@hp.com>
-  Reviewed-by: Yingke Liu <yingke.d.liu@intel.com>
+  Signed-off-by: Eric Dong <eric.dong@intel.com>
 
 ------------------------------------------------------------------------
