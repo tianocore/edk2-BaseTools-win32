@@ -2,15 +2,15 @@ Intel is a trademark or registered trademark of Intel Corporation or its
 subsidiaries in the United States and other countries.
 * Other names and brands may be claimed as the property of others.
 
-Copyright (c) 2014, Intel Corporation. All rights reserved.
+Copyright (c) 2014 - 2015, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 16562
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 16591
 
 This directory contains the Win32 binaries.
 
-Build Date:       Tue, 30 Dec 2014 03:09:11 Pacific Standard Time
-Last Changed Rev: 16561
+Build Date:       Thu, 08 Jan 2015 03:09:16 Pacific Standard Time
+Last Changed Rev: 16591
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -47,7 +47,7 @@ Last Changed Rev: 16561
   TianoCompress Version 0.1 Build 16164
   Trim.exe Version 0.10 Build 16487
   Intel(r) UEFI Packaging Tool (Intel(r) UEFIPT) - Revision 1.0 Build 16455
- *VfrCompile version  2.00 (UEFI 2.4) Build 16562
+ *VfrCompile version  2.00 (UEFI 2.4) Build 16591
   VolInfo Version 0.83 Build 16164, Sep 24 2014
   build.exe Version 0.60 Build 16555
 
@@ -55,37 +55,38 @@ Last Changed Rev: 16561
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1247
-  12/30/2014 3:09:14AM Engine version = 5600.1067
-  12/30/2014 3:09:14AM AntiVirus DAT version = 7666.0
-  12/30/2014 3:09:14AM Number of detection signatures in EXTRA.DAT = None
-  12/30/2014 3:09:14AM Names of detection signatures in EXTRA.DAT = None
-  12/30/2014 3:09:14AM Scan Started On-Demand Scan
-  12/30/2014 3:09:26AM Scan Summary
-  12/30/2014 3:09:26AM Processes scanned : 0
-  12/30/2014 3:09:26AM Processes detected : 0
-  12/30/2014 3:09:26AM Processes cleaned : 0
-  12/30/2014 3:09:26AM Boot sectors scanned : 2
-  12/30/2014 3:09:26AM Boot sectors detected: 0
-  12/30/2014 3:09:26AM Boot sectors cleaned : 0
-  12/30/2014 3:09:26AM Files scanned : 48
-  12/30/2014 3:09:26AM Files with detections: 0
-  12/30/2014 3:09:26AM File detections : 0
-  12/30/2014 3:09:26AM Files cleaned : 0
-  12/30/2014 3:09:26AM Files deleted : 0
-  12/30/2014 3:09:26AM Files not scanned : 0
-  12/30/2014 3:09:26AM Scan Summary (Registry Scanning)
-  12/30/2014 3:09:26AM Keys scanned : 0
-  12/30/2014 3:09:26AM Keys detected : 0
-  12/30/2014 3:09:26AM Keys cleaned : 0
-  12/30/2014 3:09:26AM Keys deleted : 0
-  12/30/2014 3:09:26AM Run time : 0:00:12
-  12/30/2014 3:09:26AM Scan Complete On-Demand Scan
+  1/8/2015 3:09:19AM Engine version = 5600.1067
+  1/8/2015 3:09:19AM AntiVirus DAT version = 7674.0
+  1/8/2015 3:09:19AM Number of detection signatures in EXTRA.DAT = None
+  1/8/2015 3:09:19AM Names of detection signatures in EXTRA.DAT = None
+  1/8/2015 3:09:19AM Scan Started On-Demand Scan
+  1/8/2015 3:09:37AM Scan Summary
+  1/8/2015 3:09:37AM Processes scanned : 0
+  1/8/2015 3:09:37AM Processes detected : 0
+  1/8/2015 3:09:37AM Processes cleaned : 0
+  1/8/2015 3:09:37AM Boot sectors scanned : 1
+  1/8/2015 3:09:37AM Boot sectors detected: 0
+  1/8/2015 3:09:37AM Boot sectors cleaned : 0
+  1/8/2015 3:09:37AM Files scanned : 48
+  1/8/2015 3:09:37AM Files with detections: 0
+  1/8/2015 3:09:37AM File detections : 0
+  1/8/2015 3:09:37AM Files cleaned : 0
+  1/8/2015 3:09:37AM Files deleted : 0
+  1/8/2015 3:09:37AM Files not scanned : 0
+  1/8/2015 3:09:37AM Scan Summary (Registry Scanning)
+  1/8/2015 3:09:37AM Keys scanned : 0
+  1/8/2015 3:09:37AM Keys detected : 0
+  1/8/2015 3:09:37AM Keys cleaned : 0
+  1/8/2015 3:09:37AM Keys deleted : 0
+  1/8/2015 3:09:37AM Run time : 0:00:18
+  1/8/2015 3:09:37AM Scan Complete On-Demand Scan
 
 ############### SVN Log Since Last Build ################
-svn log -r 16555:HEAD Source
-------------------------------------------------------------------------  r16561 | ydong10 | 2014-12-29 19:03:37 -0800 (Mon, 29 Dec 2014) | 4 lines
-  Rollback change 16544.
+svn log -r 16562:HEAD Source
+------------------------------------------------------------------------  r16591 | ydong10 | 2015-01-08 00:36:05 -0800 (Thu, 08 Jan 2015) | 6 lines
+  Fixed VfrCompile crash on efivarstore statement.
   Contributed-under: TianoCore Contribution Agreement 1.0
   Signed-off-by: Eric Dong <eric.dong@intel.com>
+  Reviewed-by: Aaron Pop <aaronp@ami.com>
 
 ------------------------------------------------------------------------
