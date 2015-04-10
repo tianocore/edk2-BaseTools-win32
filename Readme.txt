@@ -5,12 +5,12 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014 - 2015, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 16833
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 17162
 
 This directory contains the Win32 binaries.
 
-Build Date:       Wed, 11 Feb 2015 03:10:27 Pacific Standard Time
-Last Changed Rev: 16831
+Build Date:       Fri, 10 Apr 2015 08:13:19 Pacific Daylight Time
+Last Changed Rev: 17159
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -21,73 +21,77 @@ Last Changed Rev: 16831
   antlr3        = 3.0.1
 
 ##################### Tool Versions #####################
-  Intel(r) Binary Product Data Generation Tool (Intel(r) BPDG) - Version 0.1 Build 16814
+ *Intel(r) Binary Product Data Generation Tool (Intel(r) BPDG) - Version 0.1 Build 17162
   BootSectImage Version 0.1 Build 16164
+  Ecc.exe Version 0.01
   EfiLdrImage Version 0.1 Build 16164
   EfiRom Version 0.1 Build 16164
   GenBootSector Version 0.2 Build 16164
   GenCrc32 Version 0.2 Build 16164
-  GenDepex.exe Version 0.04 Build 16814
-  GenFds.exe 1.0 Build 16814
+ *GenDepex.exe Version 0.04 Build 17162
+ *GenFds.exe 1.0 Build 17162
   GenFfs Version 0.1 Build 16164
   GenFv Version 0.1 Build 16164
- *GenFw Version 0.2 Build 16833
+  GenFw Version 0.2 Build 16833
   GenPage Version 0.2 Build 16164
-  GenPatchPcdTable.exe Version 0.10 Build 16814
+ *GenPatchPcdTable.exe Version 0.10 Build 17162
   GenSec Version 0.1 Build 16164
   GenVtf Version 0.1 Build 16164
   ImportTool.bat Version 1.0
   LzmaCompress Version 0.2 Build 16164
   LzmaF86Compress Version 0.2 Build 16164
-  PatchPcdValue.exe Version 0.10 Build 16814
+ *PatchPcdValue.exe Version 0.10 Build 17162
   Rsa2048Sha256GenerateKeys Version 0.9 Build 16164
   Rsa2048Sha256Sign Version 0.9 Build 16164
   Split Version 0.1 Build 16164
-  TargetTool.exe Version 0.01 Build 16814
+ *TargetTool.exe Version 0.01 Build 17162
   TianoCompress Version 0.1 Build 16164
-  Trim.exe Version 0.10 Build 16814
+ *Trim.exe Version 0.10 Build 17162
   Intel(r) UEFI Packaging Tool (Intel(r) UEFIPT) - Revision 1.0 Build 16455
   VfrCompile version  2.00 (UEFI 2.4) Build 16591
   VolInfo Version 0.83 Build 16164, Sep 24 2014
-  build.exe Version 0.60 Build 16814
+ *build.exe Version 0.60 Build 17162
+ERROR : This tool is missing --version option: config.ini
+ERROR : This tool is missing --version option: exception.xml
 
 * This tool was updated
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1247
-  2/11/2015 3:10:29AM Engine version = 5700.7163
-  2/11/2015 3:10:29AM AntiVirus DAT version = 7708.0
-  2/11/2015 3:10:29AM Number of detection signatures in EXTRA.DAT = None
-  2/11/2015 3:10:29AM Names of detection signatures in EXTRA.DAT = None
-  2/11/2015 3:10:29AM Scan Started On-Demand Scan
-  2/11/2015 3:13:30AM Scan Summary
-  2/11/2015 3:13:30AM Processes scanned : 0
-  2/11/2015 3:13:30AM Processes detected : 0
-  2/11/2015 3:13:30AM Processes cleaned : 0
-  2/11/2015 3:13:30AM Boot sectors scanned : 1
-  2/11/2015 3:13:30AM Boot sectors detected: 0
-  2/11/2015 3:13:30AM Boot sectors cleaned : 0
-  2/11/2015 3:13:30AM Files scanned : 48
-  2/11/2015 3:13:30AM Files with detections: 0
-  2/11/2015 3:13:30AM File detections : 0
-  2/11/2015 3:13:30AM Files cleaned : 0
-  2/11/2015 3:13:30AM Files deleted : 0
-  2/11/2015 3:13:30AM Files not scanned : 0
-  2/11/2015 3:13:30AM Scan Summary (Registry Scanning)
-  2/11/2015 3:13:30AM Keys scanned : 0
-  2/11/2015 3:13:30AM Keys detected : 0
-  2/11/2015 3:13:30AM Keys cleaned : 0
-  2/11/2015 3:13:30AM Keys deleted : 0
-  2/11/2015 3:13:30AM Run time : 0:03:01
-  2/11/2015 3:13:30AM Scan Complete On-Demand Scan
+  4/10/2015 8:13:20AM Engine version = 5700.7163
+  4/10/2015 8:13:20AM AntiVirus DAT version = 7766.0
+  4/10/2015 8:13:20AM Number of detection signatures in EXTRA.DAT = None
+  4/10/2015 8:13:20AM Names of detection signatures in EXTRA.DAT = None
+  4/10/2015 8:13:20AM Scan Started On-Demand Scan
+  4/10/2015 8:13:55AM Scan Summary
+  4/10/2015 8:13:55AM Processes scanned : 0
+  4/10/2015 8:13:55AM Processes detected : 0
+  4/10/2015 8:13:55AM Processes cleaned : 0
+  4/10/2015 8:13:55AM Boot sectors scanned : 0
+  4/10/2015 8:13:55AM Boot sectors detected: 0
+  4/10/2015 8:13:55AM Boot sectors cleaned : 0
+  4/10/2015 8:13:55AM Files scanned : 56
+  4/10/2015 8:13:55AM Files with detections: 0
+  4/10/2015 8:13:55AM File detections : 0
+  4/10/2015 8:13:55AM Files cleaned : 0
+  4/10/2015 8:13:55AM Files deleted : 0
+  4/10/2015 8:13:55AM Files not scanned : 0
+  4/10/2015 8:13:55AM Scan Summary (Registry Scanning)
+  4/10/2015 8:13:55AM Keys scanned : 0
+  4/10/2015 8:13:55AM Keys detected : 0
+  4/10/2015 8:13:55AM Keys cleaned : 0
+  4/10/2015 8:13:55AM Keys deleted : 0
+  4/10/2015 8:13:55AM Run time : 0:00:35
+  4/10/2015 8:13:55AM Scan Complete On-Demand Scan
 
 ############### SVN Log Since Last Build ################
-svn log -r 16814:HEAD Source
-------------------------------------------------------------------------  r16831 | lgao4 | 2015-02-11 00:20:17 -0800 (Wed, 11 Feb 2015) | 7 lines
-  BaseTools/GenFw: Set the PE/COFF attribute BaseOfData with the address of the first '.data' section
-  Before this change the alignment of the first data section was not taken into account.
+svn log -r 17159:HEAD Source
+------------------------------------------------------------------------  r17159 | bobfeng | 2015-04-10 00:06:13 -0700 (Fri, 10 Apr 2015) | 9 lines
+  BaseTools/Build: Add all support skuid to the Pcd DB system skuid table
+  Update PcdDataBase System SkuIdTable. The system SkuId Table should have all the platform supported skuid.
   Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Erik Bjorge <erik.c.bjorge@intel.com>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  Signed-off-by: "Bob Feng" <bob.c.feng@intel.com>
+  Reviewed-by: "Chen, Hesheng" <hesheng.chen@intel.com>
+  Reviewed-by: "Liu, Yingke D" <yingke.d.liu@intel.com>
 
 ------------------------------------------------------------------------
