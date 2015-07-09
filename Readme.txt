@@ -5,11 +5,11 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014 - 2015, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 17887
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 17902
 
 This directory contains the Win32 binaries.
 
-Build Date:       Wed, 08 Jul 2015 06:44:51 Pacific Daylight Time
+Build Date:       Thu, 09 Jul 2015 03:16:39 Pacific Daylight Time
 Last Changed Rev: 17876
 
 ############### Build System Information ###############
@@ -31,14 +31,14 @@ Last Changed Rev: 17876
   GenDepex.exe Version 0.04 Build 17823
   GenFds.exe 1.0 Build 17823
   GenFfs Version 0.1 Build 17815
- *GenFv Version 0.1 Build 17887
+  GenFv Version 0.1 Build 17887
   GenFw Version 0.2 Build 17815
   GenPage Version 0.2 Build 17815
   GenPatchPcdTable.exe Version 0.10 Build 17823
   GenSec Version 0.1 Build 17815
   GenVtf Version 0.1 Build 17815
   ImportTool.bat Version 1.0
- *LzmaCompress Version 0.2 Build 17887
+  LzmaCompress Version 0.2 Build 17887
   LzmaF86Compress Version 0.2 Build 17887
   PatchPcdValue.exe Version 0.10 Build 17823
   Rsa2048Sha256GenerateKeys Version 0.9 Build 17553
@@ -52,60 +52,32 @@ Last Changed Rev: 17876
   VolInfo Version 0.83 Build 17815, Jul  2 2015
   build.exe Version 0.60 Build 17823
 
-* This tool was updated
-
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1385
-  7/8/2015 6:44:53AM Engine version = 5700.7163
-  7/8/2015 6:44:53AM AntiVirus DAT version = 7855.0
-  7/8/2015 6:44:53AM Number of detection signatures in EXTRA.DAT = None
-  7/8/2015 6:44:53AM Names of detection signatures in EXTRA.DAT = None
-  7/8/2015 6:44:53AM Scan Started On-Demand Scan
-  7/8/2015 6:45:14AM Scan Summary
-  7/8/2015 6:45:14AM Processes scanned : 0
-  7/8/2015 6:45:14AM Processes detected : 0
-  7/8/2015 6:45:14AM Processes cleaned : 0
-  7/8/2015 6:45:14AM Boot sectors scanned : 2
-  7/8/2015 6:45:14AM Boot sectors detected: 0
-  7/8/2015 6:45:14AM Boot sectors cleaned : 0
-  7/8/2015 6:45:14AM Files scanned : 56
-  7/8/2015 6:45:14AM Files with detections: 0
-  7/8/2015 6:45:14AM File detections : 0
-  7/8/2015 6:45:14AM Files cleaned : 0
-  7/8/2015 6:45:14AM Files deleted : 0
-  7/8/2015 6:45:14AM Files not scanned : 0
-  7/8/2015 6:45:14AM Scan Summary (Registry Scanning)
-  7/8/2015 6:45:14AM Keys scanned : 0
-  7/8/2015 6:45:14AM Keys detected : 0
-  7/8/2015 6:45:14AM Keys cleaned : 0
-  7/8/2015 6:45:14AM Keys deleted : 0
-  7/8/2015 6:45:14AM Run time : 0:00:22
-  7/8/2015 6:45:14AM Scan Complete On-Demand Scan
+  7/9/2015 3:16:41AM Engine version = 5700.7163
+  7/9/2015 3:16:41AM AntiVirus DAT version = 7856.0
+  7/9/2015 3:16:41AM Number of detection signatures in EXTRA.DAT = None
+  7/9/2015 3:16:41AM Names of detection signatures in EXTRA.DAT = None
+  7/9/2015 3:16:41AM Scan Started On-Demand Scan
+  7/9/2015 3:16:48AM Scan Summary
+  7/9/2015 3:16:48AM Processes scanned : 0
+  7/9/2015 3:16:48AM Processes detected : 0
+  7/9/2015 3:16:48AM Processes cleaned : 0
+  7/9/2015 3:16:48AM Boot sectors scanned : 2
+  7/9/2015 3:16:48AM Boot sectors detected: 0
+  7/9/2015 3:16:48AM Boot sectors cleaned : 0
+  7/9/2015 3:16:48AM Files scanned : 54
+  7/9/2015 3:16:48AM Files with detections: 0
+  7/9/2015 3:16:48AM File detections : 0
+  7/9/2015 3:16:48AM Files cleaned : 0
+  7/9/2015 3:16:48AM Files deleted : 0
+  7/9/2015 3:16:48AM Files not scanned : 0
+  7/9/2015 3:16:48AM Scan Summary (Registry Scanning)
+  7/9/2015 3:16:48AM Keys scanned : 0
+  7/9/2015 3:16:48AM Keys detected : 0
+  7/9/2015 3:16:48AM Keys cleaned : 0
+  7/9/2015 3:16:48AM Keys deleted : 0
+  7/9/2015 3:16:48AM Run time : 0:00:07
+  7/9/2015 3:16:48AM Scan Complete On-Demand Scan
 
-############### SVN Log Since Last Build ################
-svn log -r 17823:HEAD Source
-------------------------------------------------------------------------  r17866 | yingke | 2015-07-07 18:06:25 -0700 (Tue, 07 Jul 2015) | 12 lines
-  BaseTools: Fix build on FreeBSD and allow use of non-gcc system compiler
-  On FreeBSD, uuid.h is in /usr/include, not /usr/include/uuid.
-  Fix some errors when building using clang caused by self-assignment: the
-  preferred way to 'use' a variable is '(void)x;', not 'x = x;'.
-  Where the system provides $(CC) etc. by default, don't override it to be gcc.
-  Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Bruce Cran <bruce@cran.org.uk>
-  Reviewed-by: Yingke Liu <yingke.d.liu@intel.com>
-
-------------------------------------------------------------------------  r17872 | hchen30 | 2015-07-07 20:00:17 -0700 (Tue, 07 Jul 2015) | 7 lines
-  BaseTools/Upt: Update UPT to ignore "!include" statement when parsing UNI file
-  Update UPT to ignore "!include" statement when parsing UNI file
-  Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Hess Chen <hesheng.chen@intel.com>
-  Reviewed-by: YangX Li <yangx.li@intel.com>
-
-------------------------------------------------------------------------  r17876 | hchen30 | 2015-07-07 22:43:22 -0700 (Tue, 07 Jul 2015) | 7 lines
-  BaseTools/Upt: Add a BOM check for UNI file and fix some help message error
-  Add a BOM check for UNI file and fix some help message error
-  Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Hess Chen <hesheng.chen@intel.com>
-  Reviewed-by: YangX Li <yangx.li@intel.com>
-
-------------------------------------------------------------------------
+############ No SVN Changes Since Last Build ############
