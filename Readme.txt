@@ -9,7 +9,7 @@ https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for thi
 
 This directory contains the Win32 binaries.
 
-Build Date:       Fri, 10 Jul 2015 08:47:53 Pacific Daylight Time
+Build Date:       Fri, 10 Jul 2015 11:26:44 Pacific Daylight Time
 Last Changed Rev: 17876
 
 ############### Build System Information ###############
@@ -47,37 +47,39 @@ Last Changed Rev: 17876
   TargetTool.exe Version 0.01 Build 17823
   TianoCompress Version 0.1 Build 17815
   Trim.exe Version 0.10 Build 17823
-  UEFI Packaging Tool (UEFIPT) - Revision 1.0 Build 17674
+ *UEFI Packaging Tool (UEFIPT) - Revision 1.0 Build 17927
   VfrCompile version  2.00 (UEFI 2.4) Build 17815
   VolInfo Version 0.83 Build 17815, Jul  2 2015
   build.exe Version 0.60 Build 17823
 
+* This tool was updated
+
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1385
-  7/10/2015 8:47:55AM Engine version = 5700.7163
-  7/10/2015 8:47:55AM AntiVirus DAT version = 7856.0
-  7/10/2015 8:47:55AM Number of detection signatures in EXTRA.DAT = None
-  7/10/2015 8:47:55AM Names of detection signatures in EXTRA.DAT = None
-  7/10/2015 8:47:55AM Scan Started On-Demand Scan
-  7/10/2015 8:48:21AM Scan Summary
-  7/10/2015 8:48:21AM Processes scanned : 0
-  7/10/2015 8:48:21AM Processes detected : 0
-  7/10/2015 8:48:21AM Processes cleaned : 0
-  7/10/2015 8:48:21AM Boot sectors scanned : 1
-  7/10/2015 8:48:21AM Boot sectors detected: 0
-  7/10/2015 8:48:21AM Boot sectors cleaned : 0
-  7/10/2015 8:48:21AM Files scanned : 54
-  7/10/2015 8:48:21AM Files with detections: 0
-  7/10/2015 8:48:21AM File detections : 0
-  7/10/2015 8:48:21AM Files cleaned : 0
-  7/10/2015 8:48:21AM Files deleted : 0
-  7/10/2015 8:48:21AM Files not scanned : 0
-  7/10/2015 8:48:21AM Scan Summary (Registry Scanning)
-  7/10/2015 8:48:21AM Keys scanned : 0
-  7/10/2015 8:48:21AM Keys detected : 0
-  7/10/2015 8:48:21AM Keys cleaned : 0
-  7/10/2015 8:48:21AM Keys deleted : 0
-  7/10/2015 8:48:21AM Run time : 0:00:26
-  7/10/2015 8:48:21AM Scan Complete On-Demand Scan
+  7/10/2015 11:26:46AM Engine version = 5700.7163
+  7/10/2015 11:26:46AM AntiVirus DAT version = 7856.0
+  7/10/2015 11:26:46AM Number of detection signatures in EXTRA.DAT = None
+  7/10/2015 11:26:46AM Names of detection signatures in EXTRA.DAT = None
+  7/10/2015 11:26:46AM Scan Started On-Demand Scan
+  7/10/2015 11:26:53AM Scan Summary
+  7/10/2015 11:26:53AM Processes scanned : 0
+  7/10/2015 11:26:53AM Processes detected : 0
+  7/10/2015 11:26:53AM Processes cleaned : 0
+  7/10/2015 11:26:53AM Boot sectors scanned : 2
+  7/10/2015 11:26:53AM Boot sectors detected: 0
+  7/10/2015 11:26:53AM Boot sectors cleaned : 0
+  7/10/2015 11:26:53AM Files scanned : 55
+  7/10/2015 11:26:53AM Files with detections: 0
+  7/10/2015 11:26:53AM File detections : 0
+  7/10/2015 11:26:53AM Files cleaned : 0
+  7/10/2015 11:26:53AM Files deleted : 0
+  7/10/2015 11:26:53AM Files not scanned : 0
+  7/10/2015 11:26:53AM Scan Summary (Registry Scanning)
+  7/10/2015 11:26:53AM Keys scanned : 0
+  7/10/2015 11:26:53AM Keys detected : 0
+  7/10/2015 11:26:53AM Keys cleaned : 0
+  7/10/2015 11:26:53AM Keys deleted : 0
+  7/10/2015 11:26:53AM Run time : 0:00:08
+  7/10/2015 11:26:53AM Scan Complete On-Demand Scan
 
 ############ No SVN Changes Since Last Build ############
