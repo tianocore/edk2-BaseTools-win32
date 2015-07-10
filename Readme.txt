@@ -5,11 +5,11 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014 - 2015, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 17924
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 17927
 
 This directory contains the Win32 binaries.
 
-Build Date:       Fri, 10 Jul 2015 03:16:47 Pacific Daylight Time
+Build Date:       Fri, 10 Jul 2015 08:47:53 Pacific Daylight Time
 Last Changed Rev: 17876
 
 ############### Build System Information ###############
@@ -54,30 +54,30 @@ Last Changed Rev: 17876
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1385
-  7/10/2015 3:16:49AM Engine version = 5700.7163
-  7/10/2015 3:16:49AM AntiVirus DAT version = 7856.0
-  7/10/2015 3:16:49AM Number of detection signatures in EXTRA.DAT = None
-  7/10/2015 3:16:49AM Names of detection signatures in EXTRA.DAT = None
-  7/10/2015 3:16:49AM Scan Started On-Demand Scan
-  7/10/2015 3:16:51AM Scan Summary
-  7/10/2015 3:16:51AM Processes scanned : 0
-  7/10/2015 3:16:51AM Processes detected : 0
-  7/10/2015 3:16:51AM Processes cleaned : 0
-  7/10/2015 3:16:51AM Boot sectors scanned : 1
-  7/10/2015 3:16:51AM Boot sectors detected: 0
-  7/10/2015 3:16:51AM Boot sectors cleaned : 0
-  7/10/2015 3:16:51AM Files scanned : 54
-  7/10/2015 3:16:51AM Files with detections: 0
-  7/10/2015 3:16:51AM File detections : 0
-  7/10/2015 3:16:51AM Files cleaned : 0
-  7/10/2015 3:16:51AM Files deleted : 0
-  7/10/2015 3:16:51AM Files not scanned : 0
-  7/10/2015 3:16:51AM Scan Summary (Registry Scanning)
-  7/10/2015 3:16:51AM Keys scanned : 0
-  7/10/2015 3:16:51AM Keys detected : 0
-  7/10/2015 3:16:51AM Keys cleaned : 0
-  7/10/2015 3:16:51AM Keys deleted : 0
-  7/10/2015 3:16:51AM Run time : 0:00:03
-  7/10/2015 3:16:51AM Scan Complete On-Demand Scan
+  7/10/2015 8:47:55AM Engine version = 5700.7163
+  7/10/2015 8:47:55AM AntiVirus DAT version = 7856.0
+  7/10/2015 8:47:55AM Number of detection signatures in EXTRA.DAT = None
+  7/10/2015 8:47:55AM Names of detection signatures in EXTRA.DAT = None
+  7/10/2015 8:47:55AM Scan Started On-Demand Scan
+  7/10/2015 8:48:21AM Scan Summary
+  7/10/2015 8:48:21AM Processes scanned : 0
+  7/10/2015 8:48:21AM Processes detected : 0
+  7/10/2015 8:48:21AM Processes cleaned : 0
+  7/10/2015 8:48:21AM Boot sectors scanned : 1
+  7/10/2015 8:48:21AM Boot sectors detected: 0
+  7/10/2015 8:48:21AM Boot sectors cleaned : 0
+  7/10/2015 8:48:21AM Files scanned : 54
+  7/10/2015 8:48:21AM Files with detections: 0
+  7/10/2015 8:48:21AM File detections : 0
+  7/10/2015 8:48:21AM Files cleaned : 0
+  7/10/2015 8:48:21AM Files deleted : 0
+  7/10/2015 8:48:21AM Files not scanned : 0
+  7/10/2015 8:48:21AM Scan Summary (Registry Scanning)
+  7/10/2015 8:48:21AM Keys scanned : 0
+  7/10/2015 8:48:21AM Keys detected : 0
+  7/10/2015 8:48:21AM Keys cleaned : 0
+  7/10/2015 8:48:21AM Keys deleted : 0
+  7/10/2015 8:48:21AM Run time : 0:00:26
+  7/10/2015 8:48:21AM Scan Complete On-Demand Scan
 
 ############ No SVN Changes Since Last Build ############
