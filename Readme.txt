@@ -5,12 +5,12 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014 - 2015, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 18361
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 18444
 
 This directory contains the Win32 binaries.
 
-Build Date:       Fri, 28 Aug 2015 03:18:37 Pacific Daylight Time
-Last Changed Rev: 18339
+Build Date:       Fri, 11 Sep 2015 03:19:16 Pacific Daylight Time
+Last Changed Rev: 18443
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -29,10 +29,10 @@ Last Changed Rev: 18339
   GenBootSector Version 0.2 Build 18276
   GenCrc32 Version 0.2 Build 18276
   GenDepex.exe Version 0.04 Build 18320
- *GenFds.exe 1.0 Build 18361
+  GenFds.exe 1.0 Build 18361
   GenFfs Version 0.1 Build 18276
   GenFv Version 0.1 Build 18276
-  GenFw Version 0.2 Build 18276
+ *GenFw Version 0.2 Build 18444
   GenPage Version 0.2 Build 18276
   GenPatchPcdTable.exe Version 0.10 Build 18320
   GenSec Version 0.1 Build 18276
@@ -56,40 +56,43 @@ Last Changed Rev: 18339
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1385
-  8/28/2015 3:18:38AM Engine version = 5700.7163
-  8/28/2015 3:18:38AM AntiVirus DAT version = 7906.0
-  8/28/2015 3:18:38AM Number of detection signatures in EXTRA.DAT = None
-  8/28/2015 3:18:38AM Names of detection signatures in EXTRA.DAT = None
-  8/28/2015 3:18:38AM Scan Started On-Demand Scan
-  8/28/2015 3:18:44AM Scan Summary
-  8/28/2015 3:18:44AM Processes scanned : 0
-  8/28/2015 3:18:44AM Processes detected : 0
-  8/28/2015 3:18:44AM Processes cleaned : 0
-  8/28/2015 3:18:44AM Boot sectors scanned : 2
-  8/28/2015 3:18:44AM Boot sectors detected: 0
-  8/28/2015 3:18:44AM Boot sectors cleaned : 0
-  8/28/2015 3:18:44AM Files scanned : 55
-  8/28/2015 3:18:44AM Files with detections: 0
-  8/28/2015 3:18:44AM File detections : 0
-  8/28/2015 3:18:44AM Files cleaned : 0
-  8/28/2015 3:18:44AM Files deleted : 0
-  8/28/2015 3:18:44AM Files not scanned : 0
-  8/28/2015 3:18:44AM Scan Summary (Registry Scanning)
-  8/28/2015 3:18:44AM Keys scanned : 0
-  8/28/2015 3:18:44AM Keys detected : 0
-  8/28/2015 3:18:44AM Keys cleaned : 0
-  8/28/2015 3:18:44AM Keys deleted : 0
-  8/28/2015 3:18:44AM Run time : 0:00:06
-  8/28/2015 3:18:44AM Scan Complete On-Demand Scan
+  9/11/2015 3:19:17AM Engine version = 5700.7163
+  9/11/2015 3:19:17AM AntiVirus DAT version = 7920.0
+  9/11/2015 3:19:17AM Number of detection signatures in EXTRA.DAT = 6
+  9/11/2015 3:19:17AM Names of detection signatures in EXTRA.DAT = Generic BackDoor.u (ED) GenericR-ECJ (ED) RDN/Generic BackDoor (ED)
+  9/11/2015 3:19:17AM Scan Started On-Demand Scan
+  9/11/2015 3:19:22AM Scan Summary
+  9/11/2015 3:19:22AM Processes scanned : 0
+  9/11/2015 3:19:22AM Processes detected : 0
+  9/11/2015 3:19:22AM Processes cleaned : 0
+  9/11/2015 3:19:22AM Boot sectors scanned : 1
+  9/11/2015 3:19:22AM Boot sectors detected: 0
+  9/11/2015 3:19:22AM Boot sectors cleaned : 0
+  9/11/2015 3:19:22AM Files scanned : 55
+  9/11/2015 3:19:22AM Files with detections: 0
+  9/11/2015 3:19:22AM File detections : 0
+  9/11/2015 3:19:22AM Files cleaned : 0
+  9/11/2015 3:19:22AM Files deleted : 0
+  9/11/2015 3:19:22AM Files not scanned : 0
+  9/11/2015 3:19:22AM Scan Summary (Registry Scanning)
+  9/11/2015 3:19:22AM Keys scanned : 0
+  9/11/2015 3:19:22AM Keys detected : 0
+  9/11/2015 3:19:22AM Keys cleaned : 0
+  9/11/2015 3:19:22AM Keys deleted : 0
+  9/11/2015 3:19:22AM Run time : 0:00:05
+  9/11/2015 3:19:22AM Scan Complete On-Demand Scan
 
 ############### SVN Log Since Last Build ################
-svn log -r 18337:HEAD Source
-------------------------------------------------------------------------  r18339 | yingke | 2015-08-27 19:04:37 -0700 (Thu, 27 Aug 2015) | 8 lines
-  BaseTools: Fixed bug for single FV generating.
-  If -i is specified and this FV has no BlockSize defined,
-  tool did not inherit FD's BlockSize.
+svn log -r 18361:HEAD Source
+------------------------------------------------------------------------  r18443 | abiesheuvel | 2015-09-11 00:07:06 -0700 (Fri, 11 Sep 2015) | 11 lines
+  BaseTools/GenFw: align RVA of debug
+  SVN commit r18077 ("BaseTools/GenFw: move .debug contents to .data to
+  save space") removed the separate .debug section after moving its
+  contents into .text or .data. However, this change does not take into
+  account that some of these contents need to appear at a 32-bit aligned
+  offset. So align the debug data RVA to 32 bits.
   Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Yingke Liu <yingke.d.liu@intel.com>
+  Signed-off-by: Ard Biesheuvel <ard.biesheuvel@linaro.org>
   Reviewed-by: Liming Gao <liming.gao@intel.com>
 
 ------------------------------------------------------------------------
