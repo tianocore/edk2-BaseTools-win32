@@ -5,12 +5,12 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014 - 2015, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 18444
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 18552
 
 This directory contains the Win32 binaries.
 
-Build Date:       Fri, 11 Sep 2015 03:19:16 Pacific Daylight Time
-Last Changed Rev: 18443
+Build Date:       Fri, 25 Sep 2015 03:19:45 Pacific Daylight Time
+Last Changed Rev: 18540
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -32,7 +32,7 @@ Last Changed Rev: 18443
   GenFds.exe 1.0 Build 18361
   GenFfs Version 0.1 Build 18276
   GenFv Version 0.1 Build 18276
- *GenFw Version 0.2 Build 18444
+ *GenFw Version 0.2 Build 18552
   GenPage Version 0.2 Build 18276
   GenPatchPcdTable.exe Version 0.10 Build 18320
   GenSec Version 0.1 Build 18276
@@ -56,43 +56,63 @@ Last Changed Rev: 18443
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1385
-  9/11/2015 3:19:17AM Engine version = 5700.7163
-  9/11/2015 3:19:17AM AntiVirus DAT version = 7920.0
-  9/11/2015 3:19:17AM Number of detection signatures in EXTRA.DAT = 6
-  9/11/2015 3:19:17AM Names of detection signatures in EXTRA.DAT = Generic BackDoor.u (ED) GenericR-ECJ (ED) RDN/Generic BackDoor (ED)
-  9/11/2015 3:19:17AM Scan Started On-Demand Scan
-  9/11/2015 3:19:22AM Scan Summary
-  9/11/2015 3:19:22AM Processes scanned : 0
-  9/11/2015 3:19:22AM Processes detected : 0
-  9/11/2015 3:19:22AM Processes cleaned : 0
-  9/11/2015 3:19:22AM Boot sectors scanned : 1
-  9/11/2015 3:19:22AM Boot sectors detected: 0
-  9/11/2015 3:19:22AM Boot sectors cleaned : 0
-  9/11/2015 3:19:22AM Files scanned : 55
-  9/11/2015 3:19:22AM Files with detections: 0
-  9/11/2015 3:19:22AM File detections : 0
-  9/11/2015 3:19:22AM Files cleaned : 0
-  9/11/2015 3:19:22AM Files deleted : 0
-  9/11/2015 3:19:22AM Files not scanned : 0
-  9/11/2015 3:19:22AM Scan Summary (Registry Scanning)
-  9/11/2015 3:19:22AM Keys scanned : 0
-  9/11/2015 3:19:22AM Keys detected : 0
-  9/11/2015 3:19:22AM Keys cleaned : 0
-  9/11/2015 3:19:22AM Keys deleted : 0
-  9/11/2015 3:19:22AM Run time : 0:00:05
-  9/11/2015 3:19:22AM Scan Complete On-Demand Scan
+  9/25/2015 3:19:46AM Engine version = 5700.7163
+  9/25/2015 3:19:46AM AntiVirus DAT version = 7934.0
+  9/25/2015 3:19:46AM Number of detection signatures in EXTRA.DAT = 3
+  9/25/2015 3:19:46AM Names of detection signatures in EXTRA.DAT = GenericR-ECJ (ED) RDN/Generic BackDoor (ED)
+  9/25/2015 3:19:46AM Scan Started On-Demand Scan
+  9/25/2015 3:19:49AM Scan Summary
+  9/25/2015 3:19:49AM Processes scanned : 0
+  9/25/2015 3:19:49AM Processes detected : 0
+  9/25/2015 3:19:49AM Processes cleaned : 0
+  9/25/2015 3:19:49AM Boot sectors scanned : 1
+  9/25/2015 3:19:49AM Boot sectors detected: 0
+  9/25/2015 3:19:49AM Boot sectors cleaned : 0
+  9/25/2015 3:19:49AM Files scanned : 55
+  9/25/2015 3:19:49AM Files with detections: 0
+  9/25/2015 3:19:49AM File detections : 0
+  9/25/2015 3:19:49AM Files cleaned : 0
+  9/25/2015 3:19:49AM Files deleted : 0
+  9/25/2015 3:19:49AM Files not scanned : 0
+  9/25/2015 3:19:49AM Scan Summary (Registry Scanning)
+  9/25/2015 3:19:49AM Keys scanned : 0
+  9/25/2015 3:19:49AM Keys detected : 0
+  9/25/2015 3:19:49AM Keys cleaned : 0
+  9/25/2015 3:19:49AM Keys deleted : 0
+  9/25/2015 3:19:49AM Run time : 0:00:03
+  9/25/2015 3:19:49AM Scan Complete On-Demand Scan
 
 ############### SVN Log Since Last Build ################
-svn log -r 18361:HEAD Source
-------------------------------------------------------------------------  r18443 | abiesheuvel | 2015-09-11 00:07:06 -0700 (Fri, 11 Sep 2015) | 11 lines
-  BaseTools/GenFw: align RVA of debug
-  SVN commit r18077 ("BaseTools/GenFw: move .debug contents to .data to
-  save space") removed the separate .debug section after moving its
-  contents into .text or .data. However, this change does not take into
-  account that some of these contents need to appear at a 32-bit aligned
-  offset. So align the debug data RVA to 32 bits.
+svn log -r 18444:HEAD Source
+------------------------------------------------------------------------  r18446 | hchen30 | 2015-09-14 00:12:29 -0700 (Mon, 14 Sep 2015) | 8 lines
+  BaseTools/Ecc: Remove checkpoint for STATIC modifier
+  1. Fix a bug of removing the checkpoint for STATIC modifier
+  2. Fix a bug of parsing CONST variable
+  Contributed-under: TianoCore Contribution Agreement 1.0
+  Signed-off-by: Hess Chen <hesheng.chen@intel.com>
+  Reviewed-by: YangX Li <yangx.li@intel.com>
+
+------------------------------------------------------------------------  r18539 | abiesheuvel | 2015-09-24 12:35:10 -0700 (Thu, 24 Sep 2015) | 9 lines
+  BaseTools/GenFw: remove ARM and RVCT references from ELF64 code
+  ARM and RVCT apply to 32-bit code only, so remove any references
+  to them (including the workaround for the linker) from the 64-bit
+  version of ElfConvert.c
   Contributed-under: TianoCore Contribution Agreement 1.0
   Signed-off-by: Ard Biesheuvel <ard.biesheuvel@linaro.org>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  Reviewed-by: Leif Lindholm <leif.lindholm@linaro.org>
+
+------------------------------------------------------------------------  r18540 | abiesheuvel | 2015-09-24 12:35:16 -0700 (Thu, 24 Sep 2015) | 15 lines
+  BaseTools/GenFw: disable RVCT linker size optimization
+  Disable the RVCT size optimization that may put sections at an offset
+  that is not aligned to their own alignment, by adding the --no_legacyalign
+  switch to the RVCT linker command line. This is necessary since such sections
+  cannot be correctly converted into PE/COFF sections without padding them at
+  the front, which defeats the purpose of the optimization anyway.
+  With the optimization gone, we can also remove the special case for ARM in
+  GenFw that could result in corrupt PE/COFF images to be emitted. Instead,
+  sections whose base address is not aligned correctly are outright rejected.
+  Contributed-under: TianoCore Contribution Agreement 1.0
+  Signed-off-by: Ard Biesheuvel <ard.biesheuvel@linaro.org>
+  Reviewed-by: Leif Lindholm <leif.lindholm@linaro.org>
 
 ------------------------------------------------------------------------
