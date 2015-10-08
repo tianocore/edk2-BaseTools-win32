@@ -5,12 +5,12 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014 - 2015, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 18552
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 18584
 
 This directory contains the Win32 binaries.
 
-Build Date:       Fri, 25 Sep 2015 03:19:45 Pacific Daylight Time
-Last Changed Rev: 18540
+Build Date:       Thu, 08 Oct 2015 03:20:31 Pacific Daylight Time
+Last Changed Rev: 18581
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -21,98 +21,102 @@ Last Changed Rev: 18540
   antlr3        = 3.0.1
 
 ##################### Tool Versions #####################
-  Intel(r) Binary Product Data Generation Tool (Intel(r) BPDG) - Version 0.1 Build 18320
+ *Intel(r) Binary Product Data Generation Tool (Intel(r) BPDG) - Version 0.1 Build 18584
   BootSectImage Version 0.1 Build 18276
   Ecc.exe Version 0.01 Build 17712
   EfiLdrImage Version 0.1 Build 18276
   EfiRom Version 0.1 Build 18276
   GenBootSector Version 0.2 Build 18276
   GenCrc32 Version 0.2 Build 18276
-  GenDepex.exe Version 0.04 Build 18320
-  GenFds.exe 1.0 Build 18361
+ *GenDepex.exe Version 0.04 Build 18584
+ *GenFds.exe 1.0 Build 18584
   GenFfs Version 0.1 Build 18276
   GenFv Version 0.1 Build 18276
- *GenFw Version 0.2 Build 18552
+  GenFw Version 0.2 Build 18552
   GenPage Version 0.2 Build 18276
-  GenPatchPcdTable.exe Version 0.10 Build 18320
+ *GenPatchPcdTable.exe Version 0.10 Build 18584
   GenSec Version 0.1 Build 18276
   GenVtf Version 0.1 Build 18276
   ImportTool.bat Version 1.0
   LzmaCompress Version 0.2 Build 18276
   LzmaF86Compress Version 0.2 Build 18276
-  PatchPcdValue.exe Version 0.10 Build 18320
+ *PatchPcdValue.exe Version 0.10 Build 18584
   Rsa2048Sha256GenerateKeys Version 0.9 Build 17553
   Rsa2048Sha256Sign Version 0.9 Build 17821
   Split Version 0.1 Build 18276
-  TargetTool.exe Version 0.01 Build 18320
+ *TargetTool.exe Version 0.01 Build 18584
   TianoCompress Version 0.1 Build 18276
-  Trim.exe Version 0.10 Build 18320
+ *Trim.exe Version 0.10 Build 18584
   UEFI Packaging Tool (UEFIPT) - Revision 1.0 Build 17927
   VfrCompile version  2.00 (UEFI 2.4) Build 18337
   VolInfo Version 0.83 Build 18276, Aug 24 2015
-  build.exe Version 0.60 Build 18320
+ *build.exe Version 0.60 Build 18584
 
 * This tool was updated
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1385
-  9/25/2015 3:19:46AM Engine version = 5700.7163
-  9/25/2015 3:19:46AM AntiVirus DAT version = 7934.0
-  9/25/2015 3:19:46AM Number of detection signatures in EXTRA.DAT = 3
-  9/25/2015 3:19:46AM Names of detection signatures in EXTRA.DAT = GenericR-ECJ (ED) RDN/Generic BackDoor (ED)
-  9/25/2015 3:19:46AM Scan Started On-Demand Scan
-  9/25/2015 3:19:49AM Scan Summary
-  9/25/2015 3:19:49AM Processes scanned : 0
-  9/25/2015 3:19:49AM Processes detected : 0
-  9/25/2015 3:19:49AM Processes cleaned : 0
-  9/25/2015 3:19:49AM Boot sectors scanned : 1
-  9/25/2015 3:19:49AM Boot sectors detected: 0
-  9/25/2015 3:19:49AM Boot sectors cleaned : 0
-  9/25/2015 3:19:49AM Files scanned : 55
-  9/25/2015 3:19:49AM Files with detections: 0
-  9/25/2015 3:19:49AM File detections : 0
-  9/25/2015 3:19:49AM Files cleaned : 0
-  9/25/2015 3:19:49AM Files deleted : 0
-  9/25/2015 3:19:49AM Files not scanned : 0
-  9/25/2015 3:19:49AM Scan Summary (Registry Scanning)
-  9/25/2015 3:19:49AM Keys scanned : 0
-  9/25/2015 3:19:49AM Keys detected : 0
-  9/25/2015 3:19:49AM Keys cleaned : 0
-  9/25/2015 3:19:49AM Keys deleted : 0
-  9/25/2015 3:19:49AM Run time : 0:00:03
-  9/25/2015 3:19:49AM Scan Complete On-Demand Scan
+  10/8/2015 3:20:33AM Engine version = 5700.7163
+  10/8/2015 3:20:33AM AntiVirus DAT version = 7947.0
+  10/8/2015 3:20:33AM Number of detection signatures in EXTRA.DAT = 3
+  10/8/2015 3:20:33AM Names of detection signatures in EXTRA.DAT = GenericR-ECJ (ED) RDN/Generic BackDoor (ED)
+  10/8/2015 3:20:33AM Scan Started On-Demand Scan
+  10/8/2015 3:20:35AM Scan Summary
+  10/8/2015 3:20:35AM Processes scanned : 0
+  10/8/2015 3:20:35AM Processes detected : 0
+  10/8/2015 3:20:35AM Processes cleaned : 0
+  10/8/2015 3:20:35AM Boot sectors scanned : 1
+  10/8/2015 3:20:35AM Boot sectors detected: 0
+  10/8/2015 3:20:35AM Boot sectors cleaned : 0
+  10/8/2015 3:20:35AM Files scanned : 55
+  10/8/2015 3:20:35AM Files with detections: 0
+  10/8/2015 3:20:35AM File detections : 0
+  10/8/2015 3:20:35AM Files cleaned : 0
+  10/8/2015 3:20:35AM Files deleted : 0
+  10/8/2015 3:20:35AM Files not scanned : 0
+  10/8/2015 3:20:35AM Scan Summary (Registry Scanning)
+  10/8/2015 3:20:35AM Keys scanned : 0
+  10/8/2015 3:20:35AM Keys detected : 0
+  10/8/2015 3:20:35AM Keys cleaned : 0
+  10/8/2015 3:20:35AM Keys deleted : 0
+  10/8/2015 3:20:35AM Run time : 0:00:03
+  10/8/2015 3:20:35AM Scan Complete On-Demand Scan
 
 ############### SVN Log Since Last Build ################
-svn log -r 18444:HEAD Source
-------------------------------------------------------------------------  r18446 | hchen30 | 2015-09-14 00:12:29 -0700 (Mon, 14 Sep 2015) | 8 lines
-  BaseTools/Ecc: Remove checkpoint for STATIC modifier
-  1. Fix a bug of removing the checkpoint for STATIC modifier
-  2. Fix a bug of parsing CONST variable
+svn log -r 18552:HEAD Source
+------------------------------------------------------------------------  r18579 | lgao4 | 2015-10-08 02:27:14 -0700 (Thu, 08 Oct 2015) | 22 lines
+  BaseTools: Update Build tool to support multiple workspaces
+  WORKSPACE is still kept.
+  New PACKAGES_PATH is introduced to specify the additional WORKSPACEs.
+  In PACKAGES_PATH, ';' is separator in Windows, ':' is separator in Linux.
+  Build directory is in WORKSPACE. Package, BaseTools and Conf directory
+  will be found from WORKSPACE and PACKAGES_PATH.
+  In implementation, BaseTools adds MultipleWorkspace class for
+  the file path conversion from WORKSPACE and PACKAGES_PATH.
+  Verify two tree layouts.
+  Root\edk2\MdePkg
+  Root\edk2\MdeMdeModulePkg
+  Root\edk2\...
+  1. set WORKSPACE=Root\edk2
+  2. set WORKSPACE=Root, and set PACKAGES_PATH=Root\edk2
   Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Hess Chen <hesheng.chen@intel.com>
-  Reviewed-by: YangX Li <yangx.li@intel.com>
+  Signed-off-by: Li YangX <yangx.li@intel.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
 
-------------------------------------------------------------------------  r18539 | abiesheuvel | 2015-09-24 12:35:10 -0700 (Thu, 24 Sep 2015) | 9 lines
-  BaseTools/GenFw: remove ARM and RVCT references from ELF64 code
-  ARM and RVCT apply to 32-bit code only, so remove any references
-  to them (including the workaround for the linker) from the 64-bit
-  version of ElfConvert.c
+------------------------------------------------------------------------  r18580 | lgao4 | 2015-10-08 02:28:15 -0700 (Thu, 08 Oct 2015) | 8 lines
+  BaseTools: Update UPT tool to support multiple workspaces
+  Update UPT to refer MultipleWorkspace class to convert
+  the file path from WORKSPACE and PACKAGES_PATH.
   Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Ard Biesheuvel <ard.biesheuvel@linaro.org>
-  Reviewed-by: Leif Lindholm <leif.lindholm@linaro.org>
+  Signed-off-by: Hesheng Chen <hesheng.chen@intel.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
 
-------------------------------------------------------------------------  r18540 | abiesheuvel | 2015-09-24 12:35:16 -0700 (Thu, 24 Sep 2015) | 15 lines
-  BaseTools/GenFw: disable RVCT linker size optimization
-  Disable the RVCT size optimization that may put sections at an offset
-  that is not aligned to their own alignment, by adding the --no_legacyalign
-  switch to the RVCT linker command line. This is necessary since such sections
-  cannot be correctly converted into PE/COFF sections without padding them at
-  the front, which defeats the purpose of the optimization anyway.
-  With the optimization gone, we can also remove the special case for ARM in
-  GenFw that could result in corrupt PE/COFF images to be emitted. Instead,
-  sections whose base address is not aligned correctly are outright rejected.
+------------------------------------------------------------------------  r18581 | lgao4 | 2015-10-08 02:28:51 -0700 (Thu, 08 Oct 2015) | 8 lines
+  BaseTools: Update ECC tool to support multiple workspaces
+  Update ECC to refer MultipleWorkspace class to convert
+  the file path from WORKSPACE and PACKAGES_PATH.
   Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Ard Biesheuvel <ard.biesheuvel@linaro.org>
-  Reviewed-by: Leif Lindholm <leif.lindholm@linaro.org>
+  Signed-off-by: Li YangX <yangx.li@intel.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
 
 ------------------------------------------------------------------------
