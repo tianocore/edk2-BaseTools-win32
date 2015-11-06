@@ -5,12 +5,12 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014 - 2015, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 18686
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 18736
 
 This directory contains the Win32 binaries.
 
-Build Date:       Tue, 27 Oct 2015 14:26:09 Pacific Daylight Time
-Last Changed Rev: 18675
+Build Date:       Fri, 06 Nov 2015 14:27:43 Pacific Standard Time
+Last Changed Rev: 18733
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -43,53 +43,60 @@ Last Changed Rev: 18675
   PatchPcdValue.exe Version 0.10 Build 18673
   Rsa2048Sha256GenerateKeys Version 0.9 Build 17553
   Rsa2048Sha256Sign Version 0.9 Build 17821
- *Split Version 0.1 Build 18686
+  Split Version 0.1 Build 18686
   TargetTool.exe Version 0.01 Build 18673
   TianoCompress Version 0.1 Build 18600
   Trim.exe Version 0.10 Build 18673
   UEFI Packaging Tool (UEFIPT) - Revision 1.0 Build 18600
   VfrCompile version  2.00 (UEFI 2.4) Build 18607
   VolInfo Version 0.83 Build 18600, Oct 10 2015
-  build.exe Version 0.60 Build 18673
+ *build.exe Version 0.60 Build 18736
 
 * This tool was updated
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1385
-  10/27/2015 2:26:10PM Engine version = 5700.7163
-  10/27/2015 2:26:10PM AntiVirus DAT version = 7966.0
-  10/27/2015 2:26:10PM Number of detection signatures in EXTRA.DAT = 1
-  10/27/2015 2:26:10PM Names of detection signatures in EXTRA.DAT = Generic PWS.o (ED)
-  10/27/2015 2:26:10PM Scan Started On-Demand Scan
-  10/27/2015 2:26:14PM Scan Summary
-  10/27/2015 2:26:14PM Processes scanned : 0
-  10/27/2015 2:26:14PM Processes detected : 0
-  10/27/2015 2:26:14PM Processes cleaned : 0
-  10/27/2015 2:26:14PM Boot sectors scanned : 1
-  10/27/2015 2:26:14PM Boot sectors detected: 0
-  10/27/2015 2:26:14PM Boot sectors cleaned : 0
-  10/27/2015 2:26:14PM Files scanned : 55
-  10/27/2015 2:26:14PM Files with detections: 0
-  10/27/2015 2:26:14PM File detections : 0
-  10/27/2015 2:26:14PM Files cleaned : 0
-  10/27/2015 2:26:14PM Files deleted : 0
-  10/27/2015 2:26:14PM Files not scanned : 0
-  10/27/2015 2:26:14PM Scan Summary (Registry Scanning)
-  10/27/2015 2:26:14PM Keys scanned : 0
-  10/27/2015 2:26:14PM Keys detected : 0
-  10/27/2015 2:26:14PM Keys cleaned : 0
-  10/27/2015 2:26:14PM Keys deleted : 0
-  10/27/2015 2:26:14PM Run time : 0:00:04
-  10/27/2015 2:26:14PM Scan Complete On-Demand Scan
+  11/6/2015 2:27:44PM Engine version = 5700.7163
+  11/6/2015 2:27:44PM AntiVirus DAT version = 7976.0
+  11/6/2015 2:27:44PM Number of detection signatures in EXTRA.DAT = 1
+  11/6/2015 2:27:44PM Names of detection signatures in EXTRA.DAT = Generic PWS.o (ED)
+  11/6/2015 2:27:44PM Scan Started On-Demand Scan
+  11/6/2015 2:27:54PM Scan Summary
+  11/6/2015 2:27:54PM Processes scanned : 0
+  11/6/2015 2:27:54PM Processes detected : 0
+  11/6/2015 2:27:54PM Processes cleaned : 0
+  11/6/2015 2:27:54PM Boot sectors scanned : 2
+  11/6/2015 2:27:54PM Boot sectors detected: 0
+  11/6/2015 2:27:54PM Boot sectors cleaned : 0
+  11/6/2015 2:27:54PM Files scanned : 55
+  11/6/2015 2:27:54PM Files with detections: 0
+  11/6/2015 2:27:54PM File detections : 0
+  11/6/2015 2:27:54PM Files cleaned : 0
+  11/6/2015 2:27:54PM Files deleted : 0
+  11/6/2015 2:27:54PM Files not scanned : 0
+  11/6/2015 2:27:54PM Scan Summary (Registry Scanning)
+  11/6/2015 2:27:54PM Keys scanned : 0
+  11/6/2015 2:27:54PM Keys detected : 0
+  11/6/2015 2:27:54PM Keys cleaned : 0
+  11/6/2015 2:27:54PM Keys deleted : 0
+  11/6/2015 2:27:54PM Run time : 0:00:10
+  11/6/2015 2:27:54PM Scan Complete On-Demand Scan
 
 ############### SVN Log Since Last Build ################
-svn log -r 18673:HEAD Source
-------------------------------------------------------------------------  r18675 | yzhu52 | 2015-10-26 20:29:50 -0700 (Mon, 26 Oct 2015) | 8 lines
-  BaseTools:remove the redundant directories for '-f' with absolute path.
-  when the absolute path is given to '-f', it would create some redundant
-  empty directories.
+svn log -r 18686:HEAD Source
+------------------------------------------------------------------------  r18731 | lgao4 | 2015-11-05 17:10:25 -0800 (Thu, 05 Nov 2015) | 8 lines
+  BaseTools: Don't require ECP pkg in WORKSPACE when PACKAGES_PATH is set
+  When PACKAGES_PATH is set, ECP pkg may be in another directory, not exist
+  in WORKSPACE. So, keep this check in single WORKSPACE.
   Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Yonghong Zhu <yonghong.zhu@intel.com>
-  Reviewed-by: Hao Wu <hao.a.wu@intel.com>
+  Signed-off-by: Liming Gao <liming.gao@intel.com>
+  Reviewed-by: Michael Kinney <michael.d.kinney@intel.com>
+
+------------------------------------------------------------------------  r18733 | lgao4 | 2015-11-05 18:57:07 -0800 (Thu, 05 Nov 2015) | 7 lines
+  BaseTools: Print PACKAGES_PATH build environment if it is set.
+  Print the optional build environment PACKAGES_PATH and EDK_TOOLS_BIN.
+  Contributed-under: TianoCore Contribution Agreement 1.0
+  Signed-off-by: Liming Gao <liming.gao@intel.com>
+  Reviewed-by: Michael Kinney <michael.d.kinney@intel.com>
 
 ------------------------------------------------------------------------
