@@ -5,12 +5,12 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014 - 2015, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 18865
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 18900
 
 This directory contains the Win32 binaries.
 
-Build Date:       Tue, 17 Nov 2015 14:28:41 Pacific Standard Time
-Last Changed Rev: 18851
+Build Date:       Wed, 18 Nov 2015 14:28:13 Pacific Standard Time
+Last Changed Rev: 18868
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -47,49 +47,47 @@ Last Changed Rev: 18851
   TargetTool.exe Version 0.01 Build 18759
   TianoCompress Version 0.1 Build 18600
   Trim.exe Version 0.10 Build 18759
-  UEFI Packaging Tool (UEFIPT) - Revision 1.0 Build 18600
- *VfrCompile version  2.00 (UEFI 2.4) Build 18865
- *VolInfo Version 0.83 Build 18865, Nov 17 2015
+ *UEFI Packaging Tool (UEFIPT) - Revision 1.0 Build 18900
+  VfrCompile version  2.00 (UEFI 2.4) Build 18865
+  VolInfo Version 0.83 Build 18865, Nov 17 2015
   build.exe Version 0.60 Build 18759
 
 * This tool was updated
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1385
-  11/17/2015 2:28:43PM Engine version = 5700.7163
-  11/17/2015 2:28:43PM AntiVirus DAT version = 7987.0
-  11/17/2015 2:28:43PM Number of detection signatures in EXTRA.DAT = 1
-  11/17/2015 2:28:43PM Names of detection signatures in EXTRA.DAT = Generic BackDoor.u (ED)
-  11/17/2015 2:28:43PM Scan Started On-Demand Scan
-  11/17/2015 2:28:45PM Scan Summary
-  11/17/2015 2:28:45PM Processes scanned : 0
-  11/17/2015 2:28:45PM Processes detected : 0
-  11/17/2015 2:28:45PM Processes cleaned : 0
-  11/17/2015 2:28:45PM Boot sectors scanned : 1
-  11/17/2015 2:28:45PM Boot sectors detected: 0
-  11/17/2015 2:28:45PM Boot sectors cleaned : 0
-  11/17/2015 2:28:45PM Files scanned : 56
-  11/17/2015 2:28:45PM Files with detections: 0
-  11/17/2015 2:28:45PM File detections : 0
-  11/17/2015 2:28:45PM Files cleaned : 0
-  11/17/2015 2:28:45PM Files deleted : 0
-  11/17/2015 2:28:45PM Files not scanned : 0
-  11/17/2015 2:28:45PM Scan Summary (Registry Scanning)
-  11/17/2015 2:28:45PM Keys scanned : 0
-  11/17/2015 2:28:45PM Keys detected : 0
-  11/17/2015 2:28:45PM Keys cleaned : 0
-  11/17/2015 2:28:45PM Keys deleted : 0
-  11/17/2015 2:28:45PM Run time : 0:00:03
-  11/17/2015 2:28:45PM Scan Complete On-Demand Scan
+  11/18/2015 2:28:15PM Engine version = 5700.7163
+  11/18/2015 2:28:15PM AntiVirus DAT version = 7988.0
+  11/18/2015 2:28:15PM Number of detection signatures in EXTRA.DAT = 1
+  11/18/2015 2:28:15PM Names of detection signatures in EXTRA.DAT = Generic BackDoor.u (ED)
+  11/18/2015 2:28:15PM Scan Started On-Demand Scan
+  11/18/2015 2:28:25PM Scan Summary
+  11/18/2015 2:28:25PM Processes scanned : 0
+  11/18/2015 2:28:25PM Processes detected : 0
+  11/18/2015 2:28:25PM Processes cleaned : 0
+  11/18/2015 2:28:25PM Boot sectors scanned : 2
+  11/18/2015 2:28:25PM Boot sectors detected: 0
+  11/18/2015 2:28:25PM Boot sectors cleaned : 0
+  11/18/2015 2:28:25PM Files scanned : 55
+  11/18/2015 2:28:25PM Files with detections: 0
+  11/18/2015 2:28:25PM File detections : 0
+  11/18/2015 2:28:25PM Files cleaned : 0
+  11/18/2015 2:28:25PM Files deleted : 0
+  11/18/2015 2:28:25PM Files not scanned : 0
+  11/18/2015 2:28:25PM Scan Summary (Registry Scanning)
+  11/18/2015 2:28:25PM Keys scanned : 0
+  11/18/2015 2:28:25PM Keys detected : 0
+  11/18/2015 2:28:25PM Keys cleaned : 0
+  11/18/2015 2:28:25PM Keys deleted : 0
+  11/18/2015 2:28:25PM Run time : 0:00:11
+  11/18/2015 2:28:25PM Scan Complete On-Demand Scan
 
 ############### SVN Log Since Last Build ################
-svn log -r 18768:HEAD Source
-------------------------------------------------------------------------  r18851 | yzhu52 | 2015-11-16 23:40:00 -0800 (Mon, 16 Nov 2015) | 8 lines
-  BaseTools: Fix two warning reported in the make phase.
-  when we make BaseTools, it report warnings about VfrError.cpp and VolInfo,
-  so this patch fix this warning.
+svn log -r 18865:HEAD Source
+------------------------------------------------------------------------  r18868 | hchen30 | 2015-11-17 21:38:35 -0800 (Tue, 17 Nov 2015) | 6 lines
+  BaseTool/UPT: Add supporting of decimal numbers for INF_VERSION and DEC_SPECIFICATION
   Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Yonghong Zhu <yonghong.zhu@intel.com>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  Signed-off-by: Hess Chen <hesheng.chen@intel.com>
+  Reviewed-by: Yonghong Zhu <yonghong.zhu@intel.com>
 
 ------------------------------------------------------------------------
