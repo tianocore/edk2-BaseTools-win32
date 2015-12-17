@@ -5,12 +5,12 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014 - 2015, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 19244
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 19333
 
 This directory contains the Win32 binaries.
 
-Build Date:       Mon, 14 Dec 2015 14:28:08 Pacific Standard Time
-Last Changed Rev: 19238
+Build Date:       Thu, 17 Dec 2015 14:28:13 Pacific Standard Time
+Last Changed Rev: 19319
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -29,10 +29,10 @@ Last Changed Rev: 19238
   GenBootSector Version 0.2 Build 19148
   GenCrc32 Version 0.2 Build 19148
   GenDepex.exe Version 0.04 Build 19174
-  GenFds.exe 1.0 Build 19174
+ *GenFds.exe 1.0 Build 19333
   GenFfs Version 0.1 Build 19148
   GenFv Version 0.1 Build 19148
- *GenFw Version 0.2 Build 19244
+  GenFw Version 0.2 Build 19244
   GenPage Version 0.2 Build 19148
   GenPatchPcdTable.exe Version 0.10 Build 19174
   GenSec Version 0.1 Build 19148
@@ -56,66 +56,39 @@ Last Changed Rev: 19238
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1385
-  12/14/2015 2:28:09PM Engine version = 5700.7163
-  12/14/2015 2:28:09PM AntiVirus DAT version = 8014.0
-  12/14/2015 2:28:09PM Number of detection signatures in EXTRA.DAT = None
-  12/14/2015 2:28:09PM Names of detection signatures in EXTRA.DAT = None
-  12/14/2015 2:28:09PM Scan Started On-Demand Scan
-  12/14/2015 2:28:22PM Scan Summary
-  12/14/2015 2:28:22PM Processes scanned : 0
-  12/14/2015 2:28:22PM Processes detected : 0
-  12/14/2015 2:28:22PM Processes cleaned : 0
-  12/14/2015 2:28:22PM Boot sectors scanned : 1
-  12/14/2015 2:28:22PM Boot sectors detected: 0
-  12/14/2015 2:28:22PM Boot sectors cleaned : 0
-  12/14/2015 2:28:22PM Files scanned : 55
-  12/14/2015 2:28:22PM Files with detections: 0
-  12/14/2015 2:28:22PM File detections : 0
-  12/14/2015 2:28:22PM Files cleaned : 0
-  12/14/2015 2:28:22PM Files deleted : 0
-  12/14/2015 2:28:22PM Files not scanned : 0
-  12/14/2015 2:28:22PM Scan Summary (Registry Scanning)
-  12/14/2015 2:28:22PM Keys scanned : 0
-  12/14/2015 2:28:22PM Keys detected : 0
-  12/14/2015 2:28:22PM Keys cleaned : 0
-  12/14/2015 2:28:22PM Keys deleted : 0
-  12/14/2015 2:28:22PM Run time : 0:00:13
-  12/14/2015 2:28:22PM Scan Complete On-Demand Scan
+  12/17/2015 2:28:14PM Engine version = 5700.7163
+  12/17/2015 2:28:14PM AntiVirus DAT version = 8017.0
+  12/17/2015 2:28:14PM Number of detection signatures in EXTRA.DAT = None
+  12/17/2015 2:28:14PM Names of detection signatures in EXTRA.DAT = None
+  12/17/2015 2:28:14PM Scan Started On-Demand Scan
+  12/17/2015 2:28:16PM Scan Summary
+  12/17/2015 2:28:16PM Processes scanned : 0
+  12/17/2015 2:28:16PM Processes detected : 0
+  12/17/2015 2:28:16PM Processes cleaned : 0
+  12/17/2015 2:28:16PM Boot sectors scanned : 1
+  12/17/2015 2:28:16PM Boot sectors detected: 0
+  12/17/2015 2:28:16PM Boot sectors cleaned : 0
+  12/17/2015 2:28:16PM Files scanned : 55
+  12/17/2015 2:28:16PM Files with detections: 0
+  12/17/2015 2:28:16PM File detections : 0
+  12/17/2015 2:28:16PM Files cleaned : 0
+  12/17/2015 2:28:16PM Files deleted : 0
+  12/17/2015 2:28:16PM Files not scanned : 0
+  12/17/2015 2:28:16PM Scan Summary (Registry Scanning)
+  12/17/2015 2:28:16PM Keys scanned : 0
+  12/17/2015 2:28:16PM Keys detected : 0
+  12/17/2015 2:28:16PM Keys cleaned : 0
+  12/17/2015 2:28:16PM Keys deleted : 0
+  12/17/2015 2:28:16PM Run time : 0:00:02
+  12/17/2015 2:28:16PM Scan Complete On-Demand Scan
 
 ############### SVN Log Since Last Build ################
-svn log -r 19174:HEAD Source
-------------------------------------------------------------------------  r19236 | abiesheuvel | 2015-12-13 23:56:02 -0800 (Sun, 13 Dec 2015) | 30 lines
-  BaseTools/GenFw RVCT: fix relocation processing of PT_DYNAMIC sections
-  Unlike GNU ld, which can be instructed to emit symbol based static
-  relocations into fully linked binaries using the --emit-relocs command
-  line switch, the RVCT armlink tool can only emit dynamic relocations
-  into the PT_DYNAMIC segment.
-  This has two consequences
-  . we can only identify absolute relocations, so there is no way to fix
-  up relative relocations between sections, or check their validity in
-  the PE/COFF layout
-  . the r_offset fields of the PT_DYNAMIC DT_REL entries are relative
-  either to the base of the image or to any of its segments but *not* to
-  the base of the input section that contains the location they refer
-  to, and converting them to PE/COFF image offsets is non-trivial unless
-  the sections are laid out in the same way in the ELF and PE/COFF
-  versions of the binary.
-  There is really only one way to deal with this, and that is to require
-  that the ELF and PE/COFF versions of the binary are identical in memory.
-  So enforce that in the code.
-  Also, fix the utterly broken relocation fixup code that dereferences
-  ELF32_R_SYM(r_info) both as a 1-based program header index and a 0-based
-  section header index. If this code ever produced working binaries, it
-  was purely by chance.
+svn log -r 19244:HEAD Source
+------------------------------------------------------------------------  r19319 | yzhu52 | 2015-12-17 01:38:43 -0800 (Thu, 17 Dec 2015) | 7 lines
+  BaseTools: Fix one bug in FD region for multiple workspace support
+  Update the os.path.join to mws.join for FILE/INF/CAPSULE/FV region type.
   Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Ard Biesheuvel <ard.biesheuvel@linaro.org>
+  Signed-off-by: Yonghong Zhu <yonghong.zhu@intel.com>
   Reviewed-by: Liming Gao <liming.gao@intel.com>
-
-------------------------------------------------------------------------  r19238 | hchen30 | 2015-12-14 00:08:21 -0800 (Mon, 14 Dec 2015) | 7 lines
-  BaseTools/Ecc: Fix a bug to report fake issue
-  Fix a bug to ignore the lib ins defined in [components] section but also listed in SkipDir
-  Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Hess Chen <hesheng.chen@intel.com>
-  Reviewed-by: Yonghong Zhu <yonghong.zhu@intel.com>
 
 ------------------------------------------------------------------------
