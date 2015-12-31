@@ -5,11 +5,11 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014 - 2015, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 19579
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 19580
 
 This directory contains the Win32 binaries.
 
-Build Date:       Wed, 30 Dec 2015 14:28:38 Pacific Standard Time
+Build Date:       Thu, 31 Dec 2015 14:28:46 Pacific Standard Time
 Last Changed Rev: 19576
 
 ############### Build System Information ###############
@@ -54,51 +54,30 @@ Last Changed Rev: 19576
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1385
-  12/30/2015 2:28:40PM Engine version = 5700.7163
-  12/30/2015 2:28:40PM AntiVirus DAT version = 8029.0
-  12/30/2015 2:28:40PM Number of detection signatures in EXTRA.DAT = None
-  12/30/2015 2:28:40PM Names of detection signatures in EXTRA.DAT = None
-  12/30/2015 2:28:40PM Scan Started On-Demand Scan
-  12/30/2015 2:28:52PM Scan Summary
-  12/30/2015 2:28:52PM Processes scanned : 0
-  12/30/2015 2:28:52PM Processes detected : 0
-  12/30/2015 2:28:52PM Processes cleaned : 0
-  12/30/2015 2:28:52PM Boot sectors scanned : 2
-  12/30/2015 2:28:52PM Boot sectors detected: 0
-  12/30/2015 2:28:52PM Boot sectors cleaned : 0
-  12/30/2015 2:28:52PM Files scanned : 54
-  12/30/2015 2:28:52PM Files with detections: 0
-  12/30/2015 2:28:52PM File detections : 0
-  12/30/2015 2:28:52PM Files cleaned : 0
-  12/30/2015 2:28:52PM Files deleted : 0
-  12/30/2015 2:28:52PM Files not scanned : 0
-  12/30/2015 2:28:52PM Scan Summary (Registry Scanning)
-  12/30/2015 2:28:52PM Keys scanned : 0
-  12/30/2015 2:28:52PM Keys detected : 0
-  12/30/2015 2:28:52PM Keys cleaned : 0
-  12/30/2015 2:28:52PM Keys deleted : 0
-  12/30/2015 2:28:52PM Run time : 0:00:13
-  12/30/2015 2:28:52PM Scan Complete On-Demand Scan
+  12/31/2015 2:28:47PM Engine version = 5700.7163
+  12/31/2015 2:28:47PM AntiVirus DAT version = 8031.0
+  12/31/2015 2:28:47PM Number of detection signatures in EXTRA.DAT = None
+  12/31/2015 2:28:47PM Names of detection signatures in EXTRA.DAT = None
+  12/31/2015 2:28:47PM Scan Started On-Demand Scan
+  12/31/2015 2:28:50PM Scan Summary
+  12/31/2015 2:28:50PM Processes scanned : 0
+  12/31/2015 2:28:50PM Processes detected : 0
+  12/31/2015 2:28:50PM Processes cleaned : 0
+  12/31/2015 2:28:50PM Boot sectors scanned : 1
+  12/31/2015 2:28:50PM Boot sectors detected: 0
+  12/31/2015 2:28:50PM Boot sectors cleaned : 0
+  12/31/2015 2:28:50PM Files scanned : 54
+  12/31/2015 2:28:50PM Files with detections: 0
+  12/31/2015 2:28:50PM File detections : 0
+  12/31/2015 2:28:50PM Files cleaned : 0
+  12/31/2015 2:28:50PM Files deleted : 0
+  12/31/2015 2:28:50PM Files not scanned : 0
+  12/31/2015 2:28:50PM Scan Summary (Registry Scanning)
+  12/31/2015 2:28:50PM Keys scanned : 0
+  12/31/2015 2:28:50PM Keys detected : 0
+  12/31/2015 2:28:50PM Keys cleaned : 0
+  12/31/2015 2:28:50PM Keys deleted : 0
+  12/31/2015 2:28:50PM Run time : 0:00:03
+  12/31/2015 2:28:50PM Scan Complete On-Demand Scan
 
-############### SVN Log Since Last Build ################
-svn log -r 19333:HEAD Source
-------------------------------------------------------------------------  r19501 | lhauch | 2015-12-23 10:30:20 -0800 (Wed, 23 Dec 2015) | 7 lines
-  BaseTools: Fix Makefile to correctly break during a build failure
-  Updated the Makefile so that nmake will correctly fail if the cxfreeze command fails to complete successfully.
-  Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Larry Hauch <larry.hauch@intel.com>
-  Reviewed-by: Yonghong Zhu <yonghong.zhu@intel.com>
-
-------------------------------------------------------------------------  r19575 | hchen30 | 2015-12-29 18:22:02 -0800 (Tue, 29 Dec 2015) | 5 lines
-  BaseTool/ECC: Add UTF-8 support on ECC tool
-  Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Hess Chen <hesheng.chen@intel.com>
-  Reviewed-by: Yonghong Zhu <yonghong.zhu@intel.com>
-
-------------------------------------------------------------------------  r19576 | hchen30 | 2015-12-29 18:22:30 -0800 (Tue, 29 Dec 2015) | 5 lines
-  BaseTool/UPT: Fix a typo issue
-  Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Hess Chen <hesheng.chen@intel.com>
-  Reviewed-by: Yonghong Zhu <yonghong.zhu@intel.com>
-
-------------------------------------------------------------------------
+############ No SVN Changes Since Last Build ############
