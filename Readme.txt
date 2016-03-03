@@ -5,12 +5,12 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014 - 20165, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 20059
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 20119
 
 This directory contains the Win32 binaries.
 
-Build Date:       Mon, 29 Feb 2016 14:31:25 Pacific Standard Time
-Last Changed Rev: 20055
+Build Date:       Thu, 03 Mar 2016 10:06:20 Pacific Standard Time
+Last Changed Rev: 20090
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -38,8 +38,8 @@ Last Changed Rev: 20055
   GenSec Version 0.1 Build 19914
   GenVtf Version 0.1 Build 19914
   ImportTool.bat Version 1.0
- *LzmaCompress Version 0.2 Build 20059
-  LzmaF86Compress Version 0.2 Build 20059
+ *LzmaCompress Version 0.2 Build 20119
+  LzmaF86Compress Version 0.2 Build 20119
   PatchPcdValue.exe Version 0.10 Build 19914
   Rsa2048Sha256GenerateKeys Version 0.9 Build 19914
   Rsa2048Sha256Sign Version 0.9 Build 19914
@@ -56,41 +56,44 @@ Last Changed Rev: 20055
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1385
-  2/29/2016 2:31:26PM Engine version = 5700.7163
-  2/29/2016 2:31:26PM AntiVirus DAT version = 8089.0
-  2/29/2016 2:31:26PM Number of detection signatures in EXTRA.DAT = None
-  2/29/2016 2:31:26PM Names of detection signatures in EXTRA.DAT = None
-  2/29/2016 2:31:26PM Scan Started On-Demand Scan
-  2/29/2016 2:31:28PM Scan Summary
-  2/29/2016 2:31:28PM Processes scanned : 0
-  2/29/2016 2:31:28PM Processes detected : 0
-  2/29/2016 2:31:28PM Processes cleaned : 0
-  2/29/2016 2:31:28PM Boot sectors scanned : 1
-  2/29/2016 2:31:28PM Boot sectors detected: 0
-  2/29/2016 2:31:28PM Boot sectors cleaned : 0
-  2/29/2016 2:31:28PM Files scanned : 55
-  2/29/2016 2:31:28PM Files with detections: 0
-  2/29/2016 2:31:28PM File detections : 0
-  2/29/2016 2:31:28PM Files cleaned : 0
-  2/29/2016 2:31:28PM Files deleted : 0
-  2/29/2016 2:31:28PM Files not scanned : 0
-  2/29/2016 2:31:28PM Scan Summary (Registry Scanning)
-  2/29/2016 2:31:28PM Keys scanned : 0
-  2/29/2016 2:31:28PM Keys detected : 0
-  2/29/2016 2:31:28PM Keys cleaned : 0
-  2/29/2016 2:31:28PM Keys deleted : 0
-  2/29/2016 2:31:28PM Run time : 0:00:02
-  2/29/2016 2:31:28PM Scan Complete On-Demand Scan
+  3/3/2016 10:06:21AM Engine version = 5700.7163
+  3/3/2016 10:06:21AM AntiVirus DAT version = 8092.0
+  3/3/2016 10:06:21AM Number of detection signatures in EXTRA.DAT = None
+  3/3/2016 10:06:21AM Names of detection signatures in EXTRA.DAT = None
+  3/3/2016 10:06:21AM Scan Started On-Demand Scan
+  3/3/2016 10:06:23AM Scan Summary
+  3/3/2016 10:06:23AM Processes scanned : 0
+  3/3/2016 10:06:23AM Processes detected : 0
+  3/3/2016 10:06:23AM Processes cleaned : 0
+  3/3/2016 10:06:23AM Boot sectors scanned : 1
+  3/3/2016 10:06:23AM Boot sectors detected: 0
+  3/3/2016 10:06:23AM Boot sectors cleaned : 0
+  3/3/2016 10:06:23AM Files scanned : 55
+  3/3/2016 10:06:23AM Files with detections: 0
+  3/3/2016 10:06:23AM File detections : 0
+  3/3/2016 10:06:23AM Files cleaned : 0
+  3/3/2016 10:06:23AM Files deleted : 0
+  3/3/2016 10:06:23AM Files not scanned : 0
+  3/3/2016 10:06:23AM Scan Summary (Registry Scanning)
+  3/3/2016 10:06:23AM Keys scanned : 0
+  3/3/2016 10:06:23AM Keys detected : 0
+  3/3/2016 10:06:23AM Keys cleaned : 0
+  3/3/2016 10:06:23AM Keys deleted : 0
+  3/3/2016 10:06:23AM Run time : 0:00:02
+  3/3/2016 10:06:23AM Scan Complete On-Demand Scan
 
 ############### SVN Log Since Last Build ################
-svn log -r 19914:HEAD Source
-------------------------------------------------------------------------  r20055 | edk2buildsystem | 2016-02-29 09:38:08 -0800 (Mon, 29 Feb 2016) | 9 lines
-  BaseTools: fix LzmaCompress VS2013 make failure
-  when make BaseTools by VS2013, LzmaEnc.c report warning C4127:
-  conditional expression is constant, so this patch fix this issue.
+svn log -r 20059:HEAD Source
+------------------------------------------------------------------------  r20090 | edk2buildsystem | 2016-03-03 09:57:55 -0800 (Thu, 03 Mar 2016) | 12 lines
+  BaseTools/LZMA: fix the format issue for last patch
+  There are no functional changes in this patch. fixing the format base on
+  last commit.
+  The only change is 1) add back the blank line, which can help we better
+  compare with the original LZMA source code. 2) remove the indent of
+  #ifndef and #endif.
   Contributed-under: TianoCore Contribution Agreement 1.0
   Signed-off-by: Yonghong Zhu <yonghong.zhu@intel.com>
   Reviewed-by: Liming Gao <liming.gao@intel.com>
-  (cherry picked from commit b0c583cdd19cc6316cbda82cb79df4346a7db8c7)
+  (cherry picked from commit b9da8fe0e3a1353af0f5d698f449210908bab491)
 
 ------------------------------------------------------------------------
