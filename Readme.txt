@@ -5,12 +5,12 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014 - 2016, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 22316
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 22367
 
 This directory contains the Win32 binaries.
 
-Build Date:       Tue, 09 Aug 2016 03:11:02 Pacific Daylight Time
-Last Changed Rev: 22312
+Build Date:       Fri, 12 Aug 2016 03:11:17 Pacific Daylight Time
+Last Changed Rev: 22360
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -47,8 +47,8 @@ Last Changed Rev: 22312
   TargetTool.exe Version 0.01 Build 22308
   TianoCompress Version 0.1 Build 20909
   Trim.exe Version 0.10 Build 22308
- *UEFI Packaging Tool (UEFIPT) - Revision 1.1 Build Build 22316
-  VfrCompile version  2.01 (UEFI 2.4) Build Build 22308
+  UEFI Packaging Tool (UEFIPT) - Revision 1.1 Build Build 22316
+ *VfrCompile version  2.01 (UEFI 2.4) Build Build 22367
   VolInfo Version 1.0 Build Build 20909
   build.exe Version 0.60 Build 22308
 
@@ -56,41 +56,43 @@ Last Changed Rev: 22312
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1385
-  8/9/2016 3:11:03AM Engine version = 5700.7163
-  8/9/2016 3:11:03AM AntiVirus DAT version = 8251.0
-  8/9/2016 3:11:03AM Number of detection signatures in EXTRA.DAT = None
-  8/9/2016 3:11:03AM Names of detection signatures in EXTRA.DAT = None
-  8/9/2016 3:11:03AM Scan Started On-Demand Scan
-  8/9/2016 3:11:06AM Scan Summary
-  8/9/2016 3:11:06AM Processes scanned : 0
-  8/9/2016 3:11:06AM Processes detected : 0
-  8/9/2016 3:11:06AM Processes cleaned : 0
-  8/9/2016 3:11:06AM Boot sectors scanned : 1
-  8/9/2016 3:11:06AM Boot sectors detected: 0
-  8/9/2016 3:11:06AM Boot sectors cleaned : 0
-  8/9/2016 3:11:06AM Files scanned : 55
-  8/9/2016 3:11:06AM Files with detections: 0
-  8/9/2016 3:11:06AM File detections : 0
-  8/9/2016 3:11:06AM Files cleaned : 0
-  8/9/2016 3:11:06AM Files deleted : 0
-  8/9/2016 3:11:06AM Files not scanned : 0
-  8/9/2016 3:11:06AM Scan Summary (Registry Scanning)
-  8/9/2016 3:11:06AM Keys scanned : 0
-  8/9/2016 3:11:06AM Keys detected : 0
-  8/9/2016 3:11:06AM Keys cleaned : 0
-  8/9/2016 3:11:06AM Keys deleted : 0
-  8/9/2016 3:11:06AM Run time : 0:00:03
-  8/9/2016 3:11:06AM Scan Complete On-Demand Scan
+  8/12/2016 3:11:18AM Engine version = 5700.7163
+  8/12/2016 3:11:18AM AntiVirus DAT version = 8254.0
+  8/12/2016 3:11:18AM Number of detection signatures in EXTRA.DAT = None
+  8/12/2016 3:11:18AM Names of detection signatures in EXTRA.DAT = None
+  8/12/2016 3:11:18AM Scan Started On-Demand Scan
+  8/12/2016 3:11:21AM Scan Summary
+  8/12/2016 3:11:21AM Processes scanned : 0
+  8/12/2016 3:11:21AM Processes detected : 0
+  8/12/2016 3:11:21AM Processes cleaned : 0
+  8/12/2016 3:11:21AM Boot sectors scanned : 1
+  8/12/2016 3:11:21AM Boot sectors detected: 0
+  8/12/2016 3:11:21AM Boot sectors cleaned : 0
+  8/12/2016 3:11:21AM Files scanned : 55
+  8/12/2016 3:11:21AM Files with detections: 0
+  8/12/2016 3:11:21AM File detections : 0
+  8/12/2016 3:11:21AM Files cleaned : 0
+  8/12/2016 3:11:21AM Files deleted : 0
+  8/12/2016 3:11:21AM Files not scanned : 0
+  8/12/2016 3:11:21AM Scan Summary (Registry Scanning)
+  8/12/2016 3:11:21AM Keys scanned : 0
+  8/12/2016 3:11:21AM Keys detected : 0
+  8/12/2016 3:11:21AM Keys cleaned : 0
+  8/12/2016 3:11:21AM Keys deleted : 0
+  8/12/2016 3:11:21AM Run time : 0:00:03
+  8/12/2016 3:11:21AM Scan Complete On-Demand Scan
 
 ############### SVN Log Since Last Build ################
-svn log -r 22308:HEAD Source
-------------------------------------------------------------------------  r22312 | edk2buildsystem | 2016-08-09 02:05:43 -0700 (Tue, 09 Aug 2016) | 9 lines
-  BaseTools/UPT: Fix a install issue
-  Fix a corner case issue of installing a module without
-  any files which causes installing UNI file failure
+svn log -r 22316:HEAD Source
+------------------------------------------------------------------------  r22360 | edk2buildsystem | 2016-08-12 02:05:49 -0700 (Fri, 12 Aug 2016) | 11 lines
+  BaseTool/VfrCompile: Remove reset button opcode in CheckQuestionOpCode
+  "EFI_IFR_RESET_BUTTON_OP" is a statement, not a question,
+  so remove it from function CheckQuestionOpCode.
+  Cc: Liming Gao <liming.gao@intel.com>
+  Cc: Eric Dong <eric.dong@intel.com>
   Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Hess Chen <hesheng.chen@intel.com>
-  Reviewed-by: Yonghong Zhu <yonghong.zhu@intel.com>
-  (cherry picked from commit 9e730bd16418d76e400f87cf852b53f960d1d5b3)
+  Signed-off-by: Dandan Bi <dandan.bi@intel.com>
+  Reviewed-by: Eric Dong <eric.dong@intel.com>
+  (cherry picked from commit 753cf34e29c52bb45d25eb0580e04145f19cd83d)
 
 ------------------------------------------------------------------------
