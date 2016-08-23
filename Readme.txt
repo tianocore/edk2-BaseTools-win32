@@ -5,12 +5,12 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014 - 2016, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 22465
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 22466
 
 This directory contains the Win32 binaries.
 
-Build Date:       Tue, 23 Aug 2016 03:11:02 Pacific Daylight Time
-Last Changed Rev: 22463
+Build Date:       Tue, 23 Aug 2016 16:57:33 Pacific Daylight Time
+Last Changed Rev: 22466
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -29,10 +29,10 @@ Last Changed Rev: 22463
   GenBootSector Version 0.2 Build 22449
   GenCrc32 Version 0.2 Build 22449
   GenDepex.exe Version 0.04 Build 22444
- *GenFds.exe 1.0 Build 22465
+  GenFds.exe 1.0 Build 22465
   GenFfs Version 0.1 Build 22449
   GenFv Version 0.1 Build 22449
-  GenFw Version 0.2 Build 22449
+ *GenFw Version 0.2 Build 22466
   GenPage Version 0.2 Build 22449
   GenPatchPcdTable.exe Version 0.10 Build 22444
   GenSec Version 0.1 Build 22449
@@ -41,6 +41,7 @@ Last Changed Rev: 22463
   LzmaCompress Version 0.2 Build 22449
   LzmaF86Compress Version 0.2 Build 22449
   PatchPcdValue.exe Version 0.10 Build 22444
+ERROR : This tool is missing --version option: Pkcs7Sign.exe
   Rsa2048Sha256GenerateKeys Version 0.9 Build 20528
   Rsa2048Sha256Sign Version 0.9 Build 22444
   Split Version 1.0 Build Build 22449
@@ -56,89 +57,93 @@ Last Changed Rev: 22463
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1385
-  8/23/2016 3:11:03AM Engine version = 5700.7163
-  8/23/2016 3:11:03AM AntiVirus DAT version = 8265.0
-  8/23/2016 3:11:03AM Number of detection signatures in EXTRA.DAT = None
-  8/23/2016 3:11:03AM Names of detection signatures in EXTRA.DAT = None
-  8/23/2016 3:11:03AM Scan Started On-Demand Scan
-  8/23/2016 3:11:05AM Scan Summary
-  8/23/2016 3:11:05AM Processes scanned : 0
-  8/23/2016 3:11:05AM Processes detected : 0
-  8/23/2016 3:11:05AM Processes cleaned : 0
-  8/23/2016 3:11:05AM Boot sectors scanned : 1
-  8/23/2016 3:11:05AM Boot sectors detected: 0
-  8/23/2016 3:11:05AM Boot sectors cleaned : 0
-  8/23/2016 3:11:05AM Files scanned : 62
-  8/23/2016 3:11:05AM Files with detections: 0
-  8/23/2016 3:11:05AM File detections : 0
-  8/23/2016 3:11:05AM Files cleaned : 0
-  8/23/2016 3:11:05AM Files deleted : 0
-  8/23/2016 3:11:05AM Files not scanned : 0
-  8/23/2016 3:11:05AM Scan Summary (Registry Scanning)
-  8/23/2016 3:11:05AM Keys scanned : 0
-  8/23/2016 3:11:05AM Keys detected : 0
-  8/23/2016 3:11:05AM Keys cleaned : 0
-  8/23/2016 3:11:05AM Keys deleted : 0
-  8/23/2016 3:11:05AM Run time : 0:00:02
-  8/23/2016 3:11:05AM Scan Complete On-Demand Scan
+  8/23/2016 4:57:34PM Engine version = 5700.7163
+  8/23/2016 4:57:34PM AntiVirus DAT version = 8266.0
+  8/23/2016 4:57:34PM Number of detection signatures in EXTRA.DAT = None
+  8/23/2016 4:57:34PM Names of detection signatures in EXTRA.DAT = None
+  8/23/2016 4:57:34PM Scan Started On-Demand Scan
+  8/23/2016 4:57:44PM Scan Summary
+  8/23/2016 4:57:44PM Processes scanned : 0
+  8/23/2016 4:57:44PM Processes detected : 0
+  8/23/2016 4:57:44PM Processes cleaned : 0
+  8/23/2016 4:57:44PM Boot sectors scanned : 2
+  8/23/2016 4:57:44PM Boot sectors detected: 0
+  8/23/2016 4:57:44PM Boot sectors cleaned : 0
+  8/23/2016 4:57:44PM Files scanned : 62
+  8/23/2016 4:57:44PM Files with detections: 0
+  8/23/2016 4:57:44PM File detections : 0
+  8/23/2016 4:57:44PM Files cleaned : 0
+  8/23/2016 4:57:44PM Files deleted : 0
+  8/23/2016 4:57:44PM Files not scanned : 0
+  8/23/2016 4:57:44PM Scan Summary (Registry Scanning)
+  8/23/2016 4:57:44PM Keys scanned : 0
+  8/23/2016 4:57:44PM Keys detected : 0
+  8/23/2016 4:57:44PM Keys cleaned : 0
+  8/23/2016 4:57:44PM Keys deleted : 0
+  8/23/2016 4:57:44PM Run time : 0:00:10
+  8/23/2016 4:57:44PM Scan Complete On-Demand Scan
 
 ############### SVN Log Since Last Build ################
-svn log -r 22449:HEAD Source
-------------------------------------------------------------------------  r22449 | edk2buildsystem | 2016-08-22 02:05:54 -0700 (Mon, 22 Aug 2016) | 15 lines
-  BaseTools PeCoffLib: Fix the issue to get RelocationsStripped from TE image
-  If PE image has no relocation section, and has not set RELOCS_STRIPPED,
-  after it is converted to TE image, GenFw will set its relocation section
-  VirtualAddress to non-zero address, and keep Size value as Zero. MdePkg
-  BasePeCoffLib applied this rule to get RelocationsStripped attribute. But,
-  it is missing in BaseTools BasePeCoffLib.
-  Cc: Ard Biesheuvel <ard.biesheuvel@linaro.org>
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
+svn log -r 22465:HEAD Source
+------------------------------------------------------------------------  r22466 | edk2buildsystem | 2016-08-23 14:05:32 -0700 (Tue, 23 Aug 2016) | 67 lines
+  BaseTools/GenFw: ignore dynamic RELA sections
+  When building PIE (ET_DYN) executables, an additional RELA section is
+  emitted (in addition to the per-section .rela.text and .rela.data sections)
+  that is intended to be resolved at runtime by a ET_DYN compatible loader.
+  At the moment, due to the fact that we don't support GOT based relocations,
+  this dynamic RELA section only contains relocations that are redundant,
+  i.e., each R_xxx_RELATIVE relocation it contains duplicates a R_xxx_xx64
+  relocation appearing in .rela.text or .rela.data, and so we can simply
+  ignore this section (and we already ignore it in practice due to the fact
+  that it points to the NULL section, which has the SHF_ALLOC bit cleared).
+  For example,
+  Section Headers:
+  [Nr] Name              Type             Address           Offset
+  Size              EntSize          Flags  Link  Info  Align
+  [ 0]                   NULL             0000000000000000  00000000
+  0000000000000000  0000000000000000           0     0     0
+  [ 1] .text             PROGBITS         0000000000000240  000000c0
+  000000000000427c  0000000000000008  AX       0     0     64
+  [ 2] .rela.text        RELA             0000000000000000  00009310
+  0000000000001bf0  0000000000000018   I       7     1     8
+  [ 3] .data             PROGBITS         00000000000044c0  00004340
+  00000000000046d0  0000000000000000  WA       0     0     64
+  [ 4] .rela.data        RELA             0000000000000000  0000af00
+  0000000000000600  0000000000000018   I       7     3     8
+  [ 5] .rela             RELA             0000000000008bc0  00008a10
+  0000000000000600  0000000000000018           0     0     8
+  [ 6] .shstrtab         STRTAB           0000000000000000  0000b500
+  0000000000000037  0000000000000000           0     0     1
+  [ 7] .symtab           SYMTAB           0000000000000000  00009010
+  0000000000000210  0000000000000018           8    17     8
+  [ 8] .strtab           STRTAB           0000000000000000  00009220
+  00000000000000eb  0000000000000000           0     0     1
+  Relocation section '.rela.data' at offset 0xaf00 contains 64 entries:
+  Offset          Info           Type           Sym. Value    Sym. Name + Addend
+  000000004800  000100000001 R_X86_64_64       0000000000000240 .text + 3f5b
+  000000004808  000100000001 R_X86_64_64       0000000000000240 .text + 3f63
+  000000004810  000100000001 R_X86_64_64       0000000000000240 .text + 3f79
+  000000004818  000100000001 R_X86_64_64       0000000000000240 .text + 3f90
+  000000004820  000100000001 R_X86_64_64       0000000000000240 .text + 3fa6
+  ...
+  Relocation section '.rela' at offset 0x8a10 contains 64 entries:
+  Offset          Info           Type           Sym. Value    Sym. Name + Addend
+  000000004800  000000000008 R_X86_64_RELATIVE                    419b
+  000000004808  000000000008 R_X86_64_RELATIVE                    41a3
+  000000004810  000000000008 R_X86_64_RELATIVE                    41b9
+  000000004818  000000000008 R_X86_64_RELATIVE                    41d0
+  000000004820  000000000008 R_X86_64_RELATIVE                    41e6
+  000000004828  000000000008 R_X86_64_RELATIVE                    41ff
+  ...
+  Note that GOT based relocations result in entries that *only* appear in the
+  dynamic .rela section and not in .rela.text or .rela.data. This means two
+  things if we intend to add support for GOT based relocations:
+  - we must check that a dynamic RELA section exists;
+  - we must filter out duplicates between .rela and .rela.xxx, to prevent
+  emitting duplicate fixups into the PE/COFF .reloc section.
   Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Liming Gao <liming.gao@intel.com>
-  Reviewed-by: Yonghong Zhu <yonghong.zhu@intel.com>
-  Tested-by: Ard Biesheuvel <ard.biesheuvel@linaro.org>
-  (cherry picked from commit 8866d337ea9eba258e942585b172d57d39376e70)
-
-------------------------------------------------------------------------  r22459 | edk2buildsystem | 2016-08-23 02:06:08 -0700 (Tue, 23 Aug 2016) | 10 lines
-  BaseTools: add capsule image header for auth FMP capsule file
-  in last commit 91ae29, it missed to add the
-  EFI_FIRMWARE_MANAGEMENT_CAPSULE_IMAGE_HEADER for the auth FMP capsule.
-  Cc: Liming Gao <liming.gao@intel.com>
-  Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Yonghong Zhu <yonghong.zhu@intel.com>
+  Signed-off-by: Ard Biesheuvel <ard.biesheuvel@linaro.org>
   Reviewed-by: Liming Gao <liming.gao@intel.com>
-  (cherry picked from commit a07901418affc8d357ad319c6dec993cc00d6915)
-
-------------------------------------------------------------------------  r22460 | edk2buildsystem | 2016-08-23 02:06:13 -0700 (Tue, 23 Aug 2016) | 11 lines
-  BaseTools: update BinaryFiles.txt file to add Pkcs7Sign Tool
-  add Pkcs7Sign.exe and related pem file into BinaryFiles.txt for build
-  server to automatically build the binary win32 files.
-  Cc: Liming Gao <liming.gao@intel.com>
-  CC: Erik Bjorge <erik.c.bjorge@intel.com>
-  Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Yonghong Zhu <yonghong.zhu@intel.com>
-  Reviewed-by: Erik Bjorge <erik.c.bjorge@intel.com>
-  (cherry picked from commit 759be99db5d0d4d5b2eb73e110c701e83bdee7ab)
-
-------------------------------------------------------------------------  r22462 | edk2buildsystem | 2016-08-23 02:06:23 -0700 (Tue, 23 Aug 2016) | 9 lines
-  BaseTools GNU Makefile: Add the missing rules for cpp source file
-  Cc: Giri P Mudusuru <giri.p.mudusuru@intel.com>
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
-  Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Liming Gao <liming.gao@intel.com>
-  Reviewed-by: Yonghong Zhu <yonghong.zhu@intel.com>
-  Reviewed-by: Giri P Mudusuru <giri.p.mudusuru@intel.com>
-  (cherry picked from commit 00588512dc05929ff5a9a52830724bee16f72c40)
-
-------------------------------------------------------------------------  r22463 | edk2buildsystem | 2016-08-23 02:06:28 -0700 (Tue, 23 Aug 2016) | 11 lines
-  BaseTools GnuMakefile: Update GCC Flags to the specific one with BUILD_ prefix
-  To avoid the conflict with the default GCC flag name, BUILD_ prefix is added.
-  Cc: Giri P Mudusuru <giri.p.mudusuru@intel.com>
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
-  Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Liming Gao <liming.gao@intel.com>
-  Reviewed-by: Yonghong Zhu <yonghong.zhu@intel.com>
-  Reviewed-by: Giri P Mudusuru <giri.p.mudusuru@intel.com>
-  (cherry picked from commit a61331e8b78ba264f0ccd011b6dc5b9e809730a5)
+  (cherry picked from commit 4962fcfa7d265824f01f74d782d5ed841ec8a72f)
 
 ------------------------------------------------------------------------
