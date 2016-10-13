@@ -5,12 +5,12 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014 - 2016, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 22793
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 22801
 
 This directory contains the Win32 binaries.
 
-Build Date:       Wed, 12 Oct 2016 03:11:06 Pacific Daylight Time
-Last Changed Rev: 22789
+Build Date:       Thu, 13 Oct 2016 03:11:07 Pacific Daylight Time
+Last Changed Rev: 22799
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -29,7 +29,7 @@ Last Changed Rev: 22789
   GenBootSector Version 0.2 Build 22449
   GenCrc32 Version 0.2 Build 22449
   GenDepex.exe Version 0.04 Build 22700
- *GenFds.exe 1.0 Build 22793
+ *GenFds.exe 1.0 Build 22801
   GenFfs Version 0.1 Build 22449
   GenFv Version 0.1 Build 22543
   GenFw Version 0.2 Build 22466
@@ -57,51 +57,45 @@ Last Changed Rev: 22789
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1385
-  10/12/2016 3:11:08AM Engine version = 5700.7163
-  10/12/2016 3:11:08AM AntiVirus DAT version = 8315.0
-  10/12/2016 3:11:08AM Number of detection signatures in EXTRA.DAT = None
-  10/12/2016 3:11:08AM Names of detection signatures in EXTRA.DAT = None
-  10/12/2016 3:11:08AM Scan Started On-Demand Scan
-  10/12/2016 3:11:10AM Scan Summary
-  10/12/2016 3:11:10AM Processes scanned : 0
-  10/12/2016 3:11:10AM Processes detected : 0
-  10/12/2016 3:11:10AM Processes cleaned : 0
-  10/12/2016 3:11:10AM Boot sectors scanned : 1
-  10/12/2016 3:11:10AM Boot sectors detected: 0
-  10/12/2016 3:11:10AM Boot sectors cleaned : 0
-  10/12/2016 3:11:10AM Files scanned : 62
-  10/12/2016 3:11:10AM Files with detections: 0
-  10/12/2016 3:11:10AM File detections : 0
-  10/12/2016 3:11:10AM Files cleaned : 0
-  10/12/2016 3:11:10AM Files deleted : 0
-  10/12/2016 3:11:10AM Files not scanned : 0
-  10/12/2016 3:11:10AM Scan Summary (Registry Scanning)
-  10/12/2016 3:11:10AM Keys scanned : 0
-  10/12/2016 3:11:10AM Keys detected : 0
-  10/12/2016 3:11:10AM Keys cleaned : 0
-  10/12/2016 3:11:10AM Keys deleted : 0
-  10/12/2016 3:11:10AM Run time : 0:00:03
-  10/12/2016 3:11:10AM Scan Complete On-Demand Scan
+  10/13/2016 3:11:08AM Engine version = 5700.7163
+  10/13/2016 3:11:08AM AntiVirus DAT version = 8316.0
+  10/13/2016 3:11:08AM Number of detection signatures in EXTRA.DAT = None
+  10/13/2016 3:11:08AM Names of detection signatures in EXTRA.DAT = None
+  10/13/2016 3:11:08AM Scan Started On-Demand Scan
+  10/13/2016 3:11:10AM Scan Summary
+  10/13/2016 3:11:10AM Processes scanned : 0
+  10/13/2016 3:11:10AM Processes detected : 0
+  10/13/2016 3:11:10AM Processes cleaned : 0
+  10/13/2016 3:11:10AM Boot sectors scanned : 1
+  10/13/2016 3:11:10AM Boot sectors detected: 0
+  10/13/2016 3:11:10AM Boot sectors cleaned : 0
+  10/13/2016 3:11:10AM Files scanned : 62
+  10/13/2016 3:11:10AM Files with detections: 0
+  10/13/2016 3:11:10AM File detections : 0
+  10/13/2016 3:11:10AM Files cleaned : 0
+  10/13/2016 3:11:10AM Files deleted : 0
+  10/13/2016 3:11:10AM Files not scanned : 0
+  10/13/2016 3:11:10AM Scan Summary (Registry Scanning)
+  10/13/2016 3:11:10AM Keys scanned : 0
+  10/13/2016 3:11:10AM Keys detected : 0
+  10/13/2016 3:11:10AM Keys cleaned : 0
+  10/13/2016 3:11:10AM Keys deleted : 0
+  10/13/2016 3:11:10AM Run time : 0:00:02
+  10/13/2016 3:11:10AM Scan Complete On-Demand Scan
 
 ############### SVN Log Since Last Build ################
-svn log -r 22752:HEAD Source
-------------------------------------------------------------------------  r22752 | edk2buildsystem | 2016-10-08 02:07:17 -0700 (Sat, 08 Oct 2016) | 8 lines
-  BaseTools Makefile: Enable O2 option for GCC tool chain
-  Enable O2 option to generate fast code for performance improvement.
-  Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Liming Gao <liming.gao@intel.com>
-  Reviewed-by: Jordan Justen <jordan.l.justen@intel.com>
-  (cherry picked from commit 202726b3ceb33576ac6feb778e48bd851bfe171e)
-
-------------------------------------------------------------------------  r22789 | edk2buildsystem | 2016-10-12 02:06:59 -0700 (Wed, 12 Oct 2016) | 11 lines
-  BaseTools: Extend FMP to support FV statement and FD statement
-  This patch extend the <FmpFileData> to support <FvStatements> and
-  <FdStatenents>, just like the normal [Capsule] section format.
-  In order to fix the bug https://bugzilla.tianocore.org/show_bug.cgi?id=132
+svn log -r 22793:HEAD Source
+------------------------------------------------------------------------  r22799 | edk2buildsystem | 2016-10-12 14:06:00 -0700 (Wed, 12 Oct 2016) | 14 lines
+  BaseTools/GenFds: Support FDF sections in any order
+  https://bugzilla.tianocore.org/show_bug.cgi?id=141
+  This patch updates EDK II FDF parser in GenFds to allow sections
+  to be placed in any order in the FDF file.
+  Cc: Kelly Steele <kelly.steele@intel.com>
+  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
   Cc: Liming Gao <liming.gao@intel.com>
   Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Yonghong Zhu <yonghong.zhu@intel.com>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
-  (cherry picked from commit 19e3aa7a8a8dcd661e0c2c45d139c5a6bda57dbb)
+  Signed-off-by: Michael Kinney <michael.d.kinney@intel.com>
+  Reviewed-by: Yonghong Zhu <yonghong.zhu@intel.com>
+  (cherry picked from commit dd170333f6444a4256e75356a8f0758a40bfb77d)
 
 ------------------------------------------------------------------------
