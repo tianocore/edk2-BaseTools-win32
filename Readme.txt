@@ -5,12 +5,12 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014 - 2016, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 22801
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 22810
 
 This directory contains the Win32 binaries.
 
-Build Date:       Thu, 13 Oct 2016 03:11:07 Pacific Daylight Time
-Last Changed Rev: 22799
+Build Date:       Mon, 17 Oct 2016 03:11:04 Pacific Daylight Time
+Last Changed Rev: 22810
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -29,7 +29,7 @@ Last Changed Rev: 22799
   GenBootSector Version 0.2 Build 22449
   GenCrc32 Version 0.2 Build 22449
   GenDepex.exe Version 0.04 Build 22700
- *GenFds.exe 1.0 Build 22801
+  GenFds.exe 1.0 Build 22801
   GenFfs Version 0.1 Build 22449
   GenFv Version 0.1 Build 22543
   GenFw Version 0.2 Build 22466
@@ -41,7 +41,7 @@ Last Changed Rev: 22799
   LzmaCompress Version 0.2 Build 22449
   LzmaF86Compress Version 0.2 Build 22449
   PatchPcdValue.exe Version 0.10 Build 22700
-  Pkcs7Sign Version 0.9 Build 22543
+ *Pkcs7Sign Version 0.9 Build 22810
   Rsa2048Sha256GenerateKeys Version 0.9 Build 20528
   Rsa2048Sha256Sign Version 0.9 Build 22444
   Split Version 1.0 Build Build 22449
@@ -57,45 +57,47 @@ Last Changed Rev: 22799
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1385
-  10/13/2016 3:11:08AM Engine version = 5700.7163
-  10/13/2016 3:11:08AM AntiVirus DAT version = 8316.0
-  10/13/2016 3:11:08AM Number of detection signatures in EXTRA.DAT = None
-  10/13/2016 3:11:08AM Names of detection signatures in EXTRA.DAT = None
-  10/13/2016 3:11:08AM Scan Started On-Demand Scan
-  10/13/2016 3:11:10AM Scan Summary
-  10/13/2016 3:11:10AM Processes scanned : 0
-  10/13/2016 3:11:10AM Processes detected : 0
-  10/13/2016 3:11:10AM Processes cleaned : 0
-  10/13/2016 3:11:10AM Boot sectors scanned : 1
-  10/13/2016 3:11:10AM Boot sectors detected: 0
-  10/13/2016 3:11:10AM Boot sectors cleaned : 0
-  10/13/2016 3:11:10AM Files scanned : 62
-  10/13/2016 3:11:10AM Files with detections: 0
-  10/13/2016 3:11:10AM File detections : 0
-  10/13/2016 3:11:10AM Files cleaned : 0
-  10/13/2016 3:11:10AM Files deleted : 0
-  10/13/2016 3:11:10AM Files not scanned : 0
-  10/13/2016 3:11:10AM Scan Summary (Registry Scanning)
-  10/13/2016 3:11:10AM Keys scanned : 0
-  10/13/2016 3:11:10AM Keys detected : 0
-  10/13/2016 3:11:10AM Keys cleaned : 0
-  10/13/2016 3:11:10AM Keys deleted : 0
-  10/13/2016 3:11:10AM Run time : 0:00:02
-  10/13/2016 3:11:10AM Scan Complete On-Demand Scan
+  10/17/2016 3:11:06AM Engine version = 5700.7163
+  10/17/2016 3:11:06AM AntiVirus DAT version = 8320.0
+  10/17/2016 3:11:06AM Number of detection signatures in EXTRA.DAT = None
+  10/17/2016 3:11:06AM Names of detection signatures in EXTRA.DAT = None
+  10/17/2016 3:11:06AM Scan Started On-Demand Scan
+  10/17/2016 3:11:09AM Scan Summary
+  10/17/2016 3:11:09AM Processes scanned : 0
+  10/17/2016 3:11:09AM Processes detected : 0
+  10/17/2016 3:11:09AM Processes cleaned : 0
+  10/17/2016 3:11:09AM Boot sectors scanned : 1
+  10/17/2016 3:11:09AM Boot sectors detected: 0
+  10/17/2016 3:11:09AM Boot sectors cleaned : 0
+  10/17/2016 3:11:09AM Files scanned : 62
+  10/17/2016 3:11:09AM Files with detections: 0
+  10/17/2016 3:11:09AM File detections : 0
+  10/17/2016 3:11:09AM Files cleaned : 0
+  10/17/2016 3:11:09AM Files deleted : 0
+  10/17/2016 3:11:09AM Files not scanned : 0
+  10/17/2016 3:11:09AM Scan Summary (Registry Scanning)
+  10/17/2016 3:11:09AM Keys scanned : 0
+  10/17/2016 3:11:09AM Keys detected : 0
+  10/17/2016 3:11:09AM Keys cleaned : 0
+  10/17/2016 3:11:09AM Keys deleted : 0
+  10/17/2016 3:11:09AM Run time : 0:00:04
+  10/17/2016 3:11:09AM Scan Complete On-Demand Scan
 
 ############### SVN Log Since Last Build ################
-svn log -r 22793:HEAD Source
-------------------------------------------------------------------------  r22799 | edk2buildsystem | 2016-10-12 14:06:00 -0700 (Wed, 12 Oct 2016) | 14 lines
-  BaseTools/GenFds: Support FDF sections in any order
-  https://bugzilla.tianocore.org/show_bug.cgi?id=141
-  This patch updates EDK II FDF parser in GenFds to allow sections
-  to be placed in any order in the FDF file.
-  Cc: Kelly Steele <kelly.steele@intel.com>
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
+svn log -r 22801:HEAD Source
+------------------------------------------------------------------------  r22810 | edk2buildsystem | 2016-10-17 02:05:32 -0700 (Mon, 17 Oct 2016) | 15 lines
+  BaseTools: Update sign tool to make MonotonicCount *after* Payload
+  The WIN_CERTIFICATE_UEFI_GUID AuthInfo defined in the UEFI spec
+  mentioned that It is a signature across the image data and the
+  Monotonic Count value. After clarification, we do the signature
+  calculation, we put MonotonicCount after Payload.
   Cc: Liming Gao <liming.gao@intel.com>
+  Cc: Jiewen Yao <jiewen.yao@intel.com>
   Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Michael Kinney <michael.d.kinney@intel.com>
-  Reviewed-by: Yonghong Zhu <yonghong.zhu@intel.com>
-  (cherry picked from commit dd170333f6444a4256e75356a8f0758a40bfb77d)
+  Signed-off-by: Yonghong Zhu <yonghong.zhu@intel.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  Reviewed-by: Jiewen Yao <jiewen.yao@intel.com>
+  Tested-by: Jiewen Yao <jiewen.yao@intel.com>
+  (cherry picked from commit 245cda6641ade1f1013c2d5c9c838f2706636828)
 
 ------------------------------------------------------------------------
