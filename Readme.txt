@@ -5,12 +5,12 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014 - 2016, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 23606
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 23633
 
 This directory contains the Win32 binaries.
 
-Build Date:       Tue, 20 Dec 2016 03:11:15 Pacific Standard Time
-Last Changed Rev: 23603
+Build Date:       Fri, 23 Dec 2016 03:11:35 Pacific Standard Time
+Last Changed Rev: 23633
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -49,7 +49,7 @@ Last Changed Rev: 23603
   TianoCompress Version 0.1 Build 23431
   Trim.exe Version 0.10 Build 23459
   UEFI Packaging Tool (UEFIPT) - Revision 1.1 Build Build 22854
- *VfrCompile version  2.01 (UEFI 2.4) Build Build 23606
+ *VfrCompile version  2.01 (UEFI 2.4) Build Build 23633
   VolInfo Version 1.0 Build Build 23468
   build.exe Version 0.60 Build 23459
 
@@ -57,78 +57,40 @@ Last Changed Rev: 23603
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1385
-  12/20/2016 3:11:17AM Engine version = 5700.7163
-  12/20/2016 3:11:17AM AntiVirus DAT version = 8384.0
-  12/20/2016 3:11:17AM Number of detection signatures in EXTRA.DAT = None
-  12/20/2016 3:11:17AM Names of detection signatures in EXTRA.DAT = None
-  12/20/2016 3:11:17AM Scan Started On-Demand Scan
-  12/20/2016 3:11:27AM Scan Summary
-  12/20/2016 3:11:27AM Processes scanned : 0
-  12/20/2016 3:11:27AM Processes detected : 0
-  12/20/2016 3:11:27AM Processes cleaned : 0
-  12/20/2016 3:11:27AM Boot sectors scanned : 2
-  12/20/2016 3:11:27AM Boot sectors detected: 0
-  12/20/2016 3:11:27AM Boot sectors cleaned : 0
-  12/20/2016 3:11:27AM Files scanned : 62
-  12/20/2016 3:11:27AM Files with detections: 0
-  12/20/2016 3:11:27AM File detections : 0
-  12/20/2016 3:11:27AM Files cleaned : 0
-  12/20/2016 3:11:27AM Files deleted : 0
-  12/20/2016 3:11:27AM Files not scanned : 0
-  12/20/2016 3:11:27AM Scan Summary (Registry Scanning)
-  12/20/2016 3:11:27AM Keys scanned : 0
-  12/20/2016 3:11:27AM Keys detected : 0
-  12/20/2016 3:11:27AM Keys cleaned : 0
-  12/20/2016 3:11:27AM Keys deleted : 0
-  12/20/2016 3:11:27AM Run time : 0:00:11
-  12/20/2016 3:11:27AM Scan Complete On-Demand Scan
+  12/23/2016 3:11:37AM Engine version = 5700.7163
+  12/23/2016 3:11:37AM AntiVirus DAT version = 8387.0
+  12/23/2016 3:11:37AM Number of detection signatures in EXTRA.DAT = None
+  12/23/2016 3:11:37AM Names of detection signatures in EXTRA.DAT = None
+  12/23/2016 3:11:37AM Scan Started On-Demand Scan
+  12/23/2016 3:11:47AM Scan Summary
+  12/23/2016 3:11:47AM Processes scanned : 0
+  12/23/2016 3:11:47AM Processes detected : 0
+  12/23/2016 3:11:47AM Processes cleaned : 0
+  12/23/2016 3:11:47AM Boot sectors scanned : 2
+  12/23/2016 3:11:47AM Boot sectors detected: 0
+  12/23/2016 3:11:47AM Boot sectors cleaned : 0
+  12/23/2016 3:11:47AM Files scanned : 62
+  12/23/2016 3:11:47AM Files with detections: 0
+  12/23/2016 3:11:47AM File detections : 0
+  12/23/2016 3:11:47AM Files cleaned : 0
+  12/23/2016 3:11:47AM Files deleted : 0
+  12/23/2016 3:11:47AM Files not scanned : 0
+  12/23/2016 3:11:47AM Scan Summary (Registry Scanning)
+  12/23/2016 3:11:47AM Keys scanned : 0
+  12/23/2016 3:11:47AM Keys detected : 0
+  12/23/2016 3:11:47AM Keys cleaned : 0
+  12/23/2016 3:11:47AM Keys deleted : 0
+  12/23/2016 3:11:47AM Run time : 0:00:10
+  12/23/2016 3:11:47AM Scan Complete On-Demand Scan
 
 ############### SVN Log Since Last Build ################
-svn log -r 23468:HEAD Source
-------------------------------------------------------------------------  r23600 | edk2buildsystem | 2016-12-20 02:06:37 -0800 (Tue, 20 Dec 2016) | 12 lines
-  BaseTools: fix format-security build warnings
-  Fix build warnings of "format not a string literal and no format
-  arguments [-Wformat-security]" for BaseTools, while using "gcc version
-  4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3)".
+svn log -r 23606:HEAD Source
+------------------------------------------------------------------------  r23633 | edk2buildsystem | 2016-12-23 02:05:55 -0800 (Fri, 23 Dec 2016) | 8 lines
+  BaseTools/Pccts: Resolve GCC sting format mismatch build warning
+  https://bugzilla.tianocore.org/show_bug.cgi?id=282
   Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Heyi Guo <heyi.guo@linaro.org>
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
-  Cc: Liming Gao <liming.gao@intel.com>
+  Signed-off-by: Hao Wu <hao.a.wu@intel.com>
   Reviewed-by: Liming Gao <liming.gao@intel.com>
-  (cherry picked from commit 5b26adf03a0b66b741ff05daee985888fe1d636f)
-
-------------------------------------------------------------------------  r23601 | edk2buildsystem | 2016-12-20 02:06:42 -0800 (Tue, 20 Dec 2016) | 12 lines
-  BaseTools: fix format type build warnings
-  Fix build warnings of "format ?%d? expects argument of type ?int?, but
-  argument 5 has type ?long unsigned int? [-Wformat=]" for BaseTools,
-  while using "gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3)".
-  Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Heyi Guo <heyi.guo@linaro.org>
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
-  Cc: Liming Gao <liming.gao@intel.com>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
-  (cherry picked from commit 8230d45bba517d78c20634425587efeb6fa14d7c)
-
-------------------------------------------------------------------------  r23602 | edk2buildsystem | 2016-12-20 02:06:46 -0800 (Tue, 20 Dec 2016) | 12 lines
-  BaseTools: fix write-strings build warnings
-  Fix build warnings of "deprecated conversion from string constant to
-  ?CHAR8* {aka char*}? [-Wwrite-strings]" for BaseTools, while using
-  "gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3)".
-  Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Heyi Guo <heyi.guo@linaro.org>
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
-  Cc: Liming Gao <liming.gao@intel.com>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
-  (cherry picked from commit 00de920a0339e78824cdb9015f66c5a98644e0b6)
-
-------------------------------------------------------------------------  r23603 | edk2buildsystem | 2016-12-20 02:06:50 -0800 (Tue, 20 Dec 2016) | 10 lines
-  BaseTools GCC makefile: disable unused-result warning for CPP file
-  This warning has been disabled for C file. To be same, it is also disabled
-  for CPP file.
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
-  Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Liming Gao <liming.gao@intel.com>
-  Reviewed-by: Yonghong Zhu <yonghong.zhu@intel.com>
-  (cherry picked from commit 4fa9134e47bfb3b7cd9348c8d44fdb029830018b)
+  (cherry picked from commit 0a64f49fde09928b6061543b08e6da195e2abfbd)
 
 ------------------------------------------------------------------------
