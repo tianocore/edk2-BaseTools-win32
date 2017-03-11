@@ -9,7 +9,7 @@ https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for thi
 
 This directory contains the Win32 binaries.
 
-Build Date:       Fri, 10 Mar 2017 03:11:07 Pacific Standard Time
+Build Date:       Sat, 11 Mar 2017 03:11:11 Pacific Standard Time
 Last Changed Rev: 24074
 
 ############### Build System Information ###############
@@ -55,30 +55,30 @@ Last Changed Rev: 24074
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1385
-  3/10/2017 3:11:08AM Engine version = 5700.7163
-  3/10/2017 3:11:08AM AntiVirus DAT version = 8462.0
-  3/10/2017 3:11:08AM Number of detection signatures in EXTRA.DAT = None
-  3/10/2017 3:11:08AM Names of detection signatures in EXTRA.DAT = None
-  3/10/2017 3:11:08AM Scan Started On-Demand Scan
-  3/10/2017 3:11:17AM Scan Summary
-  3/10/2017 3:11:17AM Processes scanned : 0
-  3/10/2017 3:11:17AM Processes detected : 0
-  3/10/2017 3:11:17AM Processes cleaned : 0
-  3/10/2017 3:11:17AM Boot sectors scanned : 2
-  3/10/2017 3:11:17AM Boot sectors detected: 0
-  3/10/2017 3:11:17AM Boot sectors cleaned : 0
-  3/10/2017 3:11:17AM Files scanned : 61
-  3/10/2017 3:11:17AM Files with detections: 0
-  3/10/2017 3:11:17AM File detections : 0
-  3/10/2017 3:11:17AM Files cleaned : 0
-  3/10/2017 3:11:17AM Files deleted : 0
-  3/10/2017 3:11:17AM Files not scanned : 0
-  3/10/2017 3:11:17AM Scan Summary (Registry Scanning)
-  3/10/2017 3:11:17AM Keys scanned : 0
-  3/10/2017 3:11:17AM Keys detected : 0
-  3/10/2017 3:11:17AM Keys cleaned : 0
-  3/10/2017 3:11:17AM Keys deleted : 0
-  3/10/2017 3:11:17AM Run time : 0:00:10
-  3/10/2017 3:11:17AM Scan Complete On-Demand Scan
+  3/11/2017 3:11:13AM Engine version = 5700.7163
+  3/11/2017 3:11:13AM AntiVirus DAT version = 8463.0
+  3/11/2017 3:11:13AM Number of detection signatures in EXTRA.DAT = None
+  3/11/2017 3:11:13AM Names of detection signatures in EXTRA.DAT = None
+  3/11/2017 3:11:13AM Scan Started On-Demand Scan
+  3/11/2017 3:11:22AM Scan Summary
+  3/11/2017 3:11:22AM Processes scanned : 0
+  3/11/2017 3:11:22AM Processes detected : 0
+  3/11/2017 3:11:22AM Processes cleaned : 0
+  3/11/2017 3:11:22AM Boot sectors scanned : 2
+  3/11/2017 3:11:22AM Boot sectors detected: 0
+  3/11/2017 3:11:22AM Boot sectors cleaned : 0
+  3/11/2017 3:11:22AM Files scanned : 61
+  3/11/2017 3:11:22AM Files with detections: 0
+  3/11/2017 3:11:22AM File detections : 0
+  3/11/2017 3:11:22AM Files cleaned : 0
+  3/11/2017 3:11:22AM Files deleted : 0
+  3/11/2017 3:11:22AM Files not scanned : 0
+  3/11/2017 3:11:22AM Scan Summary (Registry Scanning)
+  3/11/2017 3:11:22AM Keys scanned : 0
+  3/11/2017 3:11:22AM Keys detected : 0
+  3/11/2017 3:11:22AM Keys cleaned : 0
+  3/11/2017 3:11:22AM Keys deleted : 0
+  3/11/2017 3:11:22AM Run time : 0:00:10
+  3/11/2017 3:11:22AM Scan Complete On-Demand Scan
 
 ############ No SVN Changes Since Last Build ############
