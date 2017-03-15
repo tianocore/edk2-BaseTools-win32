@@ -5,12 +5,12 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014 - 2017, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 24096
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 24130
 
 This directory contains the Win32 binaries.
 
-Build Date:       Sun, 12 Mar 2017 03:11:12 Pacific Daylight Time
-Last Changed Rev: 24074
+Build Date:       Wed, 15 Mar 2017 03:11:07 Pacific Daylight Time
+Last Changed Rev: 24111
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -48,7 +48,7 @@ Last Changed Rev: 24074
   TargetTool.exe Version 0.01 Build 23940
   TianoCompress Version 0.1 Build 23431
   Trim.exe Version 0.10 Build 23940
- *UEFI Packaging Tool (UEFIPT) - Revision 1.1 Build Build 24096
+ *UEFI Packaging Tool (UEFIPT) - Revision 1.1 Build Build 24130
   VfrCompile version  2.01 (UEFI 2.4) Build Build 23932
   VolInfo Version 1.0 Build Build 24061
   build.exe Version 0.60 Build 23940
@@ -57,30 +57,41 @@ Last Changed Rev: 24074
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1385
-  3/12/2017 3:11:14AM Engine version = 5700.7163
-  3/12/2017 3:11:14AM AntiVirus DAT version = 8464.0
-  3/12/2017 3:11:14AM Number of detection signatures in EXTRA.DAT = None
-  3/12/2017 3:11:14AM Names of detection signatures in EXTRA.DAT = None
-  3/12/2017 3:11:14AM Scan Started On-Demand Scan
-  3/12/2017 3:11:24AM Scan Summary
-  3/12/2017 3:11:24AM Processes scanned : 0
-  3/12/2017 3:11:24AM Processes detected : 0
-  3/12/2017 3:11:24AM Processes cleaned : 0
-  3/12/2017 3:11:24AM Boot sectors scanned : 2
-  3/12/2017 3:11:24AM Boot sectors detected: 0
-  3/12/2017 3:11:24AM Boot sectors cleaned : 0
-  3/12/2017 3:11:24AM Files scanned : 62
-  3/12/2017 3:11:24AM Files with detections: 0
-  3/12/2017 3:11:24AM File detections : 0
-  3/12/2017 3:11:24AM Files cleaned : 0
-  3/12/2017 3:11:24AM Files deleted : 0
-  3/12/2017 3:11:24AM Files not scanned : 0
-  3/12/2017 3:11:24AM Scan Summary (Registry Scanning)
-  3/12/2017 3:11:24AM Keys scanned : 0
-  3/12/2017 3:11:24AM Keys detected : 0
-  3/12/2017 3:11:24AM Keys cleaned : 0
-  3/12/2017 3:11:24AM Keys deleted : 0
-  3/12/2017 3:11:24AM Run time : 0:00:10
-  3/12/2017 3:11:24AM Scan Complete On-Demand Scan
+  3/15/2017 3:11:08AM Engine version = 5700.7163
+  3/15/2017 3:11:08AM AntiVirus DAT version = 8467.0
+  3/15/2017 3:11:08AM Number of detection signatures in EXTRA.DAT = None
+  3/15/2017 3:11:08AM Names of detection signatures in EXTRA.DAT = None
+  3/15/2017 3:11:08AM Scan Started On-Demand Scan
+  3/15/2017 3:11:19AM Scan Summary
+  3/15/2017 3:11:19AM Processes scanned : 0
+  3/15/2017 3:11:19AM Processes detected : 0
+  3/15/2017 3:11:19AM Processes cleaned : 0
+  3/15/2017 3:11:19AM Boot sectors scanned : 2
+  3/15/2017 3:11:19AM Boot sectors detected: 0
+  3/15/2017 3:11:19AM Boot sectors cleaned : 0
+  3/15/2017 3:11:19AM Files scanned : 62
+  3/15/2017 3:11:19AM Files with detections: 0
+  3/15/2017 3:11:19AM File detections : 0
+  3/15/2017 3:11:19AM Files cleaned : 0
+  3/15/2017 3:11:19AM Files deleted : 0
+  3/15/2017 3:11:19AM Files not scanned : 0
+  3/15/2017 3:11:19AM Scan Summary (Registry Scanning)
+  3/15/2017 3:11:19AM Keys scanned : 0
+  3/15/2017 3:11:19AM Keys detected : 0
+  3/15/2017 3:11:19AM Keys cleaned : 0
+  3/15/2017 3:11:19AM Keys deleted : 0
+  3/15/2017 3:11:19AM Run time : 0:00:11
+  3/15/2017 3:11:19AM Scan Complete On-Demand Scan
 
-############ No SVN Changes Since Last Build ############
+############### SVN Log Since Last Build ################
+svn log -r 24096:HEAD Source
+------------------------------------------------------------------------  r24111 | edk2buildsystem | 2017-03-14 14:05:45 -0700 (Tue, 14 Mar 2017) | 9 lines
+  BaseTools/UPT: Fix an issue in subst command
+  UPT used to use "B:" as the temp directory which may cause conflict,
+  now it will choose a valid volume. Also UPT now accepts empty sections.
+  Contributed-under: TianoCore Contribution Agreement 1.0
+  Signed-off-by: Hess Chen <hesheng.chen@intel.com>
+  Reviewed-by: Yonghong Zhu <yonghong.zhu@intel.com>
+  (cherry picked from commit c03f5b2c42911c6af436beb7bbc4f63dd054fc83)
+
+------------------------------------------------------------------------
