@@ -5,12 +5,12 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014 - 2017, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 24895
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 24909
 
 This directory contains the Win32 binaries.
 
-Build Date:       Thu, 06 Jul 2017 03:11:51 Pacific Daylight Time
-Last Changed Rev: 24895
+Build Date:       Fri, 07 Jul 2017 08:13:09 Pacific Daylight Time
+Last Changed Rev: 24909
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -21,7 +21,7 @@ Last Changed Rev: 24895
   antlr3        = 3.0.1
 
 ##################### Tool Versions #####################
-  Intel(r) Binary Product Data Generation Tool (Intel(r) BPDG) - Version 1.0 Build Build 24834
+ *Intel(r) Binary Product Data Generation Tool (Intel(r) BPDG) - Version 1.0 Build Build 24909
   BootSectImage Version 1.0 Build Build 23431
   Brotli Version 0.5.2 Build 24577
   Brotli Version 0.5.2 Build 24577
@@ -30,71 +30,63 @@ Last Changed Rev: 24895
   EfiRom Version 0.1 Build 23431
   GenBootSector Version 0.2 Build 23431
   GenCrc32 Version 0.2 Build 23431
-  GenDepex.exe Version 0.04 Build 24834
-  GenFds.exe 1.0 Build 24834
-  GenFfs Version 0.1 Build 23431
+ *GenDepex.exe Version 0.04 Build 24909
+ *GenFds.exe 1.0 Build 24909
+ *GenFfs Version 0.1 Build 24909
   GenFv Version 0.1 Build 23431
- *GenFw Version 0.2 Build 24895
+ *GenFw Version 0.2 Build 24909
   GenPage Version 0.2 Build 23431
-  GenPatchPcdTable.exe Version 0.10 Build 24834
+ *GenPatchPcdTable.exe Version 0.10 Build 24909
   GenSec Version 0.1 Build 23431
   GenVtf Version 0.1 Build 24061
   ImportTool.bat Version 1.0
   LzmaCompress Version 0.2 Build 23431
   LzmaF86Compress Version 0.2 Build 23431
-  PatchPcdValue.exe Version 0.10 Build 24834
+ *PatchPcdValue.exe Version 0.10 Build 24909
   Pkcs7Sign Version 0.9 Build 24507
   Rsa2048Sha256GenerateKeys Version 0.9 Build 24507
   Rsa2048Sha256Sign Version 0.9 Build 24507
   Split Version 1.0 Build Build 23431
-  TargetTool.exe Version 0.01 Build 24834
+ *TargetTool.exe Version 0.01 Build 24909
   TianoCompress Version 0.1 Build 23431
-  Trim.exe Version 0.10 Build 24834
+ *Trim.exe Version 0.10 Build 24909
   UEFI Packaging Tool (UEFIPT) - Revision 1.1 Build Build 24289
   VfrCompile version  2.01 (UEFI 2.4) Build Build 23932
   VolInfo Version 1.0 Build Build 24507
-  build.exe Version 0.60 Build 24834
+ *build.exe Version 0.60 Build 24909
 
 * This tool was updated
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1385
-  7/6/2017 3:11:52AM Engine version = 5800.7501
-  7/6/2017 3:11:52AM AntiVirus DAT version = 8582.0
-  7/6/2017 3:11:52AM Number of detection signatures in EXTRA.DAT = None
-  7/6/2017 3:11:52AM Names of detection signatures in EXTRA.DAT = None
-  7/6/2017 3:11:52AM Scan Started On-Demand Scan
-  7/6/2017 3:12:37AM Scan Summary
-  7/6/2017 3:12:37AM Processes scanned : 0
-  7/6/2017 3:12:37AM Processes detected : 0
-  7/6/2017 3:12:37AM Processes cleaned : 0
-  7/6/2017 3:12:37AM Boot sectors scanned : 2
-  7/6/2017 3:12:37AM Boot sectors detected: 0
-  7/6/2017 3:12:37AM Boot sectors cleaned : 0
-  7/6/2017 3:12:37AM Files scanned : 64
-  7/6/2017 3:12:37AM Files with detections: 0
-  7/6/2017 3:12:37AM File detections : 0
-  7/6/2017 3:12:37AM Files cleaned : 0
-  7/6/2017 3:12:37AM Files deleted : 0
-  7/6/2017 3:12:37AM Files not scanned : 0
-  7/6/2017 3:12:37AM Scan Summary (Registry Scanning)
-  7/6/2017 3:12:37AM Keys scanned : 0
-  7/6/2017 3:12:37AM Keys detected : 0
-  7/6/2017 3:12:37AM Keys cleaned : 0
-  7/6/2017 3:12:37AM Keys deleted : 0
-  7/6/2017 3:12:37AM Run time : 0:00:45
-  7/6/2017 3:12:37AM Scan Complete On-Demand Scan
+  7/7/2017 8:13:10AM Engine version = 5800.7501
+  7/7/2017 8:13:10AM AntiVirus DAT version = 8583.0
+  7/7/2017 8:13:10AM Number of detection signatures in EXTRA.DAT = None
+  7/7/2017 8:13:10AM Names of detection signatures in EXTRA.DAT = None
+  7/7/2017 8:13:10AM Scan Started On-Demand Scan
+  7/7/2017 8:13:21AM Scan Summary
+  7/7/2017 8:13:21AM Processes scanned : 0
+  7/7/2017 8:13:21AM Processes detected : 0
+  7/7/2017 8:13:21AM Processes cleaned : 0
+  7/7/2017 8:13:21AM Boot sectors scanned : 2
+  7/7/2017 8:13:21AM Boot sectors detected: 0
+  7/7/2017 8:13:21AM Boot sectors cleaned : 0
+  7/7/2017 8:13:21AM Files scanned : 66
+  7/7/2017 8:13:21AM Files with detections: 0
+  7/7/2017 8:13:21AM File detections : 0
+  7/7/2017 8:13:21AM Files cleaned : 0
+  7/7/2017 8:13:21AM Files deleted : 0
+  7/7/2017 8:13:21AM Files not scanned : 0
+  7/7/2017 8:13:21AM Scan Summary (Registry Scanning)
+  7/7/2017 8:13:21AM Keys scanned : 0
+  7/7/2017 8:13:21AM Keys detected : 0
+  7/7/2017 8:13:21AM Keys cleaned : 0
+  7/7/2017 8:13:21AM Keys deleted : 0
+  7/7/2017 8:13:21AM Run time : 0:00:11
+  7/7/2017 8:13:21AM Scan Complete On-Demand Scan
 
 ############### SVN Log Since Last Build ################
-svn log -r 24877:HEAD Source
-------------------------------------------------------------------------  r24877 | edk2buildsystem | 2017-07-05 02:05:54 -0700 (Wed, 05 Jul 2017) | 8 lines
-  BaseTools: Update GenFw to clear unused debug entry generated by VS tool chain
-  https://bugzilla.tianocore.org/show_bug.cgi?id=600
-  Contributed-under: TianoCore Contribution Agreement 1.0
-  Signed-off-by: Liming Gao <liming.gao@intel.com>
-  Reviewed-by: Yonghong Zhu <yonghong.zhu@intel.com>
-  (cherry picked from commit e4129b0e5897d76885170bec9da996b266f185f9)
-
+svn log -r 24895:HEAD Source
 ------------------------------------------------------------------------  r24895 | edk2buildsystem | 2017-07-06 02:07:12 -0700 (Thu, 06 Jul 2017) | 41 lines
   BaseTools/GenFw: disregard payload in PE debug directory entry size
   Currently, the PE/COFF conversion routines in GenFw add a so-called
@@ -131,5 +123,125 @@ svn log -r 24877:HEAD Source
   Tested-by: Laszlo Ersek <lersek@redhat.com>
   Reviewed-by: Liming Gao <liming.gao@intel.com>
   (cherry picked from commit 60e85a39fe49071683f3ac5e208f1582511d26bf)
+
+------------------------------------------------------------------------  r24900 | edk2buildsystem | 2017-07-07 02:06:00 -0700 (Fri, 07 Jul 2017) | 13 lines
+  BaseTools/GenFfs: add FFS file types for MM modules.
+  PI specification v1.5 defines new firmware volume file types
+  for Management Mode (MM).
+  This patch adds the new file type EFI_FV_FILETYPE_MM_STANDALONE and
+  EFI_FV_FILETYPE_MM_CORE_STANDALONE in GenFfs tool.
+  Contributed-under: TianoCore Contribution Agreement 1.0
+  Signed-off-by: Jiewen Yao <jiewen.yao@intel.com>
+  Signed-off-by: Supreeth Venkatesh <supreeth.venkatesh@arm.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit 116f23e8b22001249212f1ed945920994584c220)
+
+------------------------------------------------------------------------  r24901 | edk2buildsystem | 2017-07-07 02:06:05 -0700 (Fri, 07 Jul 2017) | 13 lines
+  BaseTools/GenFw: recognize MM file types as EFI Boot Service Drivers.
+  PI v1.5 Specification Volume 4 defines Management Mode Core Interface.
+  In order to support Management Mode Core Interface, Module Types
+  MM_STANDALONE, MM_CORE_STANDALONE are needed.
+  This patch ensures that MM_STANDALONE, MM_CORE_STANDALONE Modules are
+  treated as EFI Boot Service Driver in GenFw tool.
+  Contributed-under: TianoCore Contribution Agreement 1.0
+  Signed-off-by: Jiewen Yao <jiewen.yao@intel.com>
+  Signed-off-by: Supreeth Venkatesh <supreeth.venkatesh@arm.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit 87d9a2b3160ee93c111b419c477ae85dfc3d18dd)
+
+------------------------------------------------------------------------  r24902 | edk2buildsystem | 2017-07-07 02:06:10 -0700 (Fri, 07 Jul 2017) | 21 lines
+  BaseTools/AutoGen: auto generate MM template APIs and dependencies.
+  This patch adds changes to auto generate MM_CORE_STANDALONE and
+  MM_STANDALONE Entry Point templates.
+  Also, it adds changes to help auto generate dependency expressions for
+  MM_STANDALONE modules.
+  PI Specification v1.5 specifies Management Mode System Table (MMST)
+  which is  a collection of common services for managing
+  MMRAM allocation and providing basic I/O services. MMST is similar to
+  the UEFI System Table. (Currently, EFI_SMM_SYSTEM_TABLE2 defines
+  Management Mode System Table)
+  Some of auto generated MM_CORE_STANDALONE and MM_STANDALONE template
+  APIs use MMST as parameter.
+  Contributed-under: TianoCore Contribution Agreement 1.0
+  Signed-off-by: Jiewen Yao <jiewen.yao@intel.com>
+  Signed-off-by: Supreeth Venkatesh <supreeth.venkatesh@arm.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit 5a9c3e3e588007d3256877f4834a22bde68cae7b)
+
+------------------------------------------------------------------------  r24903 | edk2buildsystem | 2017-07-07 02:06:15 -0700 (Fri, 07 Jul 2017) | 11 lines
+  BaseTools/Common: add MM Module data types.
+  This patch adds SUP_MODULE_MM_STANDALONE and
+  SUP_MODULE_MM_CORE_STANDALONE data types and includes it in
+  SUP_MODULE_LIST.
+  Contributed-under: TianoCore Contribution Agreement 1.0
+  Signed-off-by: Jiewen Yao <jiewen.yao@intel.com>
+  Signed-off-by: Supreeth Venkatesh <supreeth.venkatesh@arm.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit 584e5cbb3350f988b60feaba0b4264872d228e51)
+
+------------------------------------------------------------------------  r24904 | edk2buildsystem | 2017-07-07 02:06:20 -0700 (Fri, 07 Jul 2017) | 10 lines
+  BaseTools/Common: add support in FDF Parser to parse MM Modules.
+  This patch adds support for FdfParser tool to parse MM_STANDALONE and
+  MM_CORE_STANDALONE modules.
+  Contributed-under: TianoCore Contribution Agreement 1.0
+  Signed-off-by: Jiewen Yao <jiewen.yao@intel.com>
+  Signed-off-by: Supreeth Venkatesh <supreeth.venkatesh@arm.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit 15fb5ba81c343919457f63b529943c5a5f806518)
+
+------------------------------------------------------------------------  r24905 | edk2buildsystem | 2017-07-07 02:06:25 -0700 (Fri, 07 Jul 2017) | 10 lines
+  BaseTools/CommonDataClass: register MM Modules.
+  This patch registers MM_STANDALONE and MM_CORE_STANDALONE module types
+  with CommonClass and PackageIncludePkgHeaderClass in CommonDataClass.
+  Contributed-under: TianoCore Contribution Agreement 1.0
+  Signed-off-by: Jiewen Yao <jiewen.yao@intel.com>
+  Signed-off-by: Supreeth Venkatesh <supreeth.venkatesh@arm.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit 96f73940cb10914d02eade43761736bfa133c1bc)
+
+------------------------------------------------------------------------  r24906 | edk2buildsystem | 2017-07-07 02:06:31 -0700 (Fri, 07 Jul 2017) | 15 lines
+  BaseTools/GenFds: register MM Modules and MM FV file types.
+  This patch verifies MM_CORE_STANDALONE module compatibility with PI
+  specification version.
+  Also, it registers MM_STANDALONE/MM_CORE_STANDALONE modules with
+  FdfParser class and provides mapping between MM_STANDALONE and
+  MM_CORE_STANDALONE module type in FDF with
+  EFI_FV_FILETYPE_MM_STANDALONE and EFI_FV_FILETYPE_MM_CORE_STANDALONE file types
+  in GenFfs.
+  Contributed-under: TianoCore Contribution Agreement 1.0
+  Signed-off-by: Jiewen Yao <jiewen.yao@intel.com>
+  Signed-off-by: Supreeth Venkatesh <supreeth.venkatesh@arm.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit b19df640817fb7009968d569103eeb446ec0397b)
+
+------------------------------------------------------------------------  r24907 | edk2buildsystem | 2017-07-07 02:06:36 -0700 (Fri, 07 Jul 2017) | 10 lines
+  BaseTools/build: register MM module types with build tools.
+  This patch registers MM_STANDALONE and MM_CORE_STANDALONE module type
+  with python build tools.
+  Contributed-under: TianoCore Contribution Agreement 1.0
+  Signed-off-by: Jiewen Yao <jiewen.yao@intel.com>
+  Signed-off-by: Supreeth Venkatesh <supreeth.venkatesh@arm.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit e574123c857cc8658598733b862b43f468da3a72)
+
+------------------------------------------------------------------------  r24908 | edk2buildsystem | 2017-07-07 02:06:40 -0700 (Fri, 07 Jul 2017) | 11 lines
+  BaseTools/Workspace: check MM module type compatibility with PI version.
+  This patch checks SUP_MODULE_MM_CORE_STANDALONE and
+  SUP_MODULE_MM_STANDALONE module compatibility with PI specification
+  version.
+  Contributed-under: TianoCore Contribution Agreement 1.0
+  Signed-off-by: Jiewen Yao <jiewen.yao@intel.com>
+  Signed-off-by: Supreeth Venkatesh <supreeth.venkatesh@arm.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit aeb88bf3d130802e94387403e29d5cb2e288dc54)
+
+------------------------------------------------------------------------  r24909 | edk2buildsystem | 2017-07-07 02:06:45 -0700 (Fri, 07 Jul 2017) | 9 lines
+  BaseTools/Eot: register MM Module types with FFS class.
+  This patch registers MM_STANDALONE and MM_CORE_STANDALONE with Ffs class.
+  Contributed-under: TianoCore Contribution Agreement 1.0
+  Signed-off-by: Jiewen Yao <jiewen.yao@intel.com>
+  Signed-off-by: Supreeth Venkatesh <supreeth.venkatesh@arm.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit 401d1343cb0279908a748fd0ff27609ccc300b43)
 
 ------------------------------------------------------------------------
