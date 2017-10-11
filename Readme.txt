@@ -5,12 +5,12 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014 - 2017, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 25478
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 25514
 
 This directory contains the Win32 binaries.
 
-Build Date:       Tue, 10 Oct 2017 03:11:52 Pacific Daylight Time
-Last Changed Rev: 25475
+Build Date:       Wed, 11 Oct 2017 03:12:37 Pacific Daylight Time
+Last Changed Rev: 25508
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -21,7 +21,7 @@ Last Changed Rev: 25475
   antlr3        = 3.0.1
 
 ##################### Tool Versions #####################
-  Intel(r) Binary Product Data Generation Tool (Intel(r) BPDG) - Version 1.0 Build Build 25450
+ *Intel(r) Binary Product Data Generation Tool (Intel(r) BPDG) - Version 1.0 Build Build 25514
   BootSectImage Version 1.0 Build Build 25453
   Brotli Version 0.5.2 Build 25453
   Brotli Version 0.5.2 Build 25453
@@ -30,83 +30,87 @@ Last Changed Rev: 25475
   EfiRom Version 0.1 Build 25453
   GenBootSector Version 0.2 Build 25453
   GenCrc32 Version 0.2 Build 25453
-  GenDepex.exe Version 0.04 Build 25450
-  GenFds.exe 1.0 Build 25453
+ *GenDepex.exe Version 0.04 Build 25514
+ *GenFds.exe 1.0 Build 25514
   GenFfs Version 0.1 Build 25453
   GenFv Version 0.1 Build 25453
   GenFw Version 0.2 Build 25453
   GenPage Version 0.2 Build 25453
-  GenPatchPcdTable.exe Version 0.10 Build 25450
+ *GenPatchPcdTable.exe Version 0.10 Build 25514
   GenSec Version 0.1 Build 25453
   GenVtf Version 0.1 Build 25453
   ImportTool.bat Version 1.0
   LzmaCompress Version 0.2 Build 25453
   LzmaF86Compress Version 0.2 Build 25453
-  PatchPcdValue.exe Version 0.10 Build 25450
+ *PatchPcdValue.exe Version 0.10 Build 25514
   Pkcs7Sign Version 0.9 Build 24507
   Rsa2048Sha256GenerateKeys Version 0.9 Build 24507
   Rsa2048Sha256Sign Version 0.9 Build 24507
   Split Version 1.0 Build Build 25453
-  TargetTool.exe Version 0.01 Build 25450
+ *TargetTool.exe Version 0.01 Build 25514
   TianoCompress Version 0.1 Build 25453
-  Trim.exe Version 0.10 Build 25450
+ *Trim.exe Version 0.10 Build 25514
   UEFI Packaging Tool (UEFIPT) - Revision 1.1 Build Build 25166
   VfrCompile version  2.01 (UEFI 2.4) Build Build 25453
   VolInfo Version 1.0 Build Build 25453
- *build.exe Version 0.60 Build 25478
+ *build.exe Version 0.60 Build 25514
 
 * This tool was updated
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1385
-  10/10/2017 3:11:53AM Engine version = 5900.7806
-  10/10/2017 3:11:53AM AntiVirus DAT version = 8679.0
-  10/10/2017 3:11:53AM Number of detection signatures in EXTRA.DAT = None
-  10/10/2017 3:11:53AM Names of detection signatures in EXTRA.DAT = None
-  10/10/2017 3:11:53AM Scan Started On-Demand Scan
-  10/10/2017 3:12:03AM Scan Summary
-  10/10/2017 3:12:03AM Processes scanned : 0
-  10/10/2017 3:12:03AM Processes detected : 0
-  10/10/2017 3:12:03AM Processes cleaned : 0
-  10/10/2017 3:12:03AM Boot sectors scanned : 2
-  10/10/2017 3:12:03AM Boot sectors detected: 0
-  10/10/2017 3:12:03AM Boot sectors cleaned : 0
-  10/10/2017 3:12:03AM Files scanned : 64
-  10/10/2017 3:12:03AM Files with detections: 0
-  10/10/2017 3:12:03AM File detections : 0
-  10/10/2017 3:12:03AM Files cleaned : 0
-  10/10/2017 3:12:03AM Files deleted : 0
-  10/10/2017 3:12:03AM Files not scanned : 0
-  10/10/2017 3:12:03AM Scan Summary (Registry Scanning)
-  10/10/2017 3:12:03AM Keys scanned : 0
-  10/10/2017 3:12:03AM Keys detected : 0
-  10/10/2017 3:12:03AM Keys cleaned : 0
-  10/10/2017 3:12:03AM Keys deleted : 0
-  10/10/2017 3:12:03AM Run time : 0:00:10
-  10/10/2017 3:12:03AM Scan Complete On-Demand Scan
+  10/11/2017 3:12:38AM Engine version = 5900.7806
+  10/11/2017 3:12:38AM AntiVirus DAT version = 8680.0
+  10/11/2017 3:12:38AM Number of detection signatures in EXTRA.DAT = None
+  10/11/2017 3:12:38AM Names of detection signatures in EXTRA.DAT = None
+  10/11/2017 3:12:38AM Scan Started On-Demand Scan
+  10/11/2017 3:13:00AM Scan Summary
+  10/11/2017 3:13:00AM Processes scanned : 0
+  10/11/2017 3:13:00AM Processes detected : 0
+  10/11/2017 3:13:00AM Processes cleaned : 0
+  10/11/2017 3:13:00AM Boot sectors scanned : 2
+  10/11/2017 3:13:00AM Boot sectors detected: 0
+  10/11/2017 3:13:00AM Boot sectors cleaned : 0
+  10/11/2017 3:13:00AM Files scanned : 64
+  10/11/2017 3:13:00AM Files with detections: 0
+  10/11/2017 3:13:00AM File detections : 0
+  10/11/2017 3:13:00AM Files cleaned : 0
+  10/11/2017 3:13:00AM Files deleted : 0
+  10/11/2017 3:13:00AM Files not scanned : 0
+  10/11/2017 3:13:00AM Scan Summary (Registry Scanning)
+  10/11/2017 3:13:00AM Keys scanned : 0
+  10/11/2017 3:13:00AM Keys detected : 0
+  10/11/2017 3:13:00AM Keys cleaned : 0
+  10/11/2017 3:13:00AM Keys deleted : 0
+  10/11/2017 3:13:00AM Run time : 0:00:22
+  10/11/2017 3:13:00AM Scan Complete On-Demand Scan
 
 ############### SVN Log Since Last Build ################
-svn log -r 25453:HEAD Source
-------------------------------------------------------------------------  r25453 | edk2buildsystem | 2017-10-03 02:05:24 -0700 (Tue, 03 Oct 2017) | 11 lines
-  BaseTools: PI 1.6 to support FV extended header contain FV used size
-  Per PI 1.6 we added an FV Extended Header entry that would contain the
-  size of the FV that was in use.
-  Cc: Liming Gao <liming.gao@intel.com>
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
-  Contributed-under: TianoCore Contribution Agreement 1.1
-  Signed-off-by: Yunhua Feng <yunhuax.feng@intel.com>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
-  (cherry picked from commit 9425b34925d0cf1b96aaf2c316d3299df9780252)
-
-------------------------------------------------------------------------  r25475 | edk2buildsystem | 2017-10-10 02:05:27 -0700 (Tue, 10 Oct 2017) | 11 lines
-  BaseTools: Fix a bug to use module's Name attribute as compare
-  Fix a bug to use module's Name attribute as compare for single module
-  build. ModuleFile.File can't be used to compare INF file, because it
-  is the relative path.
+svn log -r 25478:HEAD Source
+------------------------------------------------------------------------  r25507 | edk2buildsystem | 2017-10-11 02:05:43 -0700 (Wed, 11 Oct 2017) | 14 lines
+  BaseTools: Fix the bug 'DSC DEFAULT' in report wrongly use FDF value
+  current the PCD value in DSC file may be override by FDF file, then it
+  cause the 'DSC DEFAULT' in build report wrongly display the FDF value
+  but not the DSC file's value.
+  This patch add a attribute DscDefaultValue for PcdClassObject to save
+  the actual DSC file's PCD value and use this value to display for 'DSC
+  DEFAULT'.
   Cc: Liming Gao <liming.gao@intel.com>
   Contributed-under: TianoCore Contribution Agreement 1.1
   Signed-off-by: Yonghong Zhu <yonghong.zhu@intel.com>
   Reviewed-by: Liming Gao <liming.gao@intel.com>
-  (cherry picked from commit fbe538450fb5327110f3b01d038e356e590dd93a)
+  (cherry picked from commit cc71d8b7f8e7013783bb3ce77ac375ecb94e107d)
+
+------------------------------------------------------------------------  r25508 | edk2buildsystem | 2017-10-11 02:05:48 -0700 (Wed, 11 Oct 2017) | 12 lines
+  BaseTools: Fix the Keyword error for <ExtendedFvEntry> in FDF File
+  current in FDF spec 3.6 [FV] section it use "FV_EXT_ENTRY_TYPE" as
+  Keyword for <ExtendedFvEntry>, while in the code it use "FV_EXT_ENTRY".
+  To keep compatibility, this patch support both keyword in the code
+  first.
+  Cc: Liming Gao <liming.gao@intel.com>
+  Contributed-under: TianoCore Contribution Agreement 1.1
+  Signed-off-by: Yonghong Zhu <yonghong.zhu@intel.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit 92d07e48907f54a0da01663f3e876782a76b1e18)
 
 ------------------------------------------------------------------------
