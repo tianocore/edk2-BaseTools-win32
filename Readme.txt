@@ -5,12 +5,12 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014 - 2017, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 25982
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 26005
 
 This directory contains the Win32 binaries.
 
-Build Date:       Sun, 24 Dec 2017 18:03:52 Pacific Standard Time
-Last Changed Rev: 25982
+Build Date:       Mon, 25 Dec 2017 01:46:57 Pacific Standard Time
+Last Changed Rev: 26000
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -21,233 +21,72 @@ Last Changed Rev: 25982
   antlr3        = 3.0.1
 
 ##################### Tool Versions #####################
-  Intel(r) Binary Product Data Generation Tool (Intel(r) BPDG) - Version 1.0 Build Build 25927
- *BootSectImage Version 1.0 Build Build 25982
- *Brotli Version 0.5.2 Build 25982
-  Brotli Version 0.5.2 Build 25982
+ *Intel(r) Binary Product Data Generation Tool (Intel(r) BPDG) - Version 1.0 Build Build 26005
+ *BootSectImage Version 1.0 Build Build 26005
+ *Brotli Version 0.5.2 Build 26005
+ *Brotli Version 0.5.2 Build 26005
   Ecc.exe Version 1.0 Build Build 24602
- *EfiLdrImage Version 1.0 Build Build 25982
- *EfiRom Version 0.1 Build 25982
- *GenBootSector Version 0.2 Build 25982
- *GenCrc32 Version 0.2 Build 25982
-  GenDepex.exe Version 0.04 Build 25927
-  GenFds.exe 1.0 Build 25927
- *GenFfs Version 0.1 Build 25982
- *GenFv Version 0.1 Build 25982
- *GenFw Version 0.2 Build 25982
- *GenPage Version 0.2 Build 25982
-  GenPatchPcdTable.exe Version 0.10 Build 25927
- *GenSec Version 0.1 Build 25982
- *GenVtf Version 0.1 Build 25982
+ *EfiLdrImage Version 1.0 Build Build 26005
+ *EfiRom Version 0.1 Build 26005
+ *GenBootSector Version 0.2 Build 26005
+ *GenCrc32 Version 0.2 Build 26005
+ *GenDepex.exe Version 0.04 Build 26005
+ *GenFds.exe 1.0 Build 26005
+ *GenFfs Version 0.1 Build 26005
+ *GenFv Version 0.1 Build 26005
+ *GenFw Version 0.2 Build 26005
+ *GenPage Version 0.2 Build 26005
+ *GenPatchPcdTable.exe Version 0.10 Build 26005
+ *GenSec Version 0.1 Build 26005
+ *GenVtf Version 0.1 Build 26005
   ImportTool.bat Version 1.0
- *LzmaCompress Version 0.2 Build 25982
-  LzmaF86Compress Version 0.2 Build 25982
-  PatchPcdValue.exe Version 0.10 Build 25927
+ *LzmaCompress Version 0.2 Build 26005
+  LzmaF86Compress Version 0.2 Build 26005
+ *PatchPcdValue.exe Version 0.10 Build 26005
   Pkcs7Sign Version 0.9 Build 24507
   Rsa2048Sha256GenerateKeys Version 0.9 Build 24507
   Rsa2048Sha256Sign Version 0.9 Build 24507
- *Split Version 1.0 Build Build 25982
-  TargetTool.exe Version 0.01 Build 25927
- *TianoCompress Version 0.1 Build 25982
-  Trim.exe Version 0.10 Build 25927
+ *Split Version 1.0 Build Build 26005
+ *TargetTool.exe Version 0.01 Build 26005
+ *TianoCompress Version 0.1 Build 26005
+ *Trim.exe Version 0.10 Build 26005
   UEFI Packaging Tool (UEFIPT) - Revision 1.1 Build Build 25166
- *VfrCompile version  2.01 (UEFI 2.4) Build Build 25982
- *VolInfo Version 1.0 Build Build 25982
-  build.exe Version 0.60 Build 25927
+ *VfrCompile version  2.01 (UEFI 2.4) Build Build 26005
+ *VolInfo Version 1.0 Build Build 26005
+ *build.exe Version 0.60 Build 26005
 
 * This tool was updated
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1385
-  12/24/2017 6:03:53PM Engine version = 5900.7806
-  12/24/2017 6:03:53PM AntiVirus DAT version = 8755.0
-  12/24/2017 6:03:53PM Number of detection signatures in EXTRA.DAT = None
-  12/24/2017 6:03:53PM Names of detection signatures in EXTRA.DAT = None
-  12/24/2017 6:03:53PM Scan Started On-Demand Scan
-  12/24/2017 6:04:04PM Scan Summary
-  12/24/2017 6:04:04PM Processes scanned : 0
-  12/24/2017 6:04:04PM Processes detected : 0
-  12/24/2017 6:04:04PM Processes cleaned : 0
-  12/24/2017 6:04:04PM Boot sectors scanned : 2
-  12/24/2017 6:04:04PM Boot sectors detected: 0
-  12/24/2017 6:04:04PM Boot sectors cleaned : 0
-  12/24/2017 6:04:04PM Files scanned : 80
-  12/24/2017 6:04:04PM Files with detections: 0
-  12/24/2017 6:04:04PM File detections : 0
-  12/24/2017 6:04:04PM Files cleaned : 0
-  12/24/2017 6:04:04PM Files deleted : 0
-  12/24/2017 6:04:04PM Files not scanned : 0
-  12/24/2017 6:04:04PM Scan Summary (Registry Scanning)
-  12/24/2017 6:04:04PM Keys scanned : 0
-  12/24/2017 6:04:04PM Keys detected : 0
-  12/24/2017 6:04:04PM Keys cleaned : 0
-  12/24/2017 6:04:04PM Keys deleted : 0
-  12/24/2017 6:04:04PM Run time : 0:00:11
-  12/24/2017 6:04:04PM Scan Complete On-Demand Scan
+  12/25/2017 1:46:58AM Engine version = 5900.7806
+  12/25/2017 1:46:58AM AntiVirus DAT version = 8755.0
+  12/25/2017 1:46:58AM Number of detection signatures in EXTRA.DAT = None
+  12/25/2017 1:46:58AM Names of detection signatures in EXTRA.DAT = None
+  12/25/2017 1:46:58AM Scan Started On-Demand Scan
+  12/25/2017 1:47:07AM Scan Summary
+  12/25/2017 1:47:07AM Processes scanned : 0
+  12/25/2017 1:47:07AM Processes detected : 0
+  12/25/2017 1:47:07AM Processes cleaned : 0
+  12/25/2017 1:47:07AM Boot sectors scanned : 2
+  12/25/2017 1:47:07AM Boot sectors detected: 0
+  12/25/2017 1:47:07AM Boot sectors cleaned : 0
+  12/25/2017 1:47:07AM Files scanned : 81
+  12/25/2017 1:47:07AM Files with detections: 0
+  12/25/2017 1:47:07AM File detections : 0
+  12/25/2017 1:47:07AM Files cleaned : 0
+  12/25/2017 1:47:07AM Files deleted : 0
+  12/25/2017 1:47:07AM Files not scanned : 0
+  12/25/2017 1:47:07AM Scan Summary (Registry Scanning)
+  12/25/2017 1:47:07AM Keys scanned : 0
+  12/25/2017 1:47:07AM Keys detected : 0
+  12/25/2017 1:47:07AM Keys cleaned : 0
+  12/25/2017 1:47:07AM Keys deleted : 0
+  12/25/2017 1:47:07AM Run time : 0:00:09
+  12/25/2017 1:47:07AM Scan Complete On-Demand Scan
 
 ############### SVN Log Since Last Build ################
-svn log -r 25927:HEAD Source
-------------------------------------------------------------------------  r25966 | edk2buildsystem | 2017-12-24 17:58:47 -0800 (Sun, 24 Dec 2017) | 7 lines
-  BaseTools/C/Common: Add checks for array access
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
-  Contributed-under: TianoCore Contribution Agreement 1.1
-  Signed-off-by: Hao Wu <hao.a.wu@intel.com>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
-  (cherry picked from commit 58356e9478d62811746db283bce3e751c6206006)
-
-------------------------------------------------------------------------  r25967 | edk2buildsystem | 2017-12-24 17:58:54 -0800 (Sun, 24 Dec 2017) | 11 lines
-  BaseTools/EfiRom: Refine the logic in main()
-  This commit refines the logic for main(). It makes the logic more
-  straightforward to prevent possible mis-reports by static code
-  checkers.
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
-  Contributed-under: TianoCore Contribution Agreement 1.1
-  Signed-off-by: Hao Wu <hao.a.wu@intel.com>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
-  (cherry picked from commit 31c295e71aafed85c75a772dabf6e5e09d2f4a60)
-
-------------------------------------------------------------------------  r25968 | edk2buildsystem | 2017-12-24 17:58:58 -0800 (Sun, 24 Dec 2017) | 7 lines
-  BaseTools/LzmaCompress: Fix possible uninitialized variable
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
-  Contributed-under: TianoCore Contribution Agreement 1.1
-  Signed-off-by: Hao Wu <hao.a.wu@intel.com>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
-  (cherry picked from commit 9cdda7baa0819d544987d8fc909abdac549b27aa)
-
-------------------------------------------------------------------------  r25969 | edk2buildsystem | 2017-12-24 17:59:02 -0800 (Sun, 24 Dec 2017) | 7 lines
-  BaseTools/C/Common: Remove redundant type cast
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
-  Contributed-under: TianoCore Contribution Agreement 1.1
-  Signed-off-by: Hao Wu <hao.a.wu@intel.com>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
-  (cherry picked from commit b567adb81e16e009ada73dfa2fbd5a0f9688d78f)
-
-------------------------------------------------------------------------  r25970 | edk2buildsystem | 2017-12-24 17:59:07 -0800 (Sun, 24 Dec 2017) | 10 lines
-  BaseTools/VfrCompile: Assign 'NULL' for closed file handle
-  Assign 'NULL' value to the already-closed file handle to avoid closing
-  the handle multiple times.
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
-  Contributed-under: TianoCore Contribution Agreement 1.1
-  Signed-off-by: Hao Wu <hao.a.wu@intel.com>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
-  (cherry picked from commit 9edcd2788d7baa767b0761f0917c014612b6d72a)
-
-------------------------------------------------------------------------  r25971 | edk2buildsystem | 2017-12-24 17:59:12 -0800 (Sun, 24 Dec 2017) | 10 lines
-  BaseTools/GenFv: Add check to ensure the file handle status is correct
-  Add an extra NULL check for the file handle to ensure that its status is
-  correct.
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
-  Contributed-under: TianoCore Contribution Agreement 1.1
-  Signed-off-by: Hao Wu <hao.a.wu@intel.com>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
-  (cherry picked from commit f6401aedca2d576f4229c54c1356fea23387981f)
-
-------------------------------------------------------------------------  r25972 | edk2buildsystem | 2017-12-24 17:59:17 -0800 (Sun, 24 Dec 2017) | 11 lines
-  BaseTools/C/Common: Add/refine boundary checks for strcpy/strcat calls
-  Add checks to ensure when the destination string buffer is of fixed
-  size, the strcpy/strcat functions calls will not access beyond the
-  boundary.
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
-  Contributed-under: TianoCore Contribution Agreement 1.1
-  Signed-off-by: Hao Wu <hao.a.wu@intel.com>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
-  (cherry picked from commit 938cf4b9bd91167e4de637de3c1e7fa449e9de94)
-
-------------------------------------------------------------------------  r25973 | edk2buildsystem | 2017-12-24 17:59:22 -0800 (Sun, 24 Dec 2017) | 11 lines
-  BaseTools/C/Common: Refine using sprintf() with '%s' in format string
-  The commit removes the usages of sprintf() function calls with '%s' in
-  the format string. And uses strncpy/strncat instead to ensure the
-  destination string buffers will not be accessed beyond their boundary.
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
-  Contributed-under: TianoCore Contribution Agreement 1.1
-  Signed-off-by: Hao Wu <hao.a.wu@intel.com>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
-  (cherry picked from commit 3e1497334e45d09b8eccbc24ca571308e015e995)
-
-------------------------------------------------------------------------  r25974 | edk2buildsystem | 2017-12-24 17:59:26 -0800 (Sun, 24 Dec 2017) | 11 lines
-  BaseTools/EfiRom: Add/refine boundary checks for strcpy/strcat calls
-  Add checks to ensure when the destination string buffer is of fixed
-  size, the strcpy/strcat functions calls will not access beyond the
-  boundary.
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
-  Contributed-under: TianoCore Contribution Agreement 1.1
-  Signed-off-by: Hao Wu <hao.a.wu@intel.com>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
-  (cherry picked from commit 52e8c5683843f3d5f9e979cbc0261d3951a7e0be)
-
-------------------------------------------------------------------------  r25975 | edk2buildsystem | 2017-12-24 17:59:32 -0800 (Sun, 24 Dec 2017) | 11 lines
-  BaseTools/GenBootSector: Add/refine boundary checks for strcpy/strcat
-  Add checks to ensure when the destination string buffer is of fixed
-  size, the strcpy/strcat functions calls will not access beyond the
-  boundary.
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
-  Contributed-under: TianoCore Contribution Agreement 1.1
-  Signed-off-by: Hao Wu <hao.a.wu@intel.com>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
-  (cherry picked from commit 1bdd9465c12e53246e88dc91cd22879ceb269f5c)
-
-------------------------------------------------------------------------  r25976 | edk2buildsystem | 2017-12-24 17:59:37 -0800 (Sun, 24 Dec 2017) | 11 lines
-  BaseTools/GenFv: Add/refine boundary checks for strcpy/strcat calls
-  Add checks to ensure when the destination string buffer is of fixed
-  size, the strcpy/strcat functions calls will not access beyond the
-  boundary.
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
-  Contributed-under: TianoCore Contribution Agreement 1.1
-  Signed-off-by: Hao Wu <hao.a.wu@intel.com>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
-  (cherry picked from commit fc42d0e89002af2d23f83edb5b64d9a56e825922)
-
-------------------------------------------------------------------------  r25977 | edk2buildsystem | 2017-12-24 17:59:43 -0800 (Sun, 24 Dec 2017) | 11 lines
-  BaseTools/GenVtf: Add/refine boundary checks for strcpy/strcat calls
-  Add checks to ensure when the destination string buffer is of fixed
-  size, the strcpy/strcat functions calls will not access beyond the
-  boundary.
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
-  Contributed-under: TianoCore Contribution Agreement 1.1
-  Signed-off-by: Hao Wu <hao.a.wu@intel.com>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
-  (cherry picked from commit 1c47ab04046d8a4123d4bcf8826f42aca2777292)
-
-------------------------------------------------------------------------  r25978 | edk2buildsystem | 2017-12-24 17:59:48 -0800 (Sun, 24 Dec 2017) | 11 lines
-  BaseTools/VfrCompile: Add/refine boundary checks for strcpy/strcat
-  Add checks to ensure when the destination string buffer is of fixed
-  size, the strcpy/strcat functions calls will not access beyond the
-  boundary.
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
-  Contributed-under: TianoCore Contribution Agreement 1.1
-  Signed-off-by: Hao Wu <hao.a.wu@intel.com>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
-  (cherry picked from commit d837f33ab00ce9a0708382bfcf8f48f39d287644)
-
-------------------------------------------------------------------------  r25979 | edk2buildsystem | 2017-12-24 17:59:54 -0800 (Sun, 24 Dec 2017) | 10 lines
-  BaseTools/VfrCompile: Resolve uninit class variables in constructor
-  The commit initializes those possibly uninitialized class variables in
-  class constructors.
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
-  Contributed-under: TianoCore Contribution Agreement 1.1
-  Signed-off-by: Hao Wu <hao.a.wu@intel.com>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
-  (cherry picked from commit b748e35c2bb0b6bcd1d89ef67e8f905b0a1c5c11)
-
-------------------------------------------------------------------------  r25980 | edk2buildsystem | 2017-12-24 17:59:59 -0800 (Sun, 24 Dec 2017) | 11 lines
-  BaseTools/GenFfs: Enlarge the size of 'AlignmentBuffer'
-  As a workaround for the static code checkers, enlarge the size of the
-  string buffer 'AlignmentBuffer' so that it can hold all the digits of an
-  unsigned 32-bit integer plus the size unit character (e.g. 'M' & 'K').
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
-  Contributed-under: TianoCore Contribution Agreement 1.1
-  Signed-off-by: Hao Wu <hao.a.wu@intel.com>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
-  (cherry picked from commit 33fc1fc46deb3b7779b92228b1c2d0aba2d16e44)
-
-------------------------------------------------------------------------  r25981 | edk2buildsystem | 2017-12-24 18:00:04 -0800 (Sun, 24 Dec 2017) | 7 lines
-  BaseTools/GenSec: Fix potential memory leak
-  Cc: Yonghong Zhu <yonghong.zhu@intel.com>
-  Contributed-under: TianoCore Contribution Agreement 1.1
-  Signed-off-by: Hao Wu <hao.a.wu@intel.com>
-  Reviewed-by: Liming Gao <liming.gao@intel.com>
-  (cherry picked from commit ae0fbb7f5ad41866bca89320f501282e173b373d)
-
+svn log -r 25982:HEAD Source
 ------------------------------------------------------------------------  r25982 | edk2buildsystem | 2017-12-24 18:00:08 -0800 (Sun, 24 Dec 2017) | 7 lines
   BaseTools/GenSec: Fix potential null pointer dereference
   Cc: Yonghong Zhu <yonghong.zhu@intel.com>
@@ -255,5 +94,175 @@ svn log -r 25927:HEAD Source
   Signed-off-by: Hao Wu <hao.a.wu@intel.com>
   Reviewed-by: Liming Gao <liming.gao@intel.com>
   (cherry picked from commit c40dbe5e7bf9f3f841d4f1c717c245e99854b786)
+
+------------------------------------------------------------------------  r25983 | edk2buildsystem | 2017-12-25 01:36:13 -0800 (Mon, 25 Dec 2017) | 6 lines
+  BaseTools: Update Makefile to work at absolute path
+  Contributed-under: TianoCore Contribution Agreement 1.1
+  Signed-off-by: Liming Gao <liming.gao@intel.com>
+  Reviewed-by: Yonghong Zhu <yonghong.zhu@intel.com>
+  (cherry picked from commit 84e076c861ef21931b9d6eb9e0ab6206f1ddb0b8)
+
+------------------------------------------------------------------------  r25984 | edk2buildsystem | 2017-12-25 01:36:21 -0800 (Mon, 25 Dec 2017) | 8 lines
+  BaseTools: Add PcdValueCommon logic into C source CommonLib
+  PcdValueCommon is used to calculate structure pcd value.
+  Contributed-under: TianoCore Contribution Agreement 1.1
+  Signed-off-by: Liming Gao <liming.gao@intel.com>
+  Reviewed-by: Yonghong Zhu <yonghong.zhu@intel.com>
+  (cherry picked from commit 309e37a22915dca12d3e5b914d8b3429f7624601)
+
+------------------------------------------------------------------------  r25985 | edk2buildsystem | 2017-12-25 01:36:31 -0800 (Mon, 25 Dec 2017) | 10 lines
+  BaseTools: Support Structure PCD value assignment in DEC/DSC
+  https://bugzilla.tianocore.org/show_bug.cgi?id=542
+  This is pure BaseTools enhancement to support PCD with one structure.
+  User can specify PCD value based on its structure field.
+  Contributed-under: TianoCore Contribution Agreement 1.1
+  Signed-off-by: Liming Gao <liming.gao@intel.com>
+  Reviewed-by: Yonghong Zhu <yonghong.zhu@intel.com>
+  (cherry picked from commit ae7b6df816e913394a7f11264f24953658ff34ba)
+
+------------------------------------------------------------------------  r25986 | edk2buildsystem | 2017-12-25 01:36:39 -0800 (Mon, 25 Dec 2017) | 11 lines
+  BaseTools: Collect DynamicHii PCD values and assign it to VPD PCD Value
+  https://bugzilla.tianocore.org/show_bug.cgi?id=661
+  Collect all DynamicHii and DynamicExHii PCD value into PCD
+  PcdNvStoreDefaultValueBuffer, then firmware can access this PCD value
+  to get the variable default setting.
+  Contributed-under: TianoCore Contribution Agreement 1.1
+  Signed-off-by: Feng Bob C <bob.c.feng@intel.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit 34952f493c24c02f5eba6ae86ed758d3311cddb1)
+
+------------------------------------------------------------------------  r25987 | edk2buildsystem | 2017-12-25 01:36:49 -0800 (Mon, 25 Dec 2017) | 9 lines
+  BaseTools: Support Structure PCD value inherit between the different SKUs
+  https://bugzilla.tianocore.org/show_bug.cgi?id=543
+  Structure PCD field value can inherit between the different SKUIds.
+  Contributed-under: TianoCore Contribution Agreement 1.1
+  Signed-off-by: Feng Bob C <bob.c.feng@intel.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit 8518bf0b92a78938341a2752a0044f04336668cc)
+
+------------------------------------------------------------------------  r25988 | edk2buildsystem | 2017-12-25 01:36:58 -0800 (Mon, 25 Dec 2017) | 33 lines
+  BaseTools: PcdDataBase Optimization for multiple SkuIds
+  https://bugzilla.tianocore.org/show_bug.cgi?id=546
+  BaseTools will generate the optimized PCD database to save the image size
+  at build time for multiple SKUs. The optimized PCD database layout will be like
+  below, the PCD database will be composed of the full default SKU data
+  (PCD_DATABASE_INIT) and the non-default SKU delta data(PCD_DATABASE_SKU_DELTA).
+  PCD driver will build HOB to store the full default SKU data, and patch HOB
+  data based on non-default SKU delta data for the SKU set by SetSku(),
+  it can save memory resource at boot time.
+  //
+  // PCD database layout:
+  // +---------------------------------+
+  // | PCD_DATABASE_INIT (DEFAULT SKU) |
+  // +---------------------------------+
+  // | PCD_DATABASE_SKU_DELTA (SKU A)  |
+  // +---------------------------------+
+  // | PCD_DATABASE_SKU_DELTA (SKU B)  |
+  // +---------------------------------+
+  // | ......                          |
+  // +---------------------------------+
+  //
+  BaseTools, PCD database and driver updates are needed for this proposal.
+  For single SKU (default) case, this proposal is expected to have no impact.
+  For multi-SKU case, PCD database format will be changed.
+  So, PcdDataBase Version is also updated from 6 to 7.
+  Contributed-under: TianoCore Contribution Agreement 1.1
+  Signed-off-by: Feng Bob C <bob.c.feng@intel.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit 2b8a6c44e0deb508f79804dd5ff7156bc7e25493)
+
+------------------------------------------------------------------------  r25989 | edk2buildsystem | 2017-12-25 01:37:06 -0800 (Mon, 25 Dec 2017) | 11 lines
+  BaseTools: Report Structure PCD value and SKU, DefaultStore info
+  https://bugzilla.tianocore.org/show_bug.cgi?id=706
+  Add Structure PCD support for Build report. Structure PCD field value described
+  in DEC/DSC will be display in build report. And, PCD value for each SKU and
+  Default store will also be shown in build report.
+  Contributed-under: TianoCore Contribution Agreement 1.1
+  Reviewed-by: Yonghong Zhu <yonghong.zhu@intel.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit e651d06c5ed167e706e2dbe122ec0953a54033f3)
+
+------------------------------------------------------------------------  r25990 | edk2buildsystem | 2017-12-25 01:37:13 -0800 (Mon, 25 Dec 2017) | 6 lines
+  BaseTools: Update NV Default Header format to include the max size
+  Contributed-under: TianoCore Contribution Agreement 1.1
+  Signed-off-by: Bob Feng <bob.c.feng@Intel.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit 47854fd598b73267d57594c5bac6a2326332b08c)
+
+------------------------------------------------------------------------  r25991 | edk2buildsystem | 2017-12-25 01:37:19 -0800 (Mon, 25 Dec 2017) | 8 lines
+  BaseTools: Update SkuId as SKU_ID type to follow current implementation
+  Update PCD DB and Default setting format as nature alignment.
+  Contributed-under: TianoCore Contribution Agreement 1.1
+  Signed-off-by: Liming Gao <liming.gao@intel.com>
+  Reviewed-by: Yonghong Zhu <yonghong.zhu@intel.com>
+  (cherry picked from commit 7e6e459a3d91c07db1f97258aec323a982375e19)
+
+------------------------------------------------------------------------  r25992 | edk2buildsystem | 2017-12-25 01:37:25 -0800 (Mon, 25 Dec 2017) | 10 lines
+  BaseTools: Optimize VPD PCD value for the different SKUs
+  If VPD PCD value is same in the different SKUs, the different SKUs will
+  save the same offset for this PCD in VPD region. That means there is only
+  one PCD value copy in VPD region to save VPD space.
+  Contributed-under: TianoCore Contribution Agreement 1.1
+  Signed-off-by: Feng Bob C <bob.c.feng@intel.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit 626bece451db2e2a19fa7696889ad4d4c441b16e)
+
+------------------------------------------------------------------------  r25993 | edk2buildsystem | 2017-12-25 01:37:31 -0800 (Mon, 25 Dec 2017) | 9 lines
+  BaseTools: Fixed the issue of Multiple Skus are always disables
+  When multiple skus are enabled, PCD database should record the supported SKUs.
+  This patch fixes PCD database to add the missing supported SKUs.
+  Contributed-under: TianoCore Contribution Agreement 1.1
+  Signed-off-by: Bob Feng <bob.c.feng@Intel.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit 65eff519e5ef56ddf51b11ed3524f55854e49dde)
+
+------------------------------------------------------------------------  r25994 | edk2buildsystem | 2017-12-25 01:37:37 -0800 (Mon, 25 Dec 2017) | 6 lines
+  BaseTools: Add error message if Structure PCD value is wrong
+  Contributed-under: TianoCore Contribution Agreement 1.1
+  Signed-off-by: Liming Gao <liming.gao@intel.com>
+  Reviewed-by: Yonghong Zhu <yonghong.zhu@intel.com>
+  (cherry picked from commit b23957242c01ae776af86f91ebb35827422dec60)
+
+------------------------------------------------------------------------  r25995 | edk2buildsystem | 2017-12-25 01:37:43 -0800 (Mon, 25 Dec 2017) | 6 lines
+  BaseTools: Generate correct VPD PCD value to store the default setting
+  Contributed-under: TianoCore Contribution Agreement 1.1
+  Signed-off-by: Feng Bob C <bob.c.feng@intel.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit 0b6c5954e1d9a17e01eee7d5ef840a5b4790e2e8)
+
+------------------------------------------------------------------------  r25996 | edk2buildsystem | 2017-12-25 01:37:48 -0800 (Mon, 25 Dec 2017) | 6 lines
+  BaseTools: Correct PCD generation logic to make sure DB is use
+  Contributed-under: TianoCore Contribution Agreement 1.1
+  Signed-off-by: Feng Bob C <bob.c.feng@intel.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit 67e63e9a7b3620fc5fdd3df61b4477a8cd5bc944)
+
+------------------------------------------------------------------------  r25997 | edk2buildsystem | 2017-12-25 01:37:53 -0800 (Mon, 25 Dec 2017) | 6 lines
+  BaseTools: Check PCD DataType and the maxsize.
+  Contributed-under: TianoCore Contribution Agreement 1.1
+  Signed-off-by: Feng Bob C <bob.c.feng@intel.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit 520365decb26e5176ec2bb614f11ddeaa495de54)
+
+------------------------------------------------------------------------  r25998 | edk2buildsystem | 2017-12-25 01:37:59 -0800 (Mon, 25 Dec 2017) | 6 lines
+  BaseTools: Support nest field name in DSC/DEC
+  Contributed-under: TianoCore Contribution Agreement 1.1
+  Signed-off-by: Feng Bob C <bob.c.feng@intel.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit a09395932d997d41f59ae3ee2f7f77f91f5caa02)
+
+------------------------------------------------------------------------  r25999 | edk2buildsystem | 2017-12-25 01:38:05 -0800 (Mon, 25 Dec 2017) | 6 lines
+  BaseTools: Fix VPD data optimization issue
+  Contributed-under: TianoCore Contribution Agreement 1.1
+  Signed-off-by: Feng Bob C <bob.c.feng@intel.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit 8ac167890f2a8ef4918586e7e94190c52d59a4cc)
+
+------------------------------------------------------------------------  r26000 | edk2buildsystem | 2017-12-25 01:38:09 -0800 (Mon, 25 Dec 2017) | 6 lines
+  BaseTools: Fixed the issue of structure pcd filed sku inherit override
+  Contributed-under: TianoCore Contribution Agreement 1.1
+  Signed-off-by: Feng Bob C <bob.c.feng@intel.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit c05c2c0526aadb0bc9ff0939bab1dec21c41c3ef)
 
 ------------------------------------------------------------------------
