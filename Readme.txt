@@ -5,12 +5,12 @@ subsidiaries in the United States and other countries.
 Copyright (c) 2014 - 2018, Intel Corporation. All rights reserved.
 
 EDK II packages can be checked out from the following SVN address:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 26163
+https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 26182
 
 This directory contains the Win32 binaries.
 
-Build Date:       Wed, 17 Jan 2018 18:52:20 Pacific Standard Time
-Last Changed Rev: 26140
+Build Date:       Fri, 19 Jan 2018 03:12:10 Pacific Standard Time
+Last Changed Rev: 26177
 
 ############### Build System Information ###############
   OS_Name       = Windows Server 2008 R2 Enterprise (X64)
@@ -21,8 +21,6 @@ Last Changed Rev: 26140
   antlr3        = 3.0.1
 
 ##################### Tool Versions #####################
-
-** ALL TOOLS WERE REBUILT **
   Intel(r) Binary Product Data Generation Tool (Intel(r) BPDG) - Version 1.0 Build Build 26163
   BootSectImage Version 1.0 Build Build 26163
   Brotli Version 0.5.2 Build 26163
@@ -56,36 +54,47 @@ Last Changed Rev: 26140
   UEFI Packaging Tool (UEFIPT) - Revision 1.1 Build Build 26163
   VfrCompile version  2.01 (UEFI 2.4) Build Build 26163
   VolInfo Version 1.0 Build Build 26163
-  build.exe Version 0.60 Build 26163
+ *build.exe Version 0.60 Build 26182
+
+* This tool was updated
 
 ##################### Anti-Virus Scan #####################
 McAfee VirusScan Enterprise Version 8.8.0.1385
-  1/17/2018 6:52:21PM Engine version = 5900.7806
-  1/17/2018 6:52:21PM AntiVirus DAT version = 8777.0
-  1/17/2018 6:52:21PM Number of detection signatures in EXTRA.DAT = None
-  1/17/2018 6:52:21PM Names of detection signatures in EXTRA.DAT = None
-  1/17/2018 6:52:21PM Scan Started On-Demand Scan
-  1/17/2018 6:52:25PM Scan Summary
-  1/17/2018 6:52:25PM Processes scanned : 0
-  1/17/2018 6:52:25PM Processes detected : 0
-  1/17/2018 6:52:25PM Processes cleaned : 0
-  1/17/2018 6:52:25PM Boot sectors scanned : 2
-  1/17/2018 6:52:25PM Boot sectors detected: 0
-  1/17/2018 6:52:25PM Boot sectors cleaned : 0
-  1/17/2018 6:52:25PM Files scanned : 83
-  1/17/2018 6:52:25PM Files with detections: 0
-  1/17/2018 6:52:25PM File detections : 0
-  1/17/2018 6:52:25PM Files cleaned : 0
-  1/17/2018 6:52:25PM Files deleted : 0
-  1/17/2018 6:52:25PM Files not scanned : 0
-  1/17/2018 6:52:25PM Scan Summary (Registry Scanning)
-  1/17/2018 6:52:25PM Keys scanned : 0
-  1/17/2018 6:52:25PM Keys detected : 0
-  1/17/2018 6:52:25PM Keys cleaned : 0
-  1/17/2018 6:52:25PM Keys deleted : 0
-  1/17/2018 6:52:25PM Run time : 0:00:04
-  1/17/2018 6:52:25PM Scan Complete On-Demand Scan
+  1/19/2018 3:12:12AM Engine version = 5900.7806
+  1/19/2018 3:12:12AM AntiVirus DAT version = 8778.0
+  1/19/2018 3:12:12AM Number of detection signatures in EXTRA.DAT = None
+  1/19/2018 3:12:12AM Names of detection signatures in EXTRA.DAT = None
+  1/19/2018 3:12:12AM Scan Started On-Demand Scan
+  1/19/2018 3:12:21AM Scan Summary
+  1/19/2018 3:12:21AM Processes scanned : 0
+  1/19/2018 3:12:21AM Processes detected : 0
+  1/19/2018 3:12:21AM Processes cleaned : 0
+  1/19/2018 3:12:21AM Boot sectors scanned : 2
+  1/19/2018 3:12:21AM Boot sectors detected: 0
+  1/19/2018 3:12:21AM Boot sectors cleaned : 0
+  1/19/2018 3:12:21AM Files scanned : 66
+  1/19/2018 3:12:21AM Files with detections: 0
+  1/19/2018 3:12:21AM File detections : 0
+  1/19/2018 3:12:21AM Files cleaned : 0
+  1/19/2018 3:12:21AM Files deleted : 0
+  1/19/2018 3:12:21AM Files not scanned : 0
+  1/19/2018 3:12:21AM Scan Summary (Registry Scanning)
+  1/19/2018 3:12:21AM Keys scanned : 0
+  1/19/2018 3:12:21AM Keys detected : 0
+  1/19/2018 3:12:21AM Keys cleaned : 0
+  1/19/2018 3:12:21AM Keys deleted : 0
+  1/19/2018 3:12:21AM Run time : 0:00:09
+  1/19/2018 3:12:21AM Scan Complete On-Demand Scan
 
-############ No SVN Changes Since Last Build ############
+############### SVN Log Since Last Build ################
+svn log -r 26177:HEAD Source
+------------------------------------------------------------------------  r26177 | edk2buildsystem | 2018-01-19 02:05:40 -0800 (Fri, 19 Jan 2018) | 9 lines
+  BaseTools: enhance error handling for option --binary-source
+  Enhance error handling for option --binary-source to report invalid
+  option value. --binary-destination use same rule.
+  Contributed-under: TianoCore Contribution Agreement 1.1
+  Signed-off-by: Yonghong Zhu <yonghong.zhu@intel.com>
+  Reviewed-by: Liming Gao <liming.gao@intel.com>
+  (cherry picked from commit f21547ff64a58909c85ce215531345f6f8364884)
 
-"Fix
+------------------------------------------------------------------------
