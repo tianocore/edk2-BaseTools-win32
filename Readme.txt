@@ -1,7 +1,7 @@
 ############### NOTE ###############
 This directory Win32 binaries doesn't work any longer to build EDK2 project.
 Please run BaseTools Python from source in Windows OS. Here is wiki:
-https://svn.code.sf.net/p/edk2/code/trunk/edk2 Source HEAD Revision used for this build: 28123
+https://github.com/tianocore/tianocore.github.io/wiki/Windows-systems#compile-tools
 
 Intel is a trademark or registered trademark of Intel Corporation or its
 subsidiaries in the United States and other countries.
